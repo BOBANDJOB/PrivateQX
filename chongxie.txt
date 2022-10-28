@@ -799,7 +799,6 @@ https://api.rr.tv/storage/business/rootName/app/homePage\?dataType=JSON url reje
 ^https?:\/\/pagead2\.googlesyndication\.com\/pagead\/ url reject-img
 ^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier) url reject
 ^https?:\/\/.+\.googlevideo\.com\/videogoodput url reject-img
-^https?:\/\/(www\.bing)(\.\w{2,4}){1,2}\/(search\?.*|\?sa=|\?FORM)(?!.*?(apps=)).* url script-response-body https://raw.githubusercontent.com/28413761/QX/main/JS/surge_contentFarm.js
 # > 油管
 ctier=[A-Z] url 302 ctier=A
 ^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) url reject-200
