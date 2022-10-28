@@ -120,6 +120,8 @@ hostname = ad.ysepay.com， m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zh
 ^https?:\/\/iobs\.pingan\.com\.cn\/download\/icore-aops-base-dmz-prd\/YourSystemName url reject
 ^https?:\/\/iobs\.pingan\.com\.cn\/download\/icore-aops-base-dmz-prd\/PersonalCenterHomepageOBM-1651143635072-F6499B9FE32846379E94D2763D4F2186-92840231 url reject
 ^https?:\/\/iobs\.pingan\.com\.cn\/download\/icore-aops-base-dmz-prd\/PersonalCenterHomepageOBM-1651223491319-EB2E20B7E86C43AD95AD338743979093-6304785 url reject
+# > 银盛通
+^https?:\/\/ad\.ysepay\.com\/yst-ad\/ST101001\/[0-9]{11}\.jpg url reject
 # > 涨乐财富通
 ^https?+:\/\/d\.zhangle\.com\/pic\/cft\/interaction\/\d{13}-1242-2248\.jpg url reject-200
 # > 天天基金
