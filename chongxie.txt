@@ -94,7 +94,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?:\/\/mlmdacdn\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{20}_[0-9]{4}x[0-9]{4}.png url reject-200
 ^https?:\/\/mlmdacdn\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/.*.(jpg|gif|JPG) url reject-200
 # > 建行生活
-^https://res.yunbusiness.ccb.com/service/resource/mng/adMng/2022/202203/20220325/20220325070000000078/b406caab-da67-40fd-bda8-4317af93f49e.jpg url reject
+^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A00 url reject-200
 # > 华彩生活
 ^https?:\/\/static\.creditcard\.hxb\.com\.cn\/app\/apps\/group1\/M00\/00\/21\/amRGFWJzJsGAdy7RAAFxgeiCVcw561\.jpg url reject
 ^https?:\/\/static\.creditcard\.hxb\.com\.cn\/app\/apps\/group1\/M00\/00\/20\/amRGFWJWO2iASPzaAAKFE-z58V0231\.jpg url reject
@@ -598,11 +598,9 @@ https://api.rr.tv/user/profile url script-response-body https://gitlab.com/ddgks
 # > RRTV_屏蔽限時彈窗
 https://api.rr.tv/storage/business/rootName/app/homePage\?dataType=JSON url reject-dict
 # > 微店
-^https?:\/\/thor\.weidian\.com\/ares\/home\.splash\/ url reject
+^https?+:\/\/thor\.weidian\.com\/ares\/home\.splash\/ url reject-200
 # > 迅雷
 ^https?+:\/\/images\.client\.vip\.xunlei\.com\/.+?\/advert\/ url reject-200
-^https?:\/\/images\.client\.vip\.xunlei\.com\/.+?\/advert\/ url reject
-^https?:\/\/images\.client\.vip\.xunlei\.com\/.+\/advert\/ url reject
 # > 迅游加速器
 ^https?+:\/\/portal-xunyou\.qingcdn\.com\/api\/v\d\/ios\/ads\/ url reject-200
 ^https?+:\/\/portal-xunyou\.qingcdn\.com\/api\/v\d\/ios\/configs\/(?>splash_ad|ad_urls) url reject-200
@@ -814,7 +812,6 @@ https://api.m.jd.com/client.action\?functionId=lite_advertising url reject
 ^https?:\/\/mrobot\.(pcauto|pconline)\.com\.cn\/v\d\/ad\dp url reject
 ^https?:\/\/mrobot\.pcauto\.com\.cn\/xsp\/s\/auto\/info\/(ad|preload) url reject
 # > 天气通
-^https?+:\/\/tqt\.weibo\.cn\/overall\/redirect\.php\?r=tqt url reject-200
 ^https?+:\/\/tqt\.weibo\.cn\/.+?advert\.index url reject-200
 ^https?:\/\/tqt\.weibo\.cn\/[\w=?&%.-]+advert\.index url reject
 ^https?+:\/\/tqt\.weibo\.cn\/api\/advert\/ url reject-200
@@ -825,13 +822,10 @@ https://api.m.jd.com/client.action\?functionId=lite_advertising url reject
 ^https?:\/\/ad\.api\.moji\.com\/ad\/log\/stat url reject-img
 ^https?:\/\/ast\.api\.moji\.com\/assist\/ad\/moji\/stat url reject-img
 ^https?:\/\/cdn2\.moji002\.com\/webpush\/ad2\/ url reject-img
-^https?:\/\/cdn\.moji\.com\/adlink\/avatarcard url reject-img
-^https?:\/\/cdn\.moji\.com\/adlink\/common url reject-img
+^https?:\/\/cdn\.moji\.com\/adlink\/（avatarcard|common） url reject-img
 ^https?:\/\/fds\.api\.moji\.com\/card\/recommend url reject-img
 ^https?:\/\/stat\.moji\.com url reject-img
 ^https?:\/\/show\.api\.moji\.com\/json\/showcase\/getAll url reject-img
-^https?:\/\/cdn\.moji\.com\/adlink\/splash\/ url reject-img
-^https?:\/\/cdn\.moji\.com\/advert\/ url reject-img
 # > 字节跳动
 ^https?:\/\/.+/img\/ad\.union\.api\/ url reject-200
 ^https?:\/\/.+\.pstatp\.com\/img\/ad url reject-200
@@ -1275,7 +1269,6 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 # > 识货
 ^https?:\/\/static\.shihuocdn\.cn\/admin\/imgs/202[0-9]{5}\/[a-z0-9]{32}_513x777\.png url reject-200
 ^https?:\/\/static\.shihuocdn\.cn\/admin\/imgs/202[0-9]{5}\/[a-z0-9]{32}_750x1624\.png url reject-200
-^https?+:\/\/thor\.weidian\.com\/ares\/home\.splash\/ url reject-200
 # > 滴滴青桔
 ^https?:\/\/pt-starimg\.didistatic\.com\/static\/starimg\/node\/.*.(jpg|png|gif) url reject-200
 ^https?:\/\/omgup[0-9]{1}\.xiaojukeji\.com\/api url reject-200
@@ -1330,9 +1323,6 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/ossweb-img\.qq\.com\/upload\/adw\/image\/[0-9]{3}\/202[0-9]{5}\/[a-z0-9]{32}\.(jpg|jpeg) url reject-200
 # > Vista看天下
 ^https?:\/\/open3\.vistastory\.com\/v\d\/api\/inde/loading_ad url reject-200
-^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/ url reject-200
-^https?:\/\/static\.creditcard\.hxb\.com\.cn\/app\/apps\/group1\/M00\/00\/21\/amRGFWJzJsGAdy7RAAFxgeiCVcw561\.jpg - reject
-^https?:\/\/static\.creditcard\.hxb\.com\.cn\/app\/apps\/group1\/M00\/00\/20\/amRGFWJWO2iASPzaAAKFE-z58V0231\.jpg - reject
 # > 转转（中间一行小图标被误杀了）
 ^https?:\/\/app\.zhuanzhuan\.com\/zzx\/transfer\/getConfigInfo$ url reject
 ^https?:\/\/pic1\.zhuanstatic\.com\/zhuanzh\/[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}\.png\?t=5&qa=90 url reject-200
