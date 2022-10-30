@@ -1239,8 +1239,6 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/weather-map2?\.apple\.com\/(v1|v2)\/mapOverlay\/\w+(\?.*country=CN.*)?$ url script-request-header https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Weather.Map.request.js
 # > 苹果TestFlight App更新时, 提示"APP不可用"问题. 解除区域限制.
 ^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$ url script-request-body https://gist.githubusercontent.com/NobyDa/9be418b93afc5e9c8a8f4d28ae403cf2/raw/TF_Download.js
-# > 皮皮虾（*.snssdk.com主机名影响抖音）
-^https?://.*\.snssdk\.com/bds/(feed/stream|comment/cell_reply|cell/cell_comment|cell/detail|ward/list|user/favorite|user/cell_coment|user/cell_userfeed|user/publish_list) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Super.js
 # > 瑞幸咖啡（倒计时还在）
 ^https?:\/\/img0[1-9]{1}\.luckincoffeecdn\.com\/group\d/M00/[A-Z0-9]{2}/[A-Z0-9]{2}/[a-zA-Z0-9]{29}\.(jpg|jpeg)_\.webp url reject-200
 # > img0[1-9]{1}\.luckincoffeecdn\.com  img01-img09前缀的域名都匹配 主机名*代替
