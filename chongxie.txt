@@ -39,6 +39,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 # > 邮储信用卡
 ^https?:\/\/d\.psbc\.com:9091\/mcc\/resources\/[0-9]+\.(jpg|png) url reject-200
 # > 买单吧
+^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/3A\/4A\/trScJ2NBLeOAbspxAARf7S2eu2w554\.jpg url reject-200
 ^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/3A\/A9\/trScJ2NXhvaAfbl5AAMEtLprhp8025\.jpg url reject-200
 ^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/3A\/90\/trScKGNQ8w-AB3r5AALv2-HHcS0431\.jpg url reject-200
 ^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/3A\/49\/trScKGNBLlKARJXhAARf7S2eu2w563\.jpg url reject-200
@@ -106,7 +107,9 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?:\/\/m\.citiccardcdn\.citicbank\.com\/citiccard\/mbk\/dkkjv4\/appspace-img\/icon\/20220[8-9]{1}[0-9]{18}\.(png|jpg|PNG) url reject-200
 # > 202205\d{18}\.(png|jpg) url reject-200  202205后面18位数字的jpg和png格式的图片都拦截。
 # > 发现精彩
-^https?:\/\/static\.95508\.com\/mmg\/images\/ads\/20220\d{3}\/.*.(png|jpg) url reject-200
+^https?:\/\/static\.95508\.com\/mmg\/images\/ads\/202\d{5}\/202\d{13}_1125x2436\.(png|jpg|JPG) url reject-200
+^https?:\/\/static\.95508\.com\/icppweb\/images\/modelMaterial\/advertising\/202\d{5}\/.*.(png|jpg) url reject-200
+^https?:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/\d{25}\.(png|jpg) url reject-img
 # > 20220\d{3}\.(png|jpg) url reject-200  20220后面3位数字的jpg和png格式的图片都拦截。
 # > 广发银行
 ^https?:\/\/static\.95508\.com\/icppweb\/images\/modelMaterial\/advertising\/20220\d{3}\/.*.(png|jpg) url reject-200
@@ -252,6 +255,8 @@ http:\/\/analytics\.163\.com\/ntes url reject
 # > 熊猫直播
 ^https?:\/\/static\.api\.m\.panda\.tv\/index\.php\?method=clientconf\.firstscreen&__version=(play_cnmb|(\d+\.){0,3}\d+)&__plat=ios&__channel=appstore url reject-img
 # > 抖音去广告, 去水印
+#^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/ url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Aweme.js
+#^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Aweme.js
 ^https?:\/\/.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/(vapp\/inner_ad|log|location)\/ url reject
 ^https?:\/\/x?log.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/ url reject
 ^https?:\/\/.+?\.(musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ url reject-200
@@ -709,8 +714,6 @@ https://api.m.jd.com/client.action\?functionId=lite_advertising url reject
 ^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_(9\d{2}|\d{4}) url reject
 ^https:\/\/gw.alicdn.com\/mt\/ url reject
 ^https:\/\/gw.alicdn.com\/tfs\/.+\d{3,4}-\d{4} url reject
-# > 转转
-^https?:\/\/app\.zhuanzhuan\.com\/zzx\/transfer\/getConfigInfo$ url reject
 # > 天猫精灵
 ^https:\/\/ossgw.alicdn.com\/creatives-assets\/image\/ url reject-200
 # > 一淘
@@ -1036,9 +1039,7 @@ ctier=[A-Z] url 302 ctier=A
 # > 丰巢
 ^https?:\/\/consumer\.fcbox\.com\/v\d\/ad\/ url reject
 # > 悟空遥控器
-^https?:\/\/img\.wukongtv\.com\/wkremote\/AD\/iOS\/.*.png url reject-200
-^https?:\/\/img\.wukongtv\.com\/wkremote\/AD\/iOS\/.*.jpg url reject-200
-^https?:\/\/img\.wukongtv\.com\/wkremote\/AD\/iOS\/.*.jpeg url reject-200
+^https?:\/\/img\.wukongtv\.com\/wkremote\/AD\/iOS\/.*.(jpg|png|jpeg) url reject-200
 # > 马卡龙玩图
 ^https:\/\/app\.api\.versa-ai\.com\/launch\/ads\? url reject-200
 ^https?:\/\/static01\.versa-ai\.com\/upload\/ec0ba51d68f9\/.*.jpg url reject-200
@@ -1097,10 +1098,9 @@ ctier=[A-Z] url 302 ctier=A
 # > 最右
 ^https?:\/\/api\.izuiyou\.com\/ad\/ url reject
 # > 驾校一点通
-^https?:\/\/richmanapi\.jxedt\.com\/api\/(ad|adplus)\/ url reject
+^https?:\/\/richmanapi\.jxedt\.com\/api\/(ad|adplus|banadplus)\/ url reject-200
 ^https?:\/\/api\.jxedt\.com\/ad\/ url reject
 ^https?:\/\/api\.jxedt\.com\/jump\/EMiCcDNp url reject-img
-^https?:\/\/richmanapi\.jxedt\.com\/api\/banadplus url reject-img
 ^https?:\/\/richmanmain\.jxedt\.com\/advertisement\/fallback url reject-img
 # > 驾考宝典
 ^https?:\/\/789\.kakamobi\.cn\/.+adver url reject-img
@@ -1233,15 +1233,6 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/.*.jpg url reject
 # > 宝宝树
 ^https?:\/\/aimg\.babytreeimg\.com\/group1\/M00\/*\/*\/.*.jpg url reject-200
-# > 苹果天气（需要的自己添加主机名）
-# > 1.全部天气数据类型
-# > 2.替换空气质量数据:WAQI
-# > 3.添加下一小时降水:气象在线
-# > 4.替换空气质量地图数据:WAQI
-^https?:\/\/weather-data\.apple\.com\/(v1|v2|v3)\/availability\/.* url script-request-header https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Weather.Availability.request.js
-^https?:\/\/weather-data\.apple\.com\/(v1|v2|v3)\/availability\/.* url script-response-body https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Weather.Availability.response.js
-^https?:\/\/weather-data\.apple\.com\/(v1|v2|v3)\/weather\/.* url script-response-body https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Weather.response.js
-^https?:\/\/weather-map2?\.apple\.com\/(v1|v2)\/mapOverlay\/\w+(\?.*country=CN.*)?$ url script-request-header https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Weather.Map.request.js
 # > 苹果TestFlight App更新时, 提示"APP不可用"问题. 解除区域限制.
 ^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$ url script-request-body https://gist.githubusercontent.com/NobyDa/9be418b93afc5e9c8a8f4d28ae403cf2/raw/TF_Download.js
 # > 瑞幸咖啡（倒计时还在）
@@ -1263,6 +1254,7 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 # > 返利网
 ^https?:\/\/l[0-9]{1}\.51fanli\.net\/app\/images\/splash\/2022\/0[4-9]{1}\/.*.jpg url reject-200
 ^https?:\/\/l[0-9]{1}\.51fanli\.net\/app\/images\/splash\/2022\/1[0-2]{1}\/.*.jpg url reject-200
+^https?:\/\/l[0-9]{1}\.51fanli\.net\/app\/images\/splash\/202\d{1}\/\d{2}\/.*.jpg url reject-200
 # > 加油广东
 ^https?:\/\/img\.gdoil\.cn\/upload\/ad\/.*.(jpg|png) url reject-200
 # > 全家便利店
@@ -1333,27 +1325,18 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/ossweb-img\.qq\.com\/upload\/adw\/image\/[0-9]{3}\/202[0-9]{5}\/[a-z0-9]{32}\.(jpg|jpeg) url reject-200
 # > Vista看天下
 ^https?:\/\/open3\.vistastory\.com\/v\d\/api\/inde/loading_ad url reject-200
-^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/3A\/A9\/trScJ2NXhvaAfbl5AAMEtLprhp8025\.jpg url reject-200
-^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/3A\/90\/trScKGNQ8w-AB3r5AALv2-HHcS0431\.jpg url reject-200
-^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/3A\/49\/trScKGNBLlKARJXhAARf7S2eu2w563\.jpg url reject-200
-^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/3A\/4A\/trScJ2NBLeOAbspxAARf7S2eu2w554\.jpg url reject-200
 ^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/ url reject-200
 ^https?:\/\/static\.creditcard\.hxb\.com\.cn\/app\/apps\/group1\/M00\/00\/21\/amRGFWJzJsGAdy7RAAFxgeiCVcw561\.jpg - reject
 ^https?:\/\/static\.creditcard\.hxb\.com\.cn\/app\/apps\/group1\/M00\/00\/20\/amRGFWJWO2iASPzaAAKFE-z58V0231\.jpg - reject
-^https?:\/\/static\.95508\.com\/mmg\/images\/ads\/202\d{5}\/.*.(png|jpg) url reject-200
-^https?:\/\/static\.95508\.com\/mmg\/images\/ads\/202\d{5}\/202\d{13}_1125x2436\.(png|jpg|JPG) url reject-200
-^https?:\/\/static\.95508\.com\/icppweb\/images\/modelMaterial\/advertising\/202\d{5}\/.*.(png|jpg) url reject-200
-#^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/ url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Aweme.js
-#^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Aweme.js
 # > 转转（中间一行小图标被误杀了）
+^https?:\/\/app\.zhuanzhuan\.com\/zzx\/transfer\/getConfigInfo$ url reject
 ^https?:\/\/pic1\.zhuanstatic\.com\/zhuanzh\/[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}\.png\?t=5&qa=90 url reject-200
 ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses\/unread_hot_timeline url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/weibo_json.js
 ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses\/friends_timeline url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/weibo_json.js
 ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/cardlist url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/weibo_json.js
 ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=trends url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/weibo_json.js
 # > 大众点评
-^https?:\/\/img\.meituan\.net\/dpmobile\/.*..(gif|jpg) url reject-200
-# >58
+^https?:\/\/img\.meituan\.net\/dpmobile\/.*.(gif|jpg) url reject-200
 # > 麦当劳
 ^https?:\/\/api\.mcd\.cn\/bff\/portal\/home\/splash url reject-200
 # > 肯德基
