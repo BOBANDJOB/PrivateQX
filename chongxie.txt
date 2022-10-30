@@ -418,47 +418,52 @@ http:\/\/analytics\.163\.com\/ntes url reject
 ^https?:\/\/capis(-?\w*)?\.didapinche\.com\/publish\/api\/upgrade url reject-dict
 ^https?+:\/\/www\.didapinche\.com\/app\/adstat\/ url reject-200
 # > 叮咚买菜
-^https?:\/\/maicai\.api\.ddxq\.mobi\/advert\/ url reject
-# > BiliBili_哔哩哔哩_修复轮播Ad失效Bug
-^https?:\/\/.*\.xima.*\.com\/discovery-feed\/focus\/queryF url reject
-# > BiliBili_哔哩哔哩_播放页_Live
-^https?:\/\/.*\.xima.*\.com\/mobile-playpage\/view\/ url reject
-# > BiliBili_哔哩哔哩_MyInfo红点提醒
-^https?:\/\/.*\.xima.*\.com\/chaos-notice-web\/v1\/message\/preview\/list url reject
-# > BiliBili_哔哩哔哩_屏蔽大红包Tips
-^https?:\/\/.*\.xima.*\.com\/social-web\/bottomTabs\/dynamicEntrance\/status url reject
-# > BiliBili_哔哩哔哩_屏蔽gif弹窗Ad
-^https?:\/\/.*\.xmcdn\.com\/\w{8}\/\w{4}-\w{16}\/.+gif$ url reject
-# > BiliBili_哔哩哔哩_屏蔽Aged请求
-^https?:\/\/.*\.xima.*\.com\/(dog-portal\/checkOld|(child-mobile\/child|aged-mobile\/aged)\/mode\/query) url reject
-# > BiliBili_哔哩哔哩_部分Tab弹窗
-^https?:\/\/.*\.xima.*\.com\/discovery-feed\/isShowUserGiftPendant url reject
-# > BiliBili_哔哩哔哩_屏蔽红点提示
-^https?:\/\/.*\.xima.*\.com\/mobile-user\/unread url reject
-# > BiliBili_哔哩哔哩_屏蔽minor请求
-^https?:\/\/.*\.xima.*\.com/mobile-user/minorProtection/pop url reject
-# > BiliBili_哔哩哔哩_屏蔽隐私搜集
-^https?:\/\/.*\.xima.*\.com\/collector\/xl\/v\d url reject
-# > BiliBili_哔哩哔哩_屏蔽版本更新
-^https?:\/\/.*\.xima.*\.com\/butler-portal\/versionCheck url reject
-# > BiliBili_哔哩哔哩_屏蔽开屏广告
-^https?:\/\/(adse\.wsa|adse|adbehavior|xdcs-collector)\.xima.*\.com\/.* url reject
-# > BiliBili_哔哩哔哩_屏蔽位置请求
-^https?:\/\/.*\.xima.*\.com\/mobile\/discovery\/v\d\/location url reject
-# > BiliBili_哔哩哔哩_屏蔽热搜词
-^https?:\/\/.*\.xima.*\.com\/hotWord url reject
-# > BiliBili_哔哩哔哩_屏蔽搜索框定时_Ad
-^https?:\/\/.*\.xima.*\.com\/guideWord url reject
-# > BiliBili_哔哩哔哩_屏蔽实时Ad请求
-^https?:\/\/.*\.xima.*\.com\/api\/v\d\/adRealTime url reject
-# > BiliBili_哔哩哔哩_屏蔽ting_Ad
-^https?:\/\/.*\.xima.*\.com\/ting\/(loading|feed|home)? url reject
-# > BiliBili_哔哩哔哩_屏蔽首页滚动_Ad
-^https?:\/\/.*\.xima.*\.com\/discovery-feed\/v\d\/mix url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/xmly_json.js
-# > BiliBili_哔哩哔哩_屏蔽Tab页滚动_Ad
-^https?:\/\/.*\.xima.*\.com\/discovery-category\/v\d/category url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/xmly_json.js
-# > BiliBili_哔哩哔哩_去除我的页面Ad_Tag
-^https?:\/\/.*\.xima.*\.com\/mobile-user\/v\d\/homePage url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/xmly_json.js
+# > 哔哩哔哩屏蔽广告浮窗
+^https?:\/\/api\.bilibili\.com\/pgc\/activity\/deliver\/material\/receive url reject-dict
+# > 哔哩哔哩屏蔽IP请求
+^https?:\/\/app\.bilibili\.com\/x\/resource\/ip url reject
+# > 哔哩哔哩屏蔽DefaultWord
+^https?:\/\/app\.bilibili\.com\/bilibili\.app\.interface\.v1\.Search\/Default url reject
+# > 哔哩哔哩屏蔽首页右上活动[卸载重装]
+^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity url reject-dict
+# > 哔哩哔哩启动时开启直连模式[自行启用]
+;^https?:\/\/app\.bilibili\.com\/x\/resource\/domain url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_startup_direct.js
+# > 哔哩哔哩繁体CC字幕转中文简体[自行启用]
+;^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$ url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_cc.js
+# > 哔哩哔哩观影页面去广告
+^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\? url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
+# > 哔哩哔哩应用开屏去广告
+^https://app.bilibili.com/x/v2/splash/show url reject-dict
+# > 哔哩哔哩应用开屏广告预加载
+^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
+# > 哔哩哔哩去除统一设置的皮肤
+^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\? url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
+# > 哔哩哔哩1080P高码率+4K画质(番剧和影视除外)
+^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
+# > 哔哩哔哩热搜发现
+^https://app.bilibili.com/x/v2/search/square url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
+# > 哔哩哔哩Defaultword
+^https://app.bilibili.com/x/v2/search/defaultwords url reject-dict
+# > 哔哩哔哩Material_Ad
+^https?:\/\/api\.bilibili\.com\/x\/vip\/ads\/material\/report url reject-dict
+# > 哔哩哔哩小卡片广告
+^https://api.bilibili.com/pgc/season/player/cards url reject-dict
+# > 哔哩哔哩去除动态中的话题
+^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr url reject-dict
+# > 哔哩哔哩漫画去广告
+^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/(Flash|ListFlash) url reject-dict
+# > 哔哩哔哩推荐去广告
+^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
+# > 哔哩哔哩追番去广告
+^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/bangumi url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
+# > 哔哩哔哩直播去广告
+^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
+# > 哔哩哔哩标签页处理
+^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
+# > 哔哩哔哩我的页面处理
+^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
+# > 哔哩哔哩Proto去广告
+^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-proto.js
 # > 快手
 ^https:\/\/open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$ url reject
 # > 永辉
