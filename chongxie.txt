@@ -107,7 +107,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?:\/\/m\.citiccardcdn\.citicbank\.com\/citiccard\/mbk\/dkkjv4\/appspace-img\/icon\/20220[8-9]{1}[0-9]{18}\.(png|jpg|PNG) url reject-200
 # > 202205\d{18}\.(png|jpg) url reject-200  202205后面18位数字的jpg和png格式的图片都拦截。
 # > 发现精彩
-^https?:\/\/static\.95508\.com\/mmg\/images\/ads\/202\d{5}\/202\d{13}_1125x2436\.(png|jpg|JPG) url reject-200
+^https?:\/\/static\.95508\.com\/mmg\/images\/ads\/202\d{5}\/.*.(png|jpg|JPG) url reject-200
 ^https?:\/\/static\.95508\.com\/icppweb\/images\/modelMaterial\/advertising\/202\d{5}\/.*.(png|jpg) url reject-200
 ^https?:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/\d{25}\.(png|jpg) url reject-img
 # > 20220\d{3}\.(png|jpg) url reject-200  20220后面3位数字的jpg和png格式的图片都拦截。
