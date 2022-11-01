@@ -1,7 +1,7 @@
 # > /*  APP开屏广告拦截，APP启动广告拦截！
 # > 某些APP要清除缓存或者重新安装APP，拦截广告才会生效！  
 # > 28413761  收集整理
-# > 更新时间  2022.10.29
+# > 更新时间  2022.11.1
 # > */  
 
 # > 光大银行阳光惠生活
@@ -757,6 +757,8 @@ HOST,n.3g.163.com, reject
 HOST,nex.163.com, reject
 HOST,yt-adp.nosdn.127.net, reject
 HOST,yt-adp.ws.126.net, reject
+# > 网易云
+host-keyword, ossgw.alicdn.com, reject
 # (P)
 # > PPTV
 HOST,ads.aplus.pptv.com, reject
