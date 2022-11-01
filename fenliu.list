@@ -166,7 +166,6 @@ host, errlog.umeng.com, reject
 host, lf9-cdn-tos.bytegecko.com, reject
 host, novel.pangolin-sdk-toutiao.com, reject
 # > 高德
-host-keyword, ossgw.alicdn.com,REJECT
 HOST-SUFFIX,adiu.amap.com,REJECT
 HOST,aboard.apilocate.amap.com,REJECT
 HOST,apiinit.amap.com,REJECT
