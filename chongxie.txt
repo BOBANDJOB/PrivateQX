@@ -366,13 +366,13 @@ http:\/\/analytics\.163\.com\/ntes url reject
 ^https?:\/\/api\.cloud\.189\.cn\/guns\/img\/recommendedPosition\/.*.jpg url reject-200
 ^https?:\/\/cloud\.189\.cn\/include\/splash\/20170512mother\/.*.jpg url reject-200
 # > 携程（8.47.0以上版本会有部分图片加载不出来）  dimg04.c-ctrip.com
-;^https:\/\/m\.ctrip\.com\/restapi\/.+\/json\/tripAds url reject
+^https:\/\/m\.ctrip\.com\/restapi\/.+\/json\/tripAds url reject
 ;^https?:\/\/dimg04\.c-ctrip\.com\/images\/[a-zA-Z0-9]{21}\.(jpg|png)$ url reject-200
 ;#^https?:\/\/dimg04\.c-ctrip\.com\/images\/\w+(_\d{4}){2} url reject-img
-;^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/\d+\/json\/getAdsList url reject
-;^https:\/\/ma-adx\.ctrip\.com\/_ma\.gif url reject
-;^https:\/\/m\.ctrip\.com\/html5\/webresource\/js\/iscroll\.js$ url reject
-;^https:\/\/mbd\.baidu\.com\/newspage\/api\/getmobads\?page\=landingshare url reject
+^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/\d+\/json\/getAdsList url reject
+^https:\/\/ma-adx\.ctrip\.com\/_ma\.gif url reject
+^https:\/\/m\.ctrip\.com\/html5\/webresource\/js\/iscroll\.js$ url reject
+^https:\/\/mbd\.baidu\.com\/newspage\/api\/getmobads\?page\=landingshare url reject
 # > 飞常准
 ^https?:\/\/app\.variflight\.com\/ad\/ url reject
 ^https?:\/\/app\.variflight\.com\/v\d\/advert\/ url reject
@@ -936,15 +936,15 @@ https://api.m.jd.com/client.action\?functionId=lite_advertising url reject
 # > 雅虎
 ^https?:\/\/m\.yap\.yahoo\.com\/v\d{2}\/getAds\.do url reject
 # > 谷歌
-;^https?:\/\/.+\.googleapis.com/.+ad_break url reject-img
-;^https?:\/\/.+?\.googlevideo\.com\/ptracking\?pltype=adhost url reject-img
-;^https?:\/\/.+\.googleapis.com/.+log_event url reject-img
-;^https?:\/\/.+\.googleapis.com/adsmeasurement url reject-img
-;^https?:\/\/.+\.googlevideo\.com\/.+oad= url reject-img
-;^https?:\/\/.+\.googlevideo\.com\/ptracking url reject-img
-;^https?:\/\/pagead2\.googlesyndication\.com\/pagead\/ url reject-img
-;^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier) url reject
-;^https?:\/\/.+\.googlevideo\.com\/videogoodput url reject-img
+^https?:\/\/.+\.googleapis.com/.+ad_break url reject-img
+^https?:\/\/.+?\.googlevideo\.com\/ptracking\?pltype=adhost url reject-img
+^https?:\/\/.+\.googleapis.com/.+log_event url reject-img
+^https?:\/\/.+\.googleapis.com/adsmeasurement url reject-img
+^https?:\/\/.+\.googlevideo\.com\/.+oad= url reject-img
+^https?:\/\/.+\.googlevideo\.com\/ptracking url reject-img
+^https?:\/\/pagead2\.googlesyndication\.com\/pagead\/ url reject-img
+^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier) url reject
+^https?:\/\/.+\.googlevideo\.com\/videogoodput url reject-img
 # > 油管
 ;ctier=[A-Z] url 302 ctier=A
 ;^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) url reject-200
