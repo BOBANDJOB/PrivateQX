@@ -319,6 +319,10 @@ HOST,adextra.51wnl-cq.com, reject
 HOST,log.51wnl-cq.com, reject
 HOST,r.51wnl-cq.com, reject
 # > 屏蔽苹果系统更新
+HOST, gdmf.apple.com, SystemOTA
+HOST, mesu.apple.com, SystemOTA
+HOST, updates-http.cdn-apple.com, SystemOTA
+HOST, xp.apple.com, SystemOTA
 host, ns.itunes.apple.com, reject
 host, appldnld.apple.com, reject
 host, mesu.apple.com, reject
