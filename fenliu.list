@@ -9702,4 +9702,5 @@ HOST-SUFFIX,gzads.com, reject
 HOST-SUFFIX,gz-data.com, reject
 # > GrowingIO
 HOST-SUFFIX,giocdn.com, reject
-
+# > 深圳通微信小程序
+HOST-SUFFIX,wxsnsdythumb.wxs.qq.com, reject
