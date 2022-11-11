@@ -60,6 +60,8 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/39\/02\/trScKGMFjQ2AQtG3AAIfJQR48Bc372\.jpg url reject-200
 ^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/3A\/CB\/trScJ2NfJuyAWer3AAKoHxFS67Q788\.jpg url reject-200
 ^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/3A\/F7\/trScKGNov2qALvBLAAJSkXvbGqw589\.jpg url reject-200
+# > 买单吧（一小部分误杀，应该不影响使用，不用频繁更新）
+^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/3.\/..\/trSc.*\.jpg url reject-200
 # > 中国工商银行
 #^https?+:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/ url reject-200
 # > 工银E生活
@@ -97,8 +99,9 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?:\/\/cdnmlmda\.res\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/.*.(jpg|gif|JPG) url reject-200
 ^https?:\/\/mlmdacdn\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{20}_[0-4]{3}x[0-8]{3}.png url reject-200
 ^https?:\/\/mlmdacdn\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{20}_[0-9]{4}x[0-9]{4}.png url reject-200
-^https?:\/\/mlmdacdn\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/.*.(jpg|gif|JPG) url reject-200
+^https?:\/\/mlmdacdn\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/.*.(jpg|gif|JPG|jpeg) url reject-200
 ^https?:\/\/mlmdacdn\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/[a-z0-9]{8}-[0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{20}_[0-9]{4}_[0-9]{4}.+.png url reject-200
+^https?:\/\/mlmdacdn\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/.+1920.+1920\.png url reject-200
 # > 建行生活
 ^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A00 url reject-200
 # > 华彩生活
@@ -128,6 +131,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?:\/\/iobs\.pingan\.com\.cn\/download\/icore-aops-base-dmz-prd\/YourSystemName url reject
 ^https?:\/\/iobs\.pingan\.com\.cn\/download\/icore-aops-base-dmz-prd\/PersonalCenterHomepageOBM-1651143635072-F6499B9FE32846379E94D2763D4F2186-92840231 url reject
 ^https?:\/\/iobs\.pingan\.com\.cn\/download\/icore-aops-base-dmz-prd\/PersonalCenterHomepageOBM-1651223491319-EB2E20B7E86C43AD95AD338743979093-6304785 url reject
+^https?:\/\/hcz-member\.pingan\.com\.cn\/micro-api\/homepage\/do\/app\/popbox\/getTopPopBox url reject-200
 # > 银盛通
 ^https?:\/\/ad\.ysepay\.com\/yst-ad\/ST101001\/[0-9]{11}\.jpg url reject
 # > 兴业证券优理宝（3秒倒计时,任意位置点一下即可跳过）
