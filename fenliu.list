@@ -1146,18 +1146,6 @@ HOST-SUFFIX,cm.ad.bilibili.com, reject
 HOST-SUFFIX,cm.adcommon.bilibili.com, reject
 HOST-SUFFIX,cm.game.bilibili.com, reject
 HOST-SUFFIX,cm.track.biligame.bilibili.com, reject
-;DOMAIN,api.biliapi.com,StreamingSE
-;DOMAIN,api.biliapi.net,StreamingSE
-;DOMAIN,api.bilibili.com,StreamingSE
-;DOMAIN,app.biliapi.com,StreamingSE
-;DOMAIN,app.biliapi.net,StreamingSE
-;DOMAIN,app.bilibili.com,StreamingSE
-;DOMAIN,grpc.biliapi.net,StreamingSE
-;DOMAIN,m.bilibili.com,StreamingSE
-;DOMAIN,upos-hz-mirrorakam.akamaized.net,StreamingSE
-;DOMAIN,www.bilibili.com,StreamingSE
-;DOMAIN-KEYWORD,cn-hk-eq-bcache-,StreamingSE
-;ip-cidr, 203.107.1.1/24, reject
 # > 快手
 HOST-SUFFIX,yximgs.com, reject
 HOST-SUFFIX,e.kuaishou.com, reject
