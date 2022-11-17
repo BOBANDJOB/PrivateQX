@@ -432,13 +432,13 @@ http:\/\/analytics\.163\.com\/ntes url reject
 ^https?+:\/\/www\.didapinche\.com\/app\/adstat\/ url reject-200
 # > 叮咚买菜
 # > 哔哩哔哩屏蔽广告浮窗
-;^https?:\/\/api\.bilibili\.com\/pgc\/activity\/deliver\/material\/receive url reject-dict
+^https?:\/\/api\.bilibili\.com\/pgc\/activity\/deliver\/material\/receive url reject-dict
 # > 哔哩哔哩屏蔽IP请求
-;^https?:\/\/app\.bilibili\.com\/x\/resource\/ip url reject
+^https?:\/\/app\.bilibili\.com\/x\/resource\/ip url reject
 # > 哔哩哔哩屏蔽DefaultWord
-;^https?:\/\/app\.bilibili\.com\/bilibili\.app\.interface\.v1\.Search\/Default url reject
+^https?:\/\/app\.bilibili\.com\/bilibili\.app\.interface\.v1\.Search\/Default url reject
 # > 哔哩哔哩屏蔽首页右上活动[卸载重装]
-;^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity url reject-dict
+^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity url reject-dict
 # > 哔哩哔哩启动时开启直连模式[自行启用]
 ;^https?:\/\/app\.bilibili\.com\/x\/resource\/domain url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/bilibili_startup_direct.js
 # > 哔哩哔哩繁体CC字幕转中文简体[自行启用]
