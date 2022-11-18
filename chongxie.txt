@@ -819,7 +819,7 @@ https://api.m.jd.com/client.action\?functionId=lite_advertising url reject
 # > 顺丰优选
 ^https://mapi.sfbest.com\/brokerservice-server\/cms\/getPositionById.* url reject
 # > 顺丰速运   转载自墨鱼
-^https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow url script-response-body https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Script/shunfeng_json.js
+https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow url script-response-body https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Script/shunfeng_json.js
 # > 掌上道具城
 ^https?:\/\/game\.gtimg\.cn\/images\/daojushop\/uploads\/ad\/*\/.*.jpg url reject-200
 # > 掌上wegame
