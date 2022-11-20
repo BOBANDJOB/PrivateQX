@@ -820,6 +820,7 @@ https?:\/\/vip\.storage\.weibo\.com\/feed_cover\/star_\d{0,4}_mobile_new\.png\?v
 ^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/appVersion\/detectionUpgrade url reject-dict
 ^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/ url reject
 ^https?:\/\/shopic\.sf-express\.com\/crm\/mobile\/common\/flashscreen url reject
+https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow url script-response-body https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Script/shunfeng_json.js
 # > 顺丰优选
 ^https://mapi.sfbest.com\/brokerservice-server\/cms\/getPositionById.* url reject
 # > 掌上道具城
