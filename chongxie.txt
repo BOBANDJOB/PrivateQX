@@ -340,10 +340,8 @@ http:\/\/analytics\.163\.com\/ntes url reject
 ^https?:\/\/log.+?baidu\.com url reject
 ^https?:\/\/sa\d\.tuisong\.baidu\.com url reject-img
 ^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*? url reject
-# > 百度文库
-^https?:\/\/wapwenku.baidu.com\/view\/fengchaoTwojump\/ url reject
-^https?:\/\/wapwenku\.baidu\.com\/view\/fengchao\/ url reject-img
-^https?:\/\/wenku\.baidu\.com\/shifen\/ url reject-img
+# > 百度文库  主机名appwk.baidu.com
+^https?:\/\/appwk\.baidu\.com\/xpage\/interface\/wknaad url reject-200
 # > 威锋
 ^https:\/\/api\.wfdata\.club\/v2\/yesfeng\/(infoCenterAd|yesList) url reject
 # > 每日优鲜
@@ -365,8 +363,7 @@ http:\/\/analytics\.163\.com\/ntes url reject
 ^https?:\/\/cloud\.189\.cn\/include\/splash\/ url reject
 ^https?:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*?Animation url reject-img
 # > 天翼云盘
-^https?:\/\/api\.cloud\.189\.cn\/guns\/img\/recommendedPosition\/.*.jpg url reject-200
-^https?:\/\/cloud\.189\.cn\/include\/splash\/20170512mother\/.*.jpg url reject-200
+^https?:\/\/api\.cloud\.189\.cn\/guns\/getOpenscreenBanners url reject-200
 # > 携程（8.47.0以上版本会有部分图片加载不出来）  dimg04.c-ctrip.com
 ^https:\/\/m\.ctrip\.com\/restapi\/.+\/json\/tripAds url reject
 ;^https?:\/\/dimg04\.c-ctrip\.com\/images\/[a-zA-Z0-9]{21}\.(jpg|png)$ url reject-200
