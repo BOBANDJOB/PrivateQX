@@ -1159,9 +1159,7 @@ DOMAIN,www.bilibili.com,StreamingSE
 DOMAIN-KEYWORD,cn-hk-eq-bcache-,StreamingSE
 ip-cidr, 203.107.1.1/24, reject
 # > 快手
-HOST-SUFFIX,yximgs.com, reject
 HOST-SUFFIX,e.kuaishou.com, reject
-HOST,js-ad.a.yximgs.com, reject
 HOST-SUFFIX,cm.downloader.commercial.kuaishou.com, reject
 HOST-SUFFIX,cm.ad.gifshow.com, reject
 HOST-SUFFIX,cm.kwad.com, reject
