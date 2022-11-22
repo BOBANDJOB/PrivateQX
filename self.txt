@@ -1,0 +1,70 @@
+hostname = www.zhihu.com, api.zhihu.com, appcloud2.zhihu.com, static.zhihu.com, account.wps.*, account.wps.cn, spclient.wg.spotify.com, notability.com, pan.baidu.com, *wps*, www.google.*, trade-acs.m.taobao.com, micro-tool-api.lyaway.com, mall.zuoyebang.com, apivip.zybang.com, api.dushu.io, api.gotokeep.com, kad.gotokeep.com, 
+
+# > 知乎开屏页广告,首页右下角悬浮框,推荐列表广告,问题回答列表广告,具体回答下广告
+^https:\/\/(appcloud2\.zhihu\.com\/v3\/config$|www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations|api\.zhihu\.com\/(topstory\/recommend|commercial_api\/(real_time_launch_v2|app_float_layer$)|questions\/\d+\/feeds\?|v4\/questions\/\d+\/answers\?)) url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/zhihu.js
+# > 知乎网页版强制登陆弹窗@HotKids
+^https?:\/\/static\.zhihu\.com\/[^\/]+\/(main|column)\.signflow\.[^.]+.js url reject
+# > WPS
+^https?:\/\/ios\.wps\.cn\/ad-statistics-service url reject
+^https?+:\/\/mobile-pic\.cache\.iciba\.com\/feeds_ad\/ url reject-200
+# > spotify音乐
+^https?:\/\/spclient\.wg\.spotify\.com\/.+ad_slot url reject-img
+^https?:\/\/spclient\.wg\.spotify\.com\/.+banners url reject-img
+^https?:\/\/spclient\.wg\.spotify\.com\/.+crashlytics url reject-img
+^https?:\/\/spclient\.wg\.spotify\.com\/.+doubleclick url reject-img
+^https?:\/\/spclient\.wg\.spotify\.com\/.+enabled-tracks url reject-img
+^https?:\/\/spclient\.wg\.spotify\.com\/.+event url reject-img
+^https?:\/\/spclient\.wg\.spotify\.com\/.+promoted url reject-img
+^https?:\/\/spclient\.wg\.spotify\.com\/.+sponsored url reject-img
+^https?:\/\/spclient\.wg\.spotify\.com\/ad-logic url reject-img
+^https?:\/\/spclient\.wg\.spotify\.com\/ads url reject-img
+^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+#>>>>>>>>>>>>>>>>工具类VIP
+# ✅ Notability
+https://notability.com/subscriptions url script-response-body https://raw.githubusercontent.com/BOBANDJOB/moyu/main/Crack/notability.js
+# ✅ 百度网盘(倍速)
+https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://raw.githubusercontent.com/BOBANDJOB/moyu/main/Crack/bdcloud.js
+# ✅ WPS(国区)
+^https?:\/\/[a-z-]*account\.wps\.c(n|om)(:\d+|)\/api\/users url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
+# > google自动翻页
+^https?:\/\/www\.google\..*\/search url script-response-body https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/endlessgoogle.js
+# > 044 百度云（2021-03-10） by ddgksf2013
+https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/BOBANDJOB/moyu/main/Crack/bdcloud.js
+# > 🔴023 樊登读书 （2020-10-26） by ddgksf2013
+https://api.dushu.io/Album/Info url script-response-body https://raw.githubusercontent.com/BOBANDJOB/moyu/main/Crack/fdds.js
+# > 051 作业帮 （2021-04-07） by photonmang
+https://mall.zuoyebang.com/mall/goods/audio/voice/list?audioId=\d+ url script-response-body https://raw.githubusercontent.com/BOBANDJOB/moyu/main/Crack/zyb.js
+https://apivip.zybang.com/vipols/vip/viphomev1?.+ url script-response-body https://raw.githubusercontent.com/BOBANDJOB/moyu/main/Crack/zyb.js
+# > 065 通话录音（2021-06-25）by ddgksf2013
+http://micro-tool-api.lyaway.com/* url script-response-body https://raw.githubusercontent.com/BOBANDJOB/moyu/main/Crack/thly.js
+#>>>>>>>>>>>>>>>>Keep
+# > 屏蔽部分启动弹窗
+^https?:\/\/api\.gotokeep\.com\/kprime\/v\d\/popups\/primeGuide url reject
+# > 屏蔽开屏广告请求
+^https?:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v\d\/ad url reject
+# > 屏蔽青少年弹窗
+^https?:\/\/api.gotokeep.com/cauchy/growth/init url reject
+# > 屏蔽搜索栏自动填充词
+^https?:\/\/api\.gotokeep\.com\/search\/v\d\/default\/keyword\/list url reject
+# > 屏蔽热词
+^https?:\/\/api\.gotokeep\.com\/search\/v\d\/hotword\/list url reject
+# > 屏蔽hotCourse
+^https?:\/\/api\.gotokeep\.com\/search\/v\d\/hotCourse\/list url reject
+# > 屏蔽adwebapp
+^https?:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/ad url reject
+# > 屏蔽广告预加载
+^https?:\/\/api\.gotokeep\.com\/ads\/v\d\/ads\/preload url reject
+# > 屏蔽adbox
+^https?:\/\/api\.gotokeep\.com\/training\/box\/config url reject
+# > 屏蔽更新
+^https?:\/\/api\.gotokeep\.com\/anno\/v\d\/upgrade\/check url reject
+# > 我的页面去推广
+^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/keepStyle.js
+# > 底部栏净化
+^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/keepStyle.js
+# > 发现页只保留顶部
+https://api.gotokeep.com/homepage/v7/tab/find url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/keepStyle.js
+# > 课程预览页广告
+https://api.gotokeep.com/nuocha/course/v2/\w+/preview url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/keepStyle.js
+# > 我的运动页面去除下方推荐
+https://api.gotokeep.com/sportpage/sport/v3/mysport url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/keepStyle.js
