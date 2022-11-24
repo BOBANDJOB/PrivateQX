@@ -9733,3 +9733,5 @@ HOST-SUFFIX,gz-data.com, reject
 HOST-SUFFIX,giocdn.com, reject
 # > 深圳通微信小程序
 HOST-SUFFIX,wxsnsdythumb.wxs.qq.com, reject
+# > 全民K歌
+HOST-SUFFIX,gdc.kg.qq.com, reject
