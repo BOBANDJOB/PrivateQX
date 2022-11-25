@@ -26,8 +26,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 # > 阳光惠生活
 ^https?:\/\/yghsh\.cebbank\.com\/static\/picture\/.*.jpg url reject-200
 # > 中国银行
-^https?+:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do\? url reject-200
-^https:\/\/mbs.boc.cn\/ubas-mgateway-static\/images\/advertType\/ url reject-200
+^https:\/\/mbs\.boc\.cn\/ubas-mgateway-static\/images\/advertType\/.+.jpg url reject-200
 # > 缤纷生活
 ^https?:\/\/mlife\.jf365\.boc\.cn\/mlife\/mobilelife\/uploadfile\/IosPict1\/.*.png url reject-200
 # > 邮储银行,添加主机名后影响APP正常运行
