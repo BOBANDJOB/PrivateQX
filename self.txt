@@ -1,23 +1,8 @@
-hostname = notability.com, pan.baidu.com, *wps*, www.google.*, trade-acs.m.taobao.com, micro-tool-api.lyaway.com, mall.zuoyebang.com, apivip.zybang.com, api.dushu.io, api.gotokeep.com, kad.gotokeep.com, www.zhihu.com, api.zhihu.com, zhuanlan.zhihu.com, appcloud2.zhihu.com, 103.41.167.236, 103.41.167.234, 103.41.167.235, 103.41.167.226
+hostname = www.google.*, api.gotokeep.com, kad.gotokeep.com, www.zhihu.com, api.zhihu.com, zhuanlan.zhihu.com, appcloud2.zhihu.com, 103.41.167.236, 103.41.167.234, 103.41.167.235, 103.41.167.226
 
 #>>>>>>>>>>>>>>>>工具类VIP
-# ✅ Notability
-https://notability.com/subscriptions url script-response-body Crack/notability.js
-# ✅ 百度网盘(倍速)
-https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body Crack/bdcloud.js
-# ✅ WPS(国区)
-^https?:\/\/[a-z-]*account\.wps\.c(n|om)(:\d+|)\/api\/users url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 # > google自动翻页
 ^https?:\/\/www\.google\..*\/search url script-response-body https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/endlessgoogle.js
-# > 044 百度云（2021-03-10） by ddgksf2013
-https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body Crack/bdcloud.js
-# > 🔴023 樊登读书 （2020-10-26） by ddgksf2013
-https://api.dushu.io/Album/Info url script-response-body Crack/fdds.js
-# > 051 作业帮 （2021-04-07） by photonmang
-https://mall.zuoyebang.com/mall/goods/audio/voice/list?audioId=\d+ url script-response-body Crack/zyb.js
-https://apivip.zybang.com/vipols/vip/viphomev1?.+ url script-response-body Crack/zyb.js
-# > 065 通话录音（2021-06-25）by ddgksf2013
-http://micro-tool-api.lyaway.com/* url script-response-body Crack/thly.js
 #>>>>>>>>>>>>>>>>Keep 
 # > 屏蔽部分启动弹窗
 ^https?:\/\/api\.gotokeep\.com\/kprime\/v\d\/popups\/primeGuide url reject
