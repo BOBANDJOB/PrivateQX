@@ -5,7 +5,6 @@ hostname = www.google.*, api.shenyin.name, spclient.wg.spotify.com, api.gotokeep
 ^https?:\/\/www\.google\..*\/search url script-response-body https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/endlessgoogle.js
 # ～ Stay（2022-10-17）@ddgksf2013
 ^https?:\/\/api\.shenyin\.name\/stay-fork\/browse\/featured$ url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/stay.js
-spclient.wg.spotify.com
 # > spotify vip
 ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 #>>>>>>>>>>>>>>>>Keep 
