@@ -9734,3 +9734,5 @@ HOST-SUFFIX,giocdn.com, reject
 HOST-SUFFIX,wxsnsdythumb.wxs.qq.com, reject
 # > 全民K歌
 HOST-SUFFIX,gdc.kg.qq.com, reject
+# > 蓝奏云
+HOST-SUFFIX, statics.woozooo.com, REJECT
