@@ -1200,7 +1200,7 @@ HOST-SUFFIX,ipstatp.com,PROXY
 HOST-SUFFIX,muscdn.com,PROXY
 HOST-SUFFIX,musical.ly,PROXY
 HOST-SUFFIX,sgpstatp.com,PROXY
-HOST-SUFFIX,snssdk.com,PROXY
+# > HOST-SUFFIX,snssdk.com,PROXY
 HOST-SUFFIX,tik-tokapi.com,PROXY
 HOST-SUFFIX,tiktok.com,PROXY
 HOST-SUFFIX,tiktokcdn.com,PROXY
