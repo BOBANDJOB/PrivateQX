@@ -1192,7 +1192,7 @@ host-keyword,bds.snssdk.com, reject
 host-keyword,p6-ad-sign.byteimg.com, reject
 host-keyword,p3.pstatp.com, reject
 HOST,p16-tiktokcdn-com.akamaized.net,PROXY
-HOST-SUFFIX,amemv.com,PROXY
+# > HOST-SUFFIX,amemv.com,PROXY(无法观看世界杯)
 HOST-SUFFIX,byteoversea.com,PROXY
 HOST-SUFFIX,ibytedtos.com,PROXY
 HOST-SUFFIX,ibyteimg.com,PROXY
@@ -1200,7 +1200,7 @@ HOST-SUFFIX,ipstatp.com,PROXY
 HOST-SUFFIX,muscdn.com,PROXY
 HOST-SUFFIX,musical.ly,PROXY
 HOST-SUFFIX,sgpstatp.com,PROXY
-# > HOST-SUFFIX,snssdk.com,PROXY
+# > HOST-SUFFIX,snssdk.com,PROXY(无法观看世界杯)
 HOST-SUFFIX,tik-tokapi.com,PROXY
 HOST-SUFFIX,tiktok.com,PROXY
 HOST-SUFFIX,tiktokcdn.com,PROXY
