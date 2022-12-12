@@ -1192,7 +1192,7 @@ host-keyword,bds.snssdk.com, reject
 host-keyword,p6-ad-sign.byteimg.com, reject
 host-keyword,p3.pstatp.com, reject
 HOST,p16-tiktokcdn-com.akamaized.net,PROXY
-HOST-SUFFIX,amemv.com,PROXY
+# > HOST-SUFFIX,amemv.com,PROXY
 HOST-SUFFIX,byteoversea.com,PROXY
 HOST-SUFFIX,ibytedtos.com,PROXY
 HOST-SUFFIX,ibyteimg.com,PROXY
