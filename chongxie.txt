@@ -60,9 +60,9 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 # > 浦大喜奔(倒计时还在)原规则都删除
 ^https?:\/\/image\.spdbccc\.com\.cn\/group\d\/M00\/[7-9]{1}[A-Z0-9]{1}\/[A-Z0-9]{2}\/rBsZ.+.\jpg url reject-200
 # >  url 302 将前面的链接替换（重定向）为后面的链接
-# > 浦发银行 主机名mlmdacdn.spdb.com.cn
-^https?:\/\/mlmdacdn\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/(.{63}|.{69}|.{89}|.{127}|.{135})\.(jpg|png|JPG|PNG) url reject-200
-^https?:\/\/mlmdacdn\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/.+1920.+1920.+(jpg|png) url reject-200
+# > 浦发银行  原规则都删除
+^https?:\/\/mlmdacdn\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/.{63,135}\.(jpg|JPG) url reject-200
+^https?:\/\/mlmdacdn\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/.+1920.+1920.+ url reject-200
 # > 建行生活
 ^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A00(6|9) url reject-200
 # > 华彩生活
