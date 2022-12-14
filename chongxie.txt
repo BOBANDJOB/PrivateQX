@@ -84,9 +84,9 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 # > \d{25}\.(png|jpg) url reject-img 只拦截25位纯数字命名的png和jpg格式图片
 # > 广州农商银行
 ^https?:\/\/mbank\.grcbank\.com\/ydyh\/resources\/startpage\/.*.(jpg|png) url reject-200
-# > 平安好车主 原规则主机名全部删除  主机名 iobs.pingan.com.cn
+# > 平安好车主   主机名 iobs.pingan.com.cn
 ^https?:\/\/iobs\.pingan\.com\.cn\/download\/bweb-per-sf-prd\/bweb url reject-200
-^https?:\/\/iobs\.pingan\.com\.cn\/download\/icore-aops-base-dmz-prd\/YourSystemName url reject-200
+^https?:\/\/iobs\.pingan\.com\.cn\/download\/icore-aops-base-dmz-prd\/(YourSystemName|icore-apps-ad) url reject-200
 # > 银盛通
 ^https?:\/\/ad\.ysepay\.com\/yst-ad\/ST101001\/[0-9]{11}\.jpg url reject
 # > 兴业证券优理宝（3秒倒计时还在）
