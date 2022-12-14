@@ -992,6 +992,7 @@ HOST,vcardsdkservice.vivo.com.cn, reject
 HOST-KEYWORD,stsdk.vivo.com.cn, reject
 HOST-KEYWORD,stsdk.vivoglobal.com, reject
 # > 微博
+HOST,sdkapp.uve.weibo.com, direct
 HOST,gw.im.weibo.cn,reject
 HOST,gw1.i.weibo.cn,reject
 HOST-KEYWORD,fastimage.uve.weibo.com, reject
@@ -999,7 +1000,6 @@ HOST-KEYWORD,adimg.uve.weibo.com, reject
 HOST-SUFFIX,adimg.vue.weibo.com, reject
 HOST-SUFFIX,zymo.mps.weibo.com, reject
 HOST-SUFFIX,weibomingzi.com, reject
-HOST-SUFFIX,sdkapp.uve.weibo.com, reject
 HOST-SUFFIX,s.alitui.weibo.com, reject
 HOST-SUFFIX,promote.biz.weibo.cn, reject
 HOST-SUFFIX,gw5.push.mcp.weibo.cn, reject
@@ -1023,7 +1023,6 @@ HOST-KEYWORD,gw5.push.mcp.weibo.cn,REJECT
 HOST-KEYWORD,gw6.push.mcp.weibo.cn,REJECT
 HOST-KEYWORD,promote.biz.weibo.cn,REJECT
 HOST-KEYWORD,s.alitui.weibo.com,REJECT
-HOST-KEYWORD,sdkapp.uve.weibo.com,REJECT
 HOST-KEYWORD,weibomingzi.com,REJECT
 HOST-KEYWORD,zymo.mps.weibo.com,REJECT
 HOST-KEYWORD,adimg.vue.weibo.com,REJECT
