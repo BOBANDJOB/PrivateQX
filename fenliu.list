@@ -177,6 +177,7 @@ HOST,optimus-ads.amap.com.w.alikunlun.com, reject
 HOST-SUFFIX, shouji.sougou.com, reject
 HOST, u51.me, reject
 HOST-SUFFIX, u51.me, reject
+HOST,amdc.m.taobao.com,REJECT
 # > 美团
 HOST, flowplus.meituan.net, reject
 HOST-SUFFIX, analytics.meituan.net, reject
