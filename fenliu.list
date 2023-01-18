@@ -318,19 +318,19 @@ HOST,adextra.51wnl-cq.com, reject
 HOST,log.51wnl-cq.com, reject
 HOST,r.51wnl-cq.com, reject
 # > 屏蔽苹果系统更新
-;HOST, gdmf.apple.com, SystemOTA
-;HOST, mesu.apple.com, SystemOTA
-;HOST, updates-http.cdn-apple.com, SystemOTA
-;HOST, xp.apple.com, SystemOTA
-;host, ns.itunes.apple.com, reject
-;host, appldnld.apple.com, reject
-;host, mesu.apple.com, reject
-;host, xp.apple.com, reject
-;host, gdmf.apple.com, reject
-;HOST-SUFFIX,iadsdk.apple.com, reject
-;HOST-SUFFIX,ads.internal.unity3d.com, reject
-;HOST-SUFFIX,ads.prd.ie.internal.unity3d.com, reject
-;HOST-SUFFIX,unityads.unity3d.com, reject
+HOST, gdmf.apple.com, SystemOTA
+HOST, mesu.apple.com, SystemOTA
+HOST, updates-http.cdn-apple.com, SystemOTA
+HOST, xp.apple.com, SystemOTA
+host, ns.itunes.apple.com, reject
+host, appldnld.apple.com, reject
+host, mesu.apple.com, reject
+host, xp.apple.com, reject
+host, gdmf.apple.com, reject
+HOST-SUFFIX,iadsdk.apple.com, reject
+HOST-SUFFIX,ads.internal.unity3d.com, reject
+HOST-SUFFIX,ads.prd.ie.internal.unity3d.com, reject
+HOST-SUFFIX,unityads.unity3d.com, reject
 # > 优酷
 HOST-SUFFIX,atm.youku.com, reject
 HOST,ad.mobile.youku.com, reject
