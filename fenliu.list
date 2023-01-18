@@ -1233,7 +1233,6 @@ host-keyword,api-access.pangolin-sdk-toutiao.com, reject
 HOST-SUFFIX, u3.ucweb.com, reject
 host-keyword,extlog.snssdk.com, reject
 host-keyword,is.snssdk.com, reject
-host-keyword,log.snssdk.com, reject
 host-keyword,mobads.baidu.com, reject
 host-keyword,s3a.pstatp.com, reject
 host-keyword,sdfp.snssdk.com, reject
@@ -9740,3 +9739,5 @@ HOST-SUFFIX,wxsnsdythumb.wxs.qq.com, reject
 HOST-SUFFIX,gdc.kg.qq.com, reject
 # > 蓝奏云
 HOST-SUFFIX, statics.woozooo.com, REJECT
+# > 屏蔽数字联盟
+HOST-SUFFIX,shuzilm.cn,REJECT
