@@ -327,7 +327,7 @@ host, appldnld.apple.com, reject
 host, mesu.apple.com, reject
 host, xp.apple.com, reject
 host, gdmf.apple.com, reject
-;HOST-SUFFIX,iadsdk.apple.com, reject
+# > HOST-SUFFIX,iadsdk.apple.com, reject 苹果商店无法查看账户
 HOST-SUFFIX,ads.internal.unity3d.com, reject
 HOST-SUFFIX,ads.prd.ie.internal.unity3d.com, reject
 HOST-SUFFIX,unityads.unity3d.com, reject
