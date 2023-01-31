@@ -9738,7 +9738,7 @@ HOST-SUFFIX,wxsnsdythumb.wxs.qq.com, reject
 # > 全民K歌
 HOST-SUFFIX,gdc.kg.qq.com, reject
 # > 蓝奏云
-HOST,pos.baidu.com,MyBlockAds
+HOST,pos.baidu.com,reject
 HOST-SUFFIX, statics.woozooo.com, REJECT
 # > 屏蔽数字联盟
 HOST-SUFFIX,shuzilm.cn,REJECT
