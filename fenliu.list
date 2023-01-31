@@ -1065,6 +1065,7 @@ HOST-SUFFIX,adbehavior.wsa.ximalaya.com, reject
 HOST-SUFFIX,adsebs.ximalaya.com, reject
 HOST-SUFFIX,adbs.ximalaya.com, reject
 # >小红书
+HOST, www.xiaohongshu.com, REJECT
 HOST,ads-img-qc.xhscdn.com, reject
 HOST,ads-video-al.xhscdn.com, reject
 HOST,ads-video-qc.xhscdn.com, reject
