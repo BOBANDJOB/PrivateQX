@@ -104,6 +104,8 @@ hostname = api.aliyundrive.com, ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhih
 # > 51信用卡管家
 ^https?:\/\/api\.u51\.com\/(generic-config-gateway|rs-resys)\/api\/v\d\/(creditpage-config|recommend) url reject-200
 ^https?:\/\/pic\.u51\.com\/sfs-gateway\/api\/v1\/download\/fdee084b34be406bb1dca0b3f95e00ca91eb url reject
+^https?:\/\/api\.u51\.com\/liabilitygateway\/api\/v\d\/homepage\/liabilityline url response-body "operationResourceDTO" : \[.*\], response-body "operationResourceDTO" : [],
+^https?:\/\/api\.u51\.com\/generic-config-gateway\/api\/v\d\/guanjia\/me-tab2\/config url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/51card.js
 # > 苏宁
 ^https?:\/\/mpcs\.suning\.com\/mpcs\/dm\/getDmInfo url reject
 ^https?+:\/\/image\.suning\.cn\/uimg\/ma\/ad\/ url reject-200
@@ -697,6 +699,10 @@ https://api.m.jd.com/client.action\?functionId=lite_advertising url reject
 ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_training_ad\? url reject-img
 ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/step_detail_ad\? url reject-img
 ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/training_video_ad\? url reject-img
+# > 小米商城
+^https?:\/\/api\.m\.mi\.com\/v1\/app\/start url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/weibo.js
+# > 小米运动
+^https:\/\/api-mifit-cn2\.huami\.com\/discovery\/mi\/cards\/startpage_ad url reject
 # > 起点读书
 ^https?:\/\/qidian\.qpic\.cn\/qidian_common url reject-img
 ^https?:\/\/mage\.if\.qidian\.com\/Atom\.axd\/Api\/Client\/GetConfIOS url reject-img
@@ -1017,8 +1023,6 @@ https://apis.lifeweek.com.cn/api/baseConfig/getIosNewConfig url reject
 https://guanyu.longfor.com/app-server/api/v1/main/start url reject
 # > 友邻优课
 https://new-app-api.ylyk.com/v1/user/myinfo/adviser url reject
-# > 小米运动
-^https:\/\/api-mifit-cn2\.huami\.com\/discovery\/mi\/cards\/startpage_ad url reject
 # > 金十数据开屏广告和应用内弹窗
 ^https?:\/\/jad-api\.jin10\.com\/ad url reject
 # > 医考帮
