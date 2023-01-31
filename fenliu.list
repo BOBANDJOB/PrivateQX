@@ -1161,7 +1161,6 @@ DOMAIN,m.bilibili.com,StreamingSE
 DOMAIN,upos-hz-mirrorakam.akamaized.net,StreamingSE
 DOMAIN,www.bilibili.com,StreamingSE
 DOMAIN-KEYWORD,cn-hk-eq-bcache-,StreamingSE
-ip-cidr, 203.107.1.1/24, reject
 # > 快手
 HOST-SUFFIX,e.kuaishou.com, reject
 HOST-SUFFIX,cm.downloader.commercial.kuaishou.com, reject
