@@ -1,11 +1,1 @@
-hostname = www.google.*, api.shenyin.name, spclient.wg.spotify.com, mp.weixin.qq.com, 
-
-#>>>>>>>>>>>>>>>>工具类VIP
-# > google自动翻页
-^https?:\/\/www\.google\..*\/search url script-response-body https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/endlessgoogle.js
-# ～ Stay（2022-10-17）@ddgksf2013
-^https?:\/\/api\.shenyin\.name\/stay-fork\/browse\/featured$ url script-response-body Script/stay.js
-# > spotify vip
-^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
-#>>>>>>>>>>>>>>>>微信公众号去广告
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url response-body "advertisement_num":\d,"advertisement_info":\[.+\], response-body "advertisement_num":0,"advertisement_info":[],
+#原有脚本已经合并到本地#
