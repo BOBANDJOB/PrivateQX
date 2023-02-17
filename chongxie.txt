@@ -819,6 +819,7 @@ https://apis.lifeweek.com.cn/api/baseConfig/getIosNewConfig url reject
 ^https?:\/\/mapi\.sichuanair\.com\/zt\/tribeport\/encrypt_translate_key url reject-200
 # >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
 # > 天翼云盘
+^https?:\/\/api\.cloud\.189\.cn\/guns\/getPageBanners\.action\?clientVersion=.+serviceType=5 url reject-200
 ^https?:\/\/api\.cloud\.189\.cn\/guns\/getOpenscreenBanners url reject-200
 # > 腾讯游戏社区
 ^https?:\/\/static\.gameplus\.qq\.com\/img\/\d{10}-\d{4}$ url reject
