@@ -1178,9 +1178,6 @@ HOST-SUFFIX, ttayy.cn, reject
 HOST-SUFFIX, zhengxiaoliu.top, reject
 # > NicoNico
 host, ads.nicovideo.jp, reject
-# > HDO
-HOST-SUFFIX, applovin.com,REJECT
-HOST-SUFFIX, applvn.com,REJECT
 # > 多多视频
 host-suffix, bayescom.com, reject
 # > 车来了（包括小程序）
@@ -1194,7 +1191,6 @@ host-keyword,bds.snssdk.com, reject
 host-keyword,p6-ad-sign.byteimg.com, reject
 host-keyword,p3.pstatp.com, reject
 HOST,p16-tiktokcdn-com.akamaized.net,PROXY
-# > HOST-SUFFIX,amemv.com,PROXY(无法观看世界杯)
 HOST-SUFFIX,byteoversea.com,PROXY
 HOST-SUFFIX,ibytedtos.com,PROXY
 HOST-SUFFIX,ibyteimg.com,PROXY
@@ -1202,7 +1198,6 @@ HOST-SUFFIX,ipstatp.com,PROXY
 HOST-SUFFIX,muscdn.com,PROXY
 HOST-SUFFIX,musical.ly,PROXY
 HOST-SUFFIX,sgpstatp.com,PROXY
-# > HOST-SUFFIX,snssdk.com,PROXY(无法观看世界杯)
 HOST-SUFFIX,tik-tokapi.com,PROXY
 HOST-SUFFIX,tiktok.com,PROXY
 HOST-SUFFIX,tiktokcdn.com,PROXY
@@ -3742,7 +3737,6 @@ HOST-SUFFIX,d.39.net, reject
 HOST-SUFFIX,d.admx.baixing.com, reject
 HOST-SUFFIX,d.agkn.com, reject
 HOST-SUFFIX,d.annarbor.com, reject
-HOST-SUFFIX,d.applovin.com, reject
 HOST-SUFFIX,d.beigedi.com, reject
 HOST-SUFFIX,d.businessinsider.com, reject
 HOST-SUFFIX,d.clkservice.youdao.com, reject
@@ -7284,7 +7278,6 @@ HOST-SUFFIX,rs.sinajs.cn, reject
 HOST-SUFFIX,rs1.rensheng5.com, reject
 HOST-SUFFIX,rsas.szzek.com, reject
 HOST-SUFFIX,rsccs.com, reject
-HOST-SUFFIX,rt.applovin.com, reject
 HOST-SUFFIX,rt.funshion.net, reject
 HOST-SUFFIX,rt.gsspat.jp, reject
 HOST-SUFFIX,rtas.videocc.net, reject
@@ -8339,7 +8332,6 @@ HOST-SUFFIX,v-sence.gentags.net, reject
 HOST-SUFFIX,vsnoon.com, reject
 HOST-SUFFIX,vt.bjhdonline.com, reject
 HOST-SUFFIX,vtale.org, reject
-HOST-SUFFIX,vungle.cn, reject
 HOST-SUFFIX,vupload.duowan.com, reject
 HOST-SUFFIX,vvlog.moviebox.baofeng.com, reject
 HOST-SUFFIX,vvv.ieduw.com, reject
@@ -9097,7 +9089,6 @@ HOST-SUFFIX,trafficjunky.net, reject
 HOST-SUFFIX,turn.com, reject
 HOST-SUFFIX,uri6.com, reject
 HOST-SUFFIX,voicefive.com, reject
-HOST-SUFFIX,vungle.com, reject
 HOST-SUFFIX,wedolook.com, reject
 HOST-SUFFIX,xdrig.com, reject
 HOST-SUFFIX,abema-adx.ameba.jp, reject
@@ -9357,8 +9348,6 @@ HOST-SUFFIX,mmstat.com, reject
 HOST-SUFFIX,4paradigm.com, reject
 HOST-SUFFIX,catch.gift, reject
 HOST-SUFFIX,pubnative.net, reject
-HOST-SUFFIX,applovin.com, reject
-HOST-SUFFIX,applvn.com, reject
 HOST-SUFFIX,inner-active.mobi, reject
 HOST-SUFFIX,mdfull.com, reject
 HOST-SUFFIX,openx.net, reject
