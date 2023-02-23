@@ -2,6 +2,15 @@
 # > 某些APP要清除缓存或者重新安装APP，拦截广告才会生效！  
 # > 更新时间  2022.11.05
 # > */  
+# > OpenAi
+DOMAIN-SUFFIX, ai.com, 美国节点
+DOMAIN-SUFFIX, openai.com, 美国节点
+DOMAIN-SUFFIX, vimeo.com, 美国节点
+DOMAIN-SUFFIX, vimeocdn.com, 美国节点
+DOMAIN-SUFFIX, hcaptcha.com, 美国节点
+DOMAIN-SUFFIX, akamaized.com, 美国节点
+DOMAIN, cdn.auth0.com, 美国节点
+DOMAIN, openaiapi-site.azureedge.net, 美国节点
 # > 苹果天气直连
 host-keyword, weather-data.apple.com, direct
 host-keyword, weather-map.apple.com, direct
@@ -9735,3 +9744,5 @@ HOST-SUFFIX,shuzilm.cn,REJECT
 HOST,acdn.adnxs.com,REJECT
 HOST,mediation.adnxs.com,REJECT
 HOST,sin3-ib.adnxs.com,REJECT
+# > GEOIP最后直连
+geoip, cn, direct
