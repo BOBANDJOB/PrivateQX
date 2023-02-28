@@ -9744,5 +9744,3 @@ HOST-SUFFIX,shuzilm.cn,REJECT
 HOST,acdn.adnxs.com,REJECT
 HOST,mediation.adnxs.com,REJECT
 HOST,sin3-ib.adnxs.com,REJECT
-# > GEOIP最后直连
-geoip, cn, direct
