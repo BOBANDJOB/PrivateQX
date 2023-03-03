@@ -36,6 +36,8 @@ HOST-SUFFIX,jpush.cn, reject
 HOST-SUFFIX,im64.jpush.cn, reject
 HOST-SUFFIX,im.jpush.cn, reject
 HOST-SUFFIX,jpush.html5.qq.com, reject
+# > 京东收集信息
+host-suffix, jdqd.jd.com, reject
 # > 买单吧
 host-keyword, c-hzgt2.getui.com, reject
 # > 招钱进宝
