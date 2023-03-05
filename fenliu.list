@@ -3,14 +3,14 @@
 # > 更新时间  2022.11.05
 # > */  
 # > OpenAi
-DOMAIN-SUFFIX, ai.com, 美国节点
-DOMAIN-SUFFIX, openai.com, 美国节点
-DOMAIN-SUFFIX, vimeo.com, 美国节点
-DOMAIN-SUFFIX, vimeocdn.com, 美国节点
-DOMAIN-SUFFIX, hcaptcha.com, 美国节点
-DOMAIN-SUFFIX, akamaized.com, 美国节点
-DOMAIN, cdn.auth0.com, 美国节点
-DOMAIN, openaiapi-site.azureedge.net, 美国节点
+DOMAIN-SUFFIX, ai.com, OpenAI节点
+DOMAIN-SUFFIX, openai.com, OpenAI节点
+DOMAIN-SUFFIX, vimeo.com, OpenAI节点
+DOMAIN-SUFFIX, vimeocdn.com, OpenAI节点
+DOMAIN-SUFFIX, hcaptcha.com, OpenAI节点
+DOMAIN-SUFFIX, akamaized.com, OpenAI节点
+DOMAIN, cdn.auth0.com, OpenAI节点
+DOMAIN, openaiapi-site.azureedge.net, OpenAI节点
 # > 苹果天气直连
 host-keyword, weather-data.apple.com, direct
 host-keyword, weather-map.apple.com, direct
