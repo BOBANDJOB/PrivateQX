@@ -15,6 +15,12 @@ DOMAIN, openaiapi-site.azureedge.net, OpenAI节点
 host-keyword, weather-data.apple.com, direct
 host-keyword, weather-map.apple.com, direct
 host-keyword, weather-analytics-events.apple.com, direct
+# > 虎牙直播开屏广告 #热心网友分享 
+host, pp-cdnfile2pcdn.msstatic.com, reject
+host, livewebbs2pcdn.msstatic.com, reject
+host, huyafile.msstatic.com, reject
+host, livewebbs2.msstatic.com, reject
+host, business.msstatic.com, reject
 # > 光大银行阳光惠生活
 host-keyword, talk.bz.getui.com, reject
 # > 民生银行
