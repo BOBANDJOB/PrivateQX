@@ -3,14 +3,14 @@
 # > 更新时间  2022.11.05
 # > */  
 # > OpenAi
-DOMAIN-SUFFIX, ai.com, OpenAI节点
-DOMAIN-SUFFIX, openai.com, OpenAI节点
-DOMAIN-SUFFIX, vimeo.com, OpenAI节点
-DOMAIN-SUFFIX, vimeocdn.com, OpenAI节点
-DOMAIN-SUFFIX, hcaptcha.com, OpenAI节点
-DOMAIN-SUFFIX, akamaized.com, OpenAI节点
-DOMAIN, cdn.auth0.com, OpenAI节点
-DOMAIN, openaiapi-site.azureedge.net, OpenAI节点
+HOST-SUFFIX, ai.com, OpenAI节点
+HOST-SUFFIX, openai.com, OpenAI节点
+HOST-SUFFIX, vimeo.com, OpenAI节点
+HOST-SUFFIX, vimeocdn.com, OpenAI节点
+HOST-SUFFIX, hcaptcha.com, OpenAI节点
+HOST-SUFFIX, akamaized.com, OpenAI节点
+HOST, cdn.auth0.com, OpenAI节点
+HOST, openaiapi-site.azureedge.net, OpenAI节点
 # > 苹果天气直连
 host-keyword, weather-data.apple.com, direct
 host-keyword, weather-map.apple.com, direct
@@ -1169,17 +1169,17 @@ HOST-SUFFIX,cm.ad.bilibili.com, reject
 HOST-SUFFIX,cm.adcommon.bilibili.com, reject
 HOST-SUFFIX,cm.game.bilibili.com, reject
 HOST-SUFFIX,cm.track.biligame.bilibili.com, reject
-DOMAIN,api.biliapi.com,哔哩哔哩换区
-DOMAIN,api.biliapi.net,哔哩哔哩换区
-DOMAIN,api.bilibili.com,哔哩哔哩换区
-DOMAIN,app.biliapi.com,哔哩哔哩换区
-DOMAIN,app.biliapi.net,哔哩哔哩换区
-DOMAIN,app.bilibili.com,哔哩哔哩换区
-DOMAIN,grpc.biliapi.net,哔哩哔哩换区
-DOMAIN,m.bilibili.com,哔哩哔哩换区
-DOMAIN,upos-hz-mirrorakam.akamaized.net,哔哩哔哩换区
-DOMAIN,www.bilibili.com,哔哩哔哩换区
-DOMAIN-KEYWORD,cn-hk-eq-bcache-,哔哩哔哩换区
+HOST,api.biliapi.com,哔哩哔哩换区
+HOST,api.biliapi.net,哔哩哔哩换区
+HOST,api.bilibili.com,哔哩哔哩换区
+HOST,app.biliapi.com,哔哩哔哩换区
+HOST,app.biliapi.net,哔哩哔哩换区
+HOST,app.bilibili.com,哔哩哔哩换区
+HOST,grpc.biliapi.net,哔哩哔哩换区
+HOST,m.bilibili.com,哔哩哔哩换区
+HOST,upos-hz-mirrorakam.akamaized.net,哔哩哔哩换区
+HOST,www.bilibili.com,哔哩哔哩换区
+HOST-KEYWORD,cn-hk-eq-bcache-,哔哩哔哩换区
 # > 快手
 HOST-SUFFIX,e.kuaishou.com, reject
 HOST-SUFFIX,cm.downloader.commercial.kuaishou.com, reject
@@ -7571,7 +7571,6 @@ HOST-SUFFIX,shanghaironghua.com, reject
 HOST-SUFFIX,shanglinli.com, reject
 HOST-SUFFIX,shangz99991.com, reject
 HOST-SUFFIX,share.gzdsw.com, reject
-HOST-SUFFIX,shared.youdao.com, reject
 HOST-SUFFIX,sharedadHOST.com, reject
 HOST-SUFFIX,sharrysweb.com, reject
 HOST-SUFFIX,shbywsd.cn, reject
