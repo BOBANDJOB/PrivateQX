@@ -1160,17 +1160,17 @@ HOST-SUFFIX,cm.ad.bilibili.com, reject
 HOST-SUFFIX,cm.adcommon.bilibili.com, reject
 HOST-SUFFIX,cm.game.bilibili.com, reject
 HOST-SUFFIX,cm.track.biligame.bilibili.com, reject
-HOST,api.biliapi.com,哔哩哔哩换区
-HOST,api.biliapi.net,哔哩哔哩换区
-HOST,api.bilibili.com,哔哩哔哩换区
-HOST,app.biliapi.com,哔哩哔哩换区
-HOST,app.biliapi.net,哔哩哔哩换区
-HOST,app.bilibili.com,哔哩哔哩换区
-HOST,grpc.biliapi.net,哔哩哔哩换区
-HOST,m.bilibili.com,哔哩哔哩换区
-HOST,upos-hz-mirrorakam.akamaized.net,哔哩哔哩换区
-HOST,www.bilibili.com,哔哩哔哩换区
-HOST-KEYWORD,cn-hk-eq-bcache-,哔哩哔哩换区
+HOST,api.biliapi.com,BiliBili换区
+HOST,api.biliapi.net,BiliBili换区
+HOST,api.bilibili.com,BiliBili换区
+HOST,app.biliapi.com,BiliBili换区
+HOST,app.biliapi.net,BiliBili换区
+HOST,app.bilibili.com,BiliBili换区
+HOST,grpc.biliapi.net,BiliBili换区
+HOST,m.bilibili.com,BiliBili换区
+HOST,upos-hz-mirrorakam.akamaized.net,BiliBili换区
+HOST,www.bilibili.com,BiliBili换区
+HOST-KEYWORD,cn-hk-eq-bcache-,BiliBili换区
 # > 快手
 HOST-SUFFIX,e.kuaishou.com, reject
 HOST-SUFFIX,cm.downloader.commercial.kuaishou.com, reject
