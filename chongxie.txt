@@ -646,8 +646,8 @@ https://dl-cu-hz.lechange.cn/oms-online/advertisementPush/* url reject
 # > 妈妈网孕育 #开屏广告 感谢@豆豆分享 #主机名qimg.cdnmama.com
 ^https:\/\/qimg\.cdnmama\.com\/rd url reject-dict
 # >>>>>>>>>>>>>>> ✅ N ✅ <<<<<<<<<<<<<<
-# > 农业银行  主机名 enjoy.cdn-static.abchina.com
-^https?:\/\/enjoy\.cdn-static\.abchina\.com\/yx-engine-web\/file/download\/9ce3166ce url reject-200
+# > 农业银行 #开屏广告 #原规则删除
+^https?:\/\/enjoy\.cdn-static\.abchina\.com\/yx-engine-web\/file\/download\/(9ce31|1bf6e) url reject-200
 # > 南方航空弹窗 主机名 3g.csair.com 
 ^https?:\/\/3g\.csair\.com\/CSMBP\/bookProcess\/homepopup\/queryAdvertisement url reject-200
 # > 南方航空更新弹窗
