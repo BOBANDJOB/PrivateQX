@@ -332,6 +332,15 @@ HOST-SUFFIX, new.xiongzhangad.com, reject
 HOST-SUFFIX, alexametrics.com, reject 
 HOST-KEYWORD, in-page-push, reject
 # > 广告
+# > TubeMax  感谢@可莉分享
+host-suffix, adjust.com, reject
+host-suffix, applvn.com, reject
+host-suffix, app-measurement.com, reject
+host-suffix, pangle.io, reject
+host-suffix, applovin.com, reject
+host-suffix, appier.net, reject
+host-suffix, adsmoloco.com, reject
+host-suffix, adcanvas.com, reject
 # > 51wnl
 HOST,ad.51wnl-cq.com, reject
 HOST,adextra.51wnl-cq.com, reject
@@ -5142,7 +5151,6 @@ HOST-SUFFIX,img.ad.zhangyue.com, reject
 HOST-SUFFIX,img.adbox.sina.com.cn, reject
 HOST-SUFFIX,img.adnyg.com, reject
 HOST-SUFFIX,img.amp.ad.sina.com.cn, reject
-HOST-SUFFIX,img.applovin.com, reject
 HOST-SUFFIX,img.cmm.xmfish.com, reject
 HOST-SUFFIX,img.cxxyft.com, reject
 HOST-SUFFIX,img.dawenxue.org, reject
@@ -6829,7 +6837,6 @@ HOST-SUFFIX,pcxzo.pluto.sogou.com, reject
 HOST-SUFFIX,pd7-imp.revsci.net, reject
 HOST-SUFFIX,pdc.micloud.xiaomi.net, reject
 HOST-SUFFIX,pdl.gionee.com, reject
-HOST-SUFFIX,pdn.applovin.com, reject
 HOST-SUFFIX,pdsjycm.com, reject
 HOST-SUFFIX,pear.dleke.com, reject
 HOST-SUFFIX,pedailyu.com, reject
@@ -7192,7 +7199,6 @@ HOST-SUFFIX,rc.xmcmn.com, reject
 HOST-SUFFIX,rc2waycm-atl.netmng.com, reject
 HOST-SUFFIX,rc-au.imrworldwide.com, reject
 HOST-SUFFIX,rcmd.pop.ijinshan.com, reject
-HOST-SUFFIX,rcp.c.appier.net, reject
 HOST-SUFFIX,rcv.iclicash.com, reject
 HOST-SUFFIX,rcv.jesgoo.com, reject
 HOST-SUFFIX,rcv.mobad.ijinshan.com, reject
@@ -8298,7 +8304,6 @@ HOST-SUFFIX,vi1.souid.com, reject
 HOST-SUFFIX,vi2.ku6img.net, reject
 HOST-SUFFIX,vichc.com, reject
 HOST-SUFFIX,victorjx.com, reject
-HOST-SUFFIX,vid.applovin.com, reject
 HOST-SUFFIX,video.cooguo.com, reject
 HOST-SUFFIX,videondun.com, reject
 HOST-SUFFIX,viglink.com, reject
@@ -9035,7 +9040,6 @@ HOST-SUFFIX,42trck.com, reject
 HOST-SUFFIX,51.la, reject
 HOST-SUFFIX,adcolony.com, reject
 HOST-SUFFIX,adinfuse.com, reject
-HOST-SUFFIX,adjust.com, reject
 HOST-SUFFIX,adjust.io, reject
 HOST-SUFFIX,admaster.com.cn, reject
 HOST-SUFFIX,admob.com, reject
@@ -9050,7 +9054,6 @@ HOST-SUFFIX,analysys.cn, reject
 HOST-SUFFIX,app-adforce.jp, reject
 HOST-SUFFIX,appadhoc.com, reject
 HOST-SUFFIX,appads.com, reject
-HOST-SUFFIX,appier.net, reject
 HOST-SUFFIX,applift.com, reject
 HOST-SUFFIX,appsflyer.com, reject
 HOST-SUFFIX,apsalar.com, reject
@@ -9348,7 +9351,6 @@ HOST-SUFFIX,zlne800.com, reject
 HOST-SUFFIX,zunmi.cn, reject
 HOST-SUFFIX,zzd6.com, reject
 HOST-SUFFIX,mackeeper.com, reject
-HOST-SUFFIX,app-measurement.com, reject
 HOST-SUFFIX,mob.com, reject
 HOST-SUFFIX,api.joybj.com, reject
 HOST-SUFFIX,api.whizzone.com, reject
