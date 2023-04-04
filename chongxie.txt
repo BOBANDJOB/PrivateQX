@@ -718,6 +718,8 @@ https://dl-cu-hz.lechange.cn/oms-online/advertisementPush/* url reject
 ^https://rs.creditcard.cmbc.com.cn/mmc/img/126f35586ece469aa2daf2e451ba7b4d.jpg url reject-200
 # > 全家便利店
 ^https?:\/\/fmapp\.chinafamilymart\.com\.cn\/api\/app\/biz\/base\/appversion\/latest url reject
+# > 全能浏览器   感谢#梭哈 All in分享 主机名 mi.gdt.qq.com
+^https:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg\?posid= url reject-dict
 # > 亲宝宝
 ^https?:\/\/api\.qbb6\.com\/ad\/ url reject
 # > 球迷报
