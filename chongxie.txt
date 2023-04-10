@@ -1040,14 +1040,8 @@ https://apis.lifeweek.com.cn/api/baseConfig/getIosNewConfig url reject
 ^http:\/\/app02\.vgtime\.com:8080\/vgtime-app\/api\/v2\/init\/ad\.json url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/vgtime.js
 
 # >>>>>>>>>>>>>>> ✅ W ✅ <<<<<<<<<<<<<<
-# >微信公众号文章下方广告
-^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_complaint url reject
-^https?:\/\/szextshort\.weixin\.qq\.com\/cgi-bin\/mmoc-bin\/ad\/ url reject-img
-^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_video url reject
-^https?:\/\/mp\.weixin\.qq.com\/mp\/advertisement_report url reject
-^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport) url reject-img
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement|getappmsgad) url reject
-^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad) url reject-200
+# > 微信公众号图文去广告@ddgksf2013
+^(http|https):\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url response-body "advertisement_num":\d,"advertisement_info":\[.+\], response-body "advertisement_num":0,"advertisement_info":[],
 # > 微信去除公众号商品推广 主机名 mp.weixin.qq.com
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/cps_product_info\?action url reject-dict
 # > 微信跳过中间界面，支付宝链接、被封禁链接进行通知弹窗跳转，在微信中用快照显示被封禁的链接（可选），在微信中进行强制重定向（可选），群聊 / 扫码均可使用，可选项可在脚本 2、3 行更改，也可在 BoxJs 中更改。
@@ -1056,8 +1050,6 @@ https://apis.lifeweek.com.cn/api/baseConfig/getIosNewConfig url reject
 ^https?:\/\/wxsnsdythumb\.wxs\.qq\.com\/[0-9]{3}\/[0-9]{5}\/snscosdownload\/SZ\/reserved url reject-200
 # > 微信 腾讯乘车码小程序 由@jinlvei分享
 ^https:\/\/ccmsupport-sz\.tenpay\.com\/cgi-bin\/common\/ccm_page_element.cgi url reject
-# > 微信公众号图文去广告@ddgksf2013
-^(http|https):\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url response-body "advertisement_num":\d,"advertisement_info":\[.+\], response-body "advertisement_num":0,"advertisement_info":[],
 # > 微信小程序_掌上公交@ddgksf2013
 ^https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do url script-response-body zhangshanggongjiao.js
 # > 微信小程序_去广告@ddgksf2013
