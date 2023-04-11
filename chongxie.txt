@@ -331,8 +331,8 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 # > 飞常准
 ^https?:\/\/app\.variflight\.com\/ad\/ url reject
 ^https?:\/\/app\.variflight\.com\/v\d\/advert\/ url reject
-# > 发现精彩  原规则删除
-^https?:\/\/static\.95508\.com\/mmg\/images\/ads\/.+\/.+1125x2436 url reject-200
+# > 发现精彩 #开屏广告 #原规则删除
+^https?:\/\/static\.95508\.com\/mmg\/images\/ads\/.+\/.+1125.+2436 url reject-200
 # > 飞猪旅行 原规则主机名删除  主机名acs.m.taobao.com
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.allresource url reject-200
 # > 番茄小说去章末广告
