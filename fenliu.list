@@ -24,6 +24,10 @@ host, livewebbs2pcdn.msstatic.com, reject
 host, huyafile.msstatic.com, reject
 host, livewebbs2.msstatic.com, reject
 host, business.msstatic.com, reject
+# > 黄油相机 #开屏广告 感谢#Dragon分享
+host-suffix, anythinktech.com, reject
+host-suffix, adkwai.com, reject
+host-suffix, mob.com, reject
 # > 光大银行阳光惠生活
 host-keyword, talk.bz.getui.com, reject
 # > 民生银行
@@ -9361,7 +9365,6 @@ HOST-SUFFIX,zlne800.com, reject
 HOST-SUFFIX,zunmi.cn, reject
 HOST-SUFFIX,zzd6.com, reject
 HOST-SUFFIX,mackeeper.com, reject
-HOST-SUFFIX,mob.com, reject
 HOST-SUFFIX,api.joybj.com, reject
 HOST-SUFFIX,api.whizzone.com, reject
 HOST-SUFFIX,mmstat.com, reject
