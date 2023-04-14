@@ -1005,10 +1005,9 @@ https://apis.lifeweek.com.cn/api/baseConfig/getIosNewConfig url reject
 # > 淘淘阅读 感谢#Baby分享 #主机名bid.adview.cn
 ^https?:\/\/bid\.adview\.cn\/agent\/getAd url reject
 # >>>>>>>>>>>>>>> ✅ U ✅ <<<<<<<<<<<<<<
-# > U净 #小程序首页推广 感谢#豆豆分享 #主机名api-marketing.zhinengxiyifang.cn  
+# > U净 感谢#豆豆分享 adsoss.zhinengxiyifang.cn, api-marketing.zhinengxiyifang.cn, ads.zhinengxiyifang.cn
 ^https:\/\/api-marketing\.zhinengxiyifang\.cn\/api\/v2\/cloudcode\/wechat\/bid url reject
-# > U净APP净化  感谢#豆豆分享 #主机名adsoss.zhinengxiyifang.cn, api-marketing.zhinengxiyifang.cn, ads.zhinengxiyifang.cn 
-^https:\/\/adsoss\.zhinengxiyifang\.cn\/ads url reject 
+^https:\/\/adsoss\.zhinengxiyifang\.cn\/ads url reject
 ^https?:\/\/ads\.zhinengxiyifang\.cn\/api\/v1\.1\/ads\/* url reject-200
 # >>>>>>>>>>>>>>> ✅ V ✅ <<<<<<<<<<<<<<
 # > Vista看天下
