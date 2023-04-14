@@ -1211,7 +1211,7 @@ http:\/\/analytics\.163\.com\/ntes url reject
 # > 小利生活
 ^https?:\/\/mpos-pic\.helipay\.com\/upload\/images\/advertisment\/image url reject
 # > 小兔充充 #小程序净化 感谢#豆豆分享 #主机名ad.xiaotucc.com, mapi.xiaotucc.com 
-^https:\/\/ad\.xiaotucc\.com\/advert url reject 
+^https:\/\/ad\.xiaotucc\.com\/advert url reject
 ^https:\/\/mapi\.xiaotucc\.com\/(mall\/main|main_page\/index\/getActivity) url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/xiaotucc.js
 # > 小电充电 微信小程序 smarket.dian.so, file.dian.so
 ^https:\/\/smarket\.dian\.so url reject-dict
