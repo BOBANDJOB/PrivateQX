@@ -24,7 +24,7 @@
 
 
 # 去重后的hostname，将对以下域名进行MITM（MAN-IN-THE-MIDDLE：中间人攻击）
-hostname = ucmp.sf-express.com, wx.mygolbs.com, ccmsupport-sz.tenpay.com, wxsnsdythumb.wxs.qq.com, adsoss.zhinengxiyifang.cn, api-marketing.zhinengxiyifang.cn, ads.zhinengxiyifang.cn, capis*.didapinche.com, conf.diditaxi.com.cn, ad.xiaotucc.com, mapi.xiaotucc.com, aag.enmonster.com, smarket.dian.so, file.dian.so, s.jiediankeji.com, wxs-weixin.sd.zhumanggroup.com, mobile-api.imlaidian.com, api.sodalife.xyz, hdgateway.zto.com, api.ulife.group, common.diditaxi.com.cn, webchatapp.fcbox.com, dsp.fcbox.com, supplier-api.imdada.cn, customer-app.sto.cn, sto-customer-app.oss-cn-shanghai.aliyuncs.co, api.hongyibo.com.cn, res.hongyibo.com.cn
+hostname = suyun-user.daojia.com, qapi.huolala.cn, appuser-static.huolala.cn, apis.alenable.com, dock.tenchii.com, ucmp.sf-express.com, wx.mygolbs.com, ccmsupport-sz.tenpay.com, wxsnsdythumb.wxs.qq.com, adsoss.zhinengxiyifang.cn, api-marketing.zhinengxiyifang.cn, ads.zhinengxiyifang.cn, capis*.didapinche.com, conf.diditaxi.com.cn, ad.xiaotucc.com, mapi.xiaotucc.com, aag.enmonster.com, smarket.dian.so, file.dian.so, s.jiediankeji.com, wxs-weixin.sd.zhumanggroup.com, mobile-api.imlaidian.com, api.sodalife.xyz, hdgateway.zto.com, api.ulife.group, common.diditaxi.com.cn, webchatapp.fcbox.com, dsp.fcbox.com, supplier-api.imdada.cn, customer-app.sto.cn, sto-customer-app.oss-cn-shanghai.aliyuncs.co, api.hongyibo.com.cn, res.hongyibo.com.cn
 
 # >>>>>>>>>>>>>>> ✅ 0 ✅ <<<<<<<<<<<<<<
 
@@ -81,16 +81,12 @@ hostname = ucmp.sf-express.com, wx.mygolbs.com, ccmsupport-sz.tenpay.com, wxsnsd
 # >>>>>>>>>>>>>>> ✅ D ✅ <<<<<<<<<<<<<<
 # > 达达快送 微信小程序净化
 ^https:\/\/supplier-api\.imdada\.cn\/fe\/public\/ad\/spot\?forwardServiceName=growth-activity url reject-dict
-
 # > 滴滴出行 微信小程序个人中心净化 由TEXAS和豆豆提供
 ^https:\/\/common\.diditaxi\.com\.cn\/common\/v5 url script-response-body didi.js
 # > 滴滴打车 小程序净化 感谢#豆豆分享
 ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/core url reject-dict
-
 # > 嘀嗒出行 小程序净化 感谢#豆豆分享
 ^https?:\/\/capis(-\d)?\.didapinche\.com\/(ad|adbase)\/ url reject
-
-
 
 # >>>>>>>>>>>>>>> ✅ E ✅ <<<<<<<<<<<<<<
 
@@ -105,15 +101,18 @@ hostname = ucmp.sf-express.com, wx.mygolbs.com, ccmsupport-sz.tenpay.com, wxsnsd
 
 # >>>>>>>>>>>>>>> ✅ G ✅ <<<<<<<<<<<<<<
 # > 怪兽充电 微信小程序 aag.enmonster.com awg.enmonster.com
-^https?:\/\/(awg|aag)\.enmonster\.com\/apa\/(advert\/demand\/home\/poster|index\/advert\/skin) url reject-dict
-
-
+^https?:\/\/(awg|aag)\.enmonster\.com\/apa\/(advert\/(demand\/home\/poster|multi\/positions)|index\/advert\/skin) url reject-dict
+# > 广州地铁乘车码 微信小程序净化 apis.alenable.com
+^https:\/\/apis\.alenable\.com\/mall\/v1\/api\/mall\/skin\/user\/get url reject-dict
+^https:\/\/apis\.alenable\.com\/ycx\/v1\/api\/adPut url reject-dict
 
 # >>>>>>>>>>>>>>> ✅ H ✅ <<<<<<<<<<<<<<
 # > 花小猪打车 微信小程序净化
 ^https:\/\/api\.hongyibo\.com\.cn url reject-dict
 ^https:\/\/res\.hongyibo\.com\.cn\/os\/gs\/resapi\/activity url reject-dict
-
+# 货拉拉 微信小程序净化 qapi.huolala.cn, appuser-static.huolala.cn
+^https:\/\/qapi\.huolala\.cn\/(ads|home_new_user|get_service_list) url reject-dict
+^https:\/\/appuser-static\.huolala\.cn\/imgs url reject-dict
 
 
 # >>>>>>>>>>>>>>> ✅ I ✅ <<<<<<<<<<<<<<
@@ -127,7 +126,8 @@ hostname = ucmp.sf-express.com, wx.mygolbs.com, ccmsupport-sz.tenpay.com, wxsnsd
 
 
 # >>>>>>>>>>>>>>> ✅ K ✅ <<<<<<<<<<<<<<
-
+# 快狗打车搬家 微信小程序净化 suyun-user.daojia.com
+^https:\/\/suyun-guest\.daojia\.com\/api\/kuaigou\/banjia\/review url reject-dict
 
 
 # >>>>>>>>>>>>>>> ✅ L ✅ <<<<<<<<<<<<<<
@@ -160,16 +160,15 @@ hostname = ucmp.sf-express.com, wx.mygolbs.com, ccmsupport-sz.tenpay.com, wxsnsd
 
 
 # >>>>>>>>>>>>>>> ✅ S ✅ <<<<<<<<<<<<<<
+# > 上海地铁Metro大都会乘车码 微信小程序净化 dock.tenchii.com
+^https:\/\/dock\.tenchii\.com\/DockCard\/api\/mini\/card\/list url reject-dict
 # > 顺丰速运小程序 #弹窗广告 #其他乱七八糟的广告 #主机名ucmp.sf-express.com
 ^https?:\/\/ucmp\.sf-express\.com\/cx-wechat-query\/query\/info-flow\/reconsitution-list url reject-200
-
 # > 深圳通小程序 主机名 wxsnsdythumb.wxs.qq.com
 ^https?:\/\/wxsnsdythumb\.wxs\.qq\.com\/[0-9]{3}\/[0-9]{5}\/snscosdownload\/SZ\/reserved url reject-200
-
 # > 申通快递 微信小程序净化
 ^https:\/\/customer-app\.sto\.cn\/api\/app\/banner\/banner url reject-dict
 ^https:\/\/sto-customer-app\.oss-cn-shanghai\.aliyuncs\.com\/images url reject-dict
-
 # > 苏打校园APP 净化(需要卸载重装) @TEXAS提供
 ^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ATOP url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/soda.js
 ^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ABOTTOM url reject-dict
@@ -177,7 +176,6 @@ hostname = ucmp.sf-express.com, wx.mygolbs.com, ccmsupport-sz.tenpay.com, wxsnsd
 ^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AMINE%3ABOTTOM url reject-dict
 ^https:\/\/api\.sodalife\.xyz\/v1\/goods url reject-dict
 ^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AREWARDS%3ACENTER url reject-dict
-
 # > 搜电充电 微信小程序
 ^https:\/\/wxs-weixin\.sd\.zhumanggroup\.com\/api\/v2\/ad url reject-dict
 
@@ -209,7 +207,6 @@ hostname = ucmp.sf-express.com, wx.mygolbs.com, ccmsupport-sz.tenpay.com, wxsnsd
 # > 小电充电 微信小程序
 ^https:\/\/smarket\.dian\.so url reject-dict
 ^https:\/\/file\.dian\.so\/c\/leto url reject-dict
-
 # > 小兔充充 小程序净化 感谢#豆豆分享 ad.xiaotucc.com, mapi.xiaotucc.com
 ^https:\/\/ad\.xiaotucc\.com\/advert url reject
 ^https:\/\/mapi\.xiaotucc\.com\/(mall\/main|main_page\/index\/getActivity) url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/xiaotucc.js
@@ -233,6 +230,5 @@ hostname = ucmp.sf-express.com, wx.mygolbs.com, ccmsupport-sz.tenpay.com, wxsnsd
 ^https:\/\/hdgateway\.zto\.com\/track url reject-dict
 ^https:\/\/hdgateway\.zto\.com\/getAdInfo url reject-dict
 ^https:\/\/hdgateway\.zto\.com\/listJumperShow url reject-dict
-
 # > 掌上公交@ddgksf2013  wx.mygolbs.com
 ^https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do url script-response-body zhangshanggongjiao.js
