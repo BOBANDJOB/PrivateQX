@@ -24,7 +24,7 @@
 
 
 # 去重后的hostname，将对以下域名进行MITM（MAN-IN-THE-MIDDLE：中间人攻击）
-hostname = suyun-user.daojia.com, qapi.huolala.cn, appuser-static.huolala.cn, apis.alenable.com, dock.tenchii.com, ucmp.sf-express.com, wx.mygolbs.com, ccmsupport-sz.tenpay.com, wxsnsdythumb.wxs.qq.com, adsoss.zhinengxiyifang.cn, api-marketing.zhinengxiyifang.cn, ads.zhinengxiyifang.cn, capis*.didapinche.com, conf.diditaxi.com.cn, ad.xiaotucc.com, mapi.xiaotucc.com, aag.enmonster.com, smarket.dian.so, file.dian.so, s.jiediankeji.com, wxs-weixin.sd.zhumanggroup.com, mobile-api.imlaidian.com, api.sodalife.xyz, hdgateway.zto.com, api.ulife.group, common.diditaxi.com.cn, webchatapp.fcbox.com, dsp.fcbox.com, supplier-api.imdada.cn, customer-app.sto.cn, sto-customer-app.oss-cn-shanghai.aliyuncs.co, api.hongyibo.com.cn, res.hongyibo.com.cn
+hostname = dock.tenchii.com, s.jiediankeji.com, qapi.huolala.cn, dsp.fcbox.com, file.dian.so, capis*.didapinche.com, adsoss.zhinengxiyifang.cn, common.diditaxi.com.cn, api.hongyibo.com.cn, api-marketing.zhinengxiyifang.cn, wx.mygolbs.com, ccmsupport-sz.tenpay.com, ads.zhinengxiyifang.cn, apis.alenable.com, supplier-api.imdada.cn, webchatapp.fcbox.com, ucmp.sf-express.com, ad.xiaotucc.com, mobile-api.imlaidian.com, consumer.fcbox.com, customer-app.sto.cn, aag.enmonster.com, suyun-user.daojia.com, api.sodalife.xyz, sto-customer-app.oss-cn-shanghai.aliyuncs.co, wxs-weixin.sd.zhumanggroup.com, mapi.xiaotucc.com, hdgateway.zto.com, appuser-static.huolala.cn, res.hongyibo.com.cn, smarket.dian.so, conf.diditaxi.com.cn, wxsnsdythumb.wxs.qq.com, api.ulife.group, 
 
 # >>>>>>>>>>>>>>> ✅ 0 ✅ <<<<<<<<<<<<<<
 
@@ -93,15 +93,14 @@ hostname = suyun-user.daojia.com, qapi.huolala.cn, appuser-static.huolala.cn, ap
 
 
 # >>>>>>>>>>>>>>> ✅ F ✅ <<<<<<<<<<<<<<
-# > 丰巢 微信小程序净化
+# > 丰巢 微信小程序净化 consumer.fcbox.com
 ^https:\/\/webchatapp\.fcbox\.com\/fcboxactivityweb\/api\/v2\/clientPage url reject-dict
 ^https:\/\/dsp\.fcbox\.com url reject-dict
-
-
+^https?:\/\/consumer\.fcbox\.com\/v\d\/ad\/ url reject
 
 # >>>>>>>>>>>>>>> ✅ G ✅ <<<<<<<<<<<<<<
 # > 怪兽充电 微信小程序 aag.enmonster.com awg.enmonster.com
-^https?:\/\/(awg|aag)\.enmonster\.com\/apa\/(advert\/(demand\/home\/poster|multi\/positions)|index\/advert\/skin) url reject-dict
+^https?:\/\/(awg|aag)\.enmonster\.com\/apa\/(index\/)?advert\/(skin|demand\/home\/poster|multi\/positions) url reject-dict
 # > 广州地铁乘车码 微信小程序净化 apis.alenable.com
 ^https:\/\/apis\.alenable\.com\/mall\/v1\/api\/mall\/skin\/user\/get url reject-dict
 ^https:\/\/apis\.alenable\.com\/ycx\/v1\/api\/adPut url reject-dict
