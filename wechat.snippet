@@ -1,0 +1,237 @@
+#############################################
+# 重写作用：针对部分APP、小程序内的广告和冗余模块进行去除
+# 重要提示：某些APP/小程序要清除缓存或者重新安装，拦截才会生效！
+# 项目地址：https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/rewrite/cleanup.snippet
+# 交流群组：https://t.me/quguanggao
+# 支持数量：
+# 更新时间：2023.04.15 09:00
+#############################################
+# "reject"        策略返回 HTTP 状态码 404,不附带任何额外内容
+# "reject-200"    策略返回 HTTP 状态码 200,不附带任何额外内容
+# "reject-img"    策略返回 HTTP 状态码 200,同时附带 1px gif
+# "reject-dict"   策略返回 HTTP 状态码 200,同时附带一个空的 JSON 对象
+# "reject-array"  策略返回 HTTP 状态码 200,同时附带一个空的 JSON 数组
+#############################################
+# 常见问题：
+# 1️⃣：我知道规则，不知道主机名怎么办？
+# ✅：几乎所有的主机名都是从规则中提取出来的，先有的规则再有的主机名
+# 举个栗子：12306的一条规则URL👉🏻^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList
+# 只需要去掉反斜杠：^https?://ad.12306.cn/ad/ser/getAdList
+# 不用再说了吧，ad.12306.cn就是想要的主机名
+# 2️⃣：有些常用的软件为什么没有去广告配置？
+# ✅：如果要利用重写去广告，就需要对请求或响应信息进行解密(MITM)，现在一些软件已经禁止了MITM，所以就无法去广告。
+#############################################
+
+
+# 去重后的hostname，将对以下域名进行MITM（MAN-IN-THE-MIDDLE：中间人攻击）
+hostname = ucmp.sf-express.com, wx.mygolbs.com, ccmsupport-sz.tenpay.com, wxsnsdythumb.wxs.qq.com, adsoss.zhinengxiyifang.cn, api-marketing.zhinengxiyifang.cn, ads.zhinengxiyifang.cn, capis*.didapinche.com, conf.diditaxi.com.cn, ad.xiaotucc.com, mapi.xiaotucc.com, aag.enmonster.com, smarket.dian.so, file.dian.so, s.jiediankeji.com, wxs-weixin.sd.zhumanggroup.com, mobile-api.imlaidian.com, api.sodalife.xyz, hdgateway.zto.com, api.ulife.group, common.diditaxi.com.cn, webchatapp.fcbox.com, dsp.fcbox.com, supplier-api.imdada.cn, customer-app.sto.cn, sto-customer-app.oss-cn-shanghai.aliyuncs.co, api.hongyibo.com.cn, res.hongyibo.com.cn
+
+# >>>>>>>>>>>>>>> ✅ 0 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 1 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 2 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 3 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 4 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 5 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 6 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 7 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 8 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 9 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ A ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ B ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ C ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ D ✅ <<<<<<<<<<<<<<
+# > 达达快送 微信小程序净化
+^https:\/\/supplier-api\.imdada\.cn\/fe\/public\/ad\/spot\?forwardServiceName=growth-activity url reject-dict
+
+# > 滴滴出行 微信小程序个人中心净化 由TEXAS和豆豆提供
+^https:\/\/common\.diditaxi\.com\.cn\/common\/v5 url script-response-body didi.js
+# > 滴滴打车 小程序净化 感谢#豆豆分享
+^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/core url reject-dict
+
+# > 嘀嗒出行 小程序净化 感谢#豆豆分享
+^https?:\/\/capis(-\d)?\.didapinche\.com\/(ad|adbase)\/ url reject
+
+
+
+# >>>>>>>>>>>>>>> ✅ E ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ F ✅ <<<<<<<<<<<<<<
+# > 丰巢 微信小程序净化
+^https:\/\/webchatapp\.fcbox\.com\/fcboxactivityweb\/api\/v2\/clientPage url reject-dict
+^https:\/\/dsp\.fcbox\.com url reject-dict
+
+
+
+# >>>>>>>>>>>>>>> ✅ G ✅ <<<<<<<<<<<<<<
+# > 怪兽充电 微信小程序 aag.enmonster.com awg.enmonster.com
+^https?:\/\/(awg|aag)\.enmonster\.com\/apa\/(advert\/demand\/home\/poster|index\/advert\/skin) url reject-dict
+
+
+
+# >>>>>>>>>>>>>>> ✅ H ✅ <<<<<<<<<<<<<<
+# > 花小猪打车 微信小程序净化
+^https:\/\/api\.hongyibo\.com\.cn url reject-dict
+^https:\/\/res\.hongyibo\.com\.cn\/os\/gs\/resapi\/activity url reject-dict
+
+
+
+# >>>>>>>>>>>>>>> ✅ I ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ J ✅ <<<<<<<<<<<<<<
+# > 街电 微信小程序
+^https:\/\/s\.jiediankeji\.com\/adv url reject-dict
+
+
+
+# >>>>>>>>>>>>>>> ✅ K ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ L ✅ <<<<<<<<<<<<<<
+# > 来电 小程序净化
+^https:\/\/mobile-api\.imlaidian\.com\/api\/args url reject-dict
+
+
+# >>>>>>>>>>>>>>> ✅ M ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ N ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ O ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ P ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ Q ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ R ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ S ✅ <<<<<<<<<<<<<<
+# > 顺丰速运小程序 #弹窗广告 #其他乱七八糟的广告 #主机名ucmp.sf-express.com
+^https?:\/\/ucmp\.sf-express\.com\/cx-wechat-query\/query\/info-flow\/reconsitution-list url reject-200
+
+# > 深圳通小程序 主机名 wxsnsdythumb.wxs.qq.com
+^https?:\/\/wxsnsdythumb\.wxs\.qq\.com\/[0-9]{3}\/[0-9]{5}\/snscosdownload\/SZ\/reserved url reject-200
+
+# > 申通快递 微信小程序净化
+^https:\/\/customer-app\.sto\.cn\/api\/app\/banner\/banner url reject-dict
+^https:\/\/sto-customer-app\.oss-cn-shanghai\.aliyuncs\.com\/images url reject-dict
+
+# > 苏打校园APP 净化(需要卸载重装) @TEXAS提供
+^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ATOP url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/soda.js
+^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ABOTTOM url reject-dict
+^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ACENTER url reject-dict
+^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AMINE%3ABOTTOM url reject-dict
+^https:\/\/api\.sodalife\.xyz\/v1\/goods url reject-dict
+^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AREWARDS%3ACENTER url reject-dict
+
+# > 搜电充电 微信小程序
+^https:\/\/wxs-weixin\.sd\.zhumanggroup\.com\/api\/v2\/ad url reject-dict
+
+
+
+# >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
+# > 腾讯乘车码小程序 由@jinlvei分享 ccmsupport-sz.tenpay.com
+^https:\/\/ccmsupport-sz\.tenpay\.com\/cgi-bin\/common\/ccm_page_element.cgi url reject
+
+# >>>>>>>>>>>>>>> ✅ U ✅ <<<<<<<<<<<<<<
+# > U净 感谢#豆豆分享 adsoss.zhinengxiyifang.cn, api-marketing.zhinengxiyifang.cn, ads.zhinengxiyifang.cn
+^https:\/\/adsoss\.zhinengxiyifang\.cn\/ads url reject ^https?:\/\/ads\.zhinengxiyifang\.cn\/api\/v1\.1\/ads\/* url reject-200
+^https:\/\/api-marketing\.zhinengxiyifang\.cn\/api\/v2\/cloudcode\/wechat\/bid url reject
+^https?:\/\/ads\.zhinengxiyifang\.cn\/api\/v1\.1\/ads\/* url reject-200
+
+
+
+
+# >>>>>>>>>>>>>>> ✅ V ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ W ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ X ✅ <<<<<<<<<<<<<<
+# > 小电充电 微信小程序
+^https:\/\/smarket\.dian\.so url reject-dict
+^https:\/\/file\.dian\.so\/c\/leto url reject-dict
+
+# > 小兔充充 小程序净化 感谢#豆豆分享 ad.xiaotucc.com, mapi.xiaotucc.com
+^https:\/\/ad\.xiaotucc\.com\/advert url reject
+^https:\/\/mapi\.xiaotucc\.com\/(mall\/main|main_page\/index\/getActivity) url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/xiaotucc.js
+
+
+
+# >>>>>>>>>>>>>>> ✅ Y ✅ <<<<<<<<<<<<<<
+# > 悠洗APP 微信小程序净化 由TEXAS和豆豆提供
+^https:\/\/api\.ulife\.group\/signintask\/adServing url reject-dict
+^https:\/\/api\.ulife\.group\/auth\/account\/getUpgradeStrategy url reject-dict
+^https:\/\/api\.ulife\.group\/market\/frontEntrance\/getThirdAdvertising\?displayPort=1&type=15 url reject-dict
+^https:\/\/api\.ulife\.group\/market\/memberCard\/listMemberCard\?isShowSecondaryCard=1 url reject-dict
+^https:\/\/api\.ulife\.group\/auth\/account\/entrance url reject-dict
+^https:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7 url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/yx.js
+
+
+
+# >>>>>>>>>>>>>>> ✅ Z ✅ <<<<<<<<<<<<<<
+# > 中通快递 微信小程序净化 hdgateway.zto.com
+^https:\/\/hdgateway\.zto\.com\/getApolloConfig url reject-dict
+^https:\/\/hdgateway\.zto\.com\/track url reject-dict
+^https:\/\/hdgateway\.zto\.com\/getAdInfo url reject-dict
+^https:\/\/hdgateway\.zto\.com\/listJumperShow url reject-dict
+
+# > 掌上公交@ddgksf2013  wx.mygolbs.com
+^https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do url script-response-body zhangshanggongjiao.js
