@@ -24,7 +24,7 @@
 
 
 # 去重后的hostname，将对以下域名进行MITM（MAN-IN-THE-MIDDLE：中间人攻击）
-hostname = dock.tenchii.com, s.jiediankeji.com, qapi.huolala.cn, dsp.fcbox.com, file.dian.so, capis*.didapinche.com, adsoss.zhinengxiyifang.cn, common.diditaxi.com.cn, api.hongyibo.com.cn, api-marketing.zhinengxiyifang.cn, wx.mygolbs.com, ccmsupport-sz.tenpay.com, ads.zhinengxiyifang.cn, apis.alenable.com, supplier-api.imdada.cn, webchatapp.fcbox.com, ucmp.sf-express.com, ad.xiaotucc.com, mobile-api.imlaidian.com, consumer.fcbox.com, customer-app.sto.cn, aag.enmonster.com, suyun-user.daojia.com, api.sodalife.xyz, sto-customer-app.oss-cn-shanghai.aliyuncs.co, wxs-weixin.sd.zhumanggroup.com, mapi.xiaotucc.com, hdgateway.zto.com, appuser-static.huolala.cn, res.hongyibo.com.cn, smarket.dian.so, conf.diditaxi.com.cn, wxsnsdythumb.wxs.qq.com, api.ulife.group, 
+hostname = res.pizzahut.com.cn, orders.kfc.com.cn, dynamicad.kfc.com.cn, res.kfc.com.cn, api.mcd.cn, 3pp.starbucks.com.cn, wechat-api.i-xiaoma.com.cn, apiproxy.zuche.com, miniprogram.ishansong.com, ads.ishansong.com, minicap.caocaokeji.cn, applets.jtexpress.com.cn, ump.ems.com.cn, api.hellobike.com, api.kuaidihelp.com, wxproj.seeyouyima.com, dock.tenchii.com, s.jiediankeji.com, qapi.huolala.cn, dsp.fcbox.com, file.dian.so, capis*.didapinche.com, adsoss.zhinengxiyifang.cn, common.diditaxi.com.cn, api.hongyibo.com.cn, api-marketing.zhinengxiyifang.cn, wx.mygolbs.com, ccmsupport-sz.tenpay.com, ads.zhinengxiyifang.cn, apis.alenable.com, supplier-api.imdada.cn, webchatapp.fcbox.com, ucmp.sf-express.com, ad.xiaotucc.com, mobile-api.imlaidian.com, consumer.fcbox.com, customer-app.sto.cn, aag.enmonster.com, suyun-user.daojia.com, api.sodalife.xyz, sto-customer-app.oss-cn-shanghai.aliyuncs.com, wxs-weixin.sd.zhumanggroup.com, mapi.xiaotucc.com, hdgateway.zto.com, appuser-static.huolala.cn, res.hongyibo.com.cn, smarket.dian.so, conf.diditaxi.com.cn, wxsnsdythumb.wxs.qq.com, api.ulife.group, 
 
 # >>>>>>>>>>>>>>> ✅ 0 ✅ <<<<<<<<<<<<<<
 
@@ -71,10 +71,16 @@ hostname = dock.tenchii.com, s.jiediankeji.com, qapi.huolala.cn, dsp.fcbox.com, 
 
 
 # >>>>>>>>>>>>>>> ✅ B ✅ <<<<<<<<<<<<<<
+# > 必胜客 微信小程序净化 res.pizzahut.com.cn
+
+^https:\/\/res\.pizzahut\.com\.cn\/CRM url reject-dict
+
 
 
 
 # >>>>>>>>>>>>>>> ✅ C ✅ <<<<<<<<<<<<<<
+# > 曹操出行 微信小程序净化 minicap.caocaokeji.cn
+^https:\/\/minicap\.caocaokeji\.cn\/advert-bss\/pullAdvert url reject-dict
 
 
 
@@ -89,7 +95,8 @@ hostname = dock.tenchii.com, s.jiediankeji.com, qapi.huolala.cn, dsp.fcbox.com, 
 ^https?:\/\/capis(-\d)?\.didapinche\.com\/(ad|adbase)\/ url reject
 
 # >>>>>>>>>>>>>>> ✅ E ✅ <<<<<<<<<<<<<<
-
+# > EMS 微信小程序净化 由TEXAS和豆豆提供 ump.ems.com.cn
+^https:\/\/ump\.ems\.com\.cn\/new-generation-extend\/redis\/pageInfoByChannel url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/ems.js
 
 
 # >>>>>>>>>>>>>>> ✅ F ✅ <<<<<<<<<<<<<<
@@ -109,9 +116,13 @@ hostname = dock.tenchii.com, s.jiediankeji.com, qapi.huolala.cn, dsp.fcbox.com, 
 # > 花小猪打车 微信小程序净化
 ^https:\/\/api\.hongyibo\.com\.cn url reject-dict
 ^https:\/\/res\.hongyibo\.com\.cn\/os\/gs\/resapi\/activity url reject-dict
-# 货拉拉 微信小程序净化 qapi.huolala.cn, appuser-static.huolala.cn
+# > 货拉拉 微信小程序净化 qapi.huolala.cn, appuser-static.huolala.cn
 ^https:\/\/qapi\.huolala\.cn\/(ads|home_new_user|get_service_list) url reject-dict
 ^https:\/\/appuser-static\.huolala\.cn\/imgs url reject-dict
+# > 哈啰 微信小程序首页弹窗屏蔽 api.hellobike.com
+^https:\/\/api\.hellobike\.com\/api\?adx url reject-dict
+
+
 
 
 # >>>>>>>>>>>>>>> ✅ I ✅ <<<<<<<<<<<<<<
@@ -121,12 +132,21 @@ hostname = dock.tenchii.com, s.jiediankeji.com, qapi.huolala.cn, dsp.fcbox.com, 
 # >>>>>>>>>>>>>>> ✅ J ✅ <<<<<<<<<<<<<<
 # > 街电 微信小程序
 ^https:\/\/s\.jiediankeji\.com\/adv url reject-dict
+# > 极兔快递 微信小程序净化 applets.jtexpress.com.cn
+
+^https:\/\/applets\.jtexpress\.com\.cn url reject-dict
+
 
 
 
 # >>>>>>>>>>>>>>> ✅ K ✅ <<<<<<<<<<<<<<
-# 快狗打车搬家 微信小程序净化 suyun-user.daojia.com
+# > 快狗打车搬家 微信小程序净化 suyun-user.daojia.com
 ^https:\/\/suyun-guest\.daojia\.com\/api\/kuaigou\/banjia\/review url reject-dict
+# > 肯德基 微信小程序净化 orders.kfc.com.cn, dynamicad.kfc.com.cn, res.kfc.com.cn
+^https:\/\/orders\.kfc\.com\.cn\/preorder-portal\/api\/v2\/coupon url reject-dict
+^https:\/\/dynamicad\.kfc\.com\.cn\/api url reject-dict
+^https:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/custom_v2\/wxapp url reject-dict
+^https:\/\/orders\.kfc\.com\.cn\/preorder-portal\/api\/v2\/activity url reject-dict
 
 
 # >>>>>>>>>>>>>>> ✅ L ✅ <<<<<<<<<<<<<<
@@ -135,6 +155,10 @@ hostname = dock.tenchii.com, s.jiediankeji.com, qapi.huolala.cn, dsp.fcbox.com, 
 
 
 # >>>>>>>>>>>>>>> ✅ M ✅ <<<<<<<<<<<<<<
+# > 美柚 微信小程序净化 wxproj.seeyouyima.com
+^https:\/\/wxproj\.seeyouyima\.com\/data\/today_tips url reject-dict
+#麦当劳 微信小程序净化 api.mcd.cn
+^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/hotActivity url reject-dict
 
 
 
@@ -169,7 +193,7 @@ hostname = dock.tenchii.com, s.jiediankeji.com, qapi.huolala.cn, dsp.fcbox.com, 
 ^https:\/\/customer-app\.sto\.cn\/api\/app\/banner\/banner url reject-dict
 ^https:\/\/sto-customer-app\.oss-cn-shanghai\.aliyuncs\.com\/images url reject-dict
 # > 苏打校园APP 净化(需要卸载重装) @TEXAS提供
-^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ATOP url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/soda.js
+^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ATOP url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/soda.js
 ^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ABOTTOM url reject-dict
 ^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ACENTER url reject-dict
 ^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AMINE%3ABOTTOM url reject-dict
@@ -177,6 +201,14 @@ hostname = dock.tenchii.com, s.jiediankeji.com, qapi.huolala.cn, dsp.fcbox.com, 
 ^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AREWARDS%3ACENTER url reject-dict
 # > 搜电充电 微信小程序
 ^https:\/\/wxs-weixin\.sd\.zhumanggroup\.com\/api\/v2\/ad url reject-dict
+# > 闪送 微信小程序净化 miniprogram.ishansong.com, ads.ishansong.com
+^https:\/\/miniprogram\.ishansong\.com\/cms\/faq\/query url reject-dict
+^https:\/\/ads\.ishansong\.com\/advert url reject-dict
+# > 神州租车 微信小程序净化 apiproxy.zuche.com
+^https:\/\/apiproxy\.zuche\.com\/resource\/carrctapi\/home\/marketing url reject-dict
+^https:\/\/apiproxy\.zuche\.com\/resource\/carrctapi\/home\/page\/advertising url reject-dict
+# > 石家庄公交乘车码 微信小程序净化 wechat-api.i-xiaoma.com.cn
+^https:\/\/wechat-api\.i-xiaoma\.com\.cn\/app\/v1\/bus\/wechat\/content url reject-dict
 
 
 
@@ -199,6 +231,8 @@ hostname = dock.tenchii.com, s.jiediankeji.com, qapi.huolala.cn, dsp.fcbox.com, 
 
 
 # >>>>>>>>>>>>>>> ✅ W ✅ <<<<<<<<<<<<<<
+# > 微快递 微信小程序净化 api.kuaidihelp.com
+^https:\/\/api\.kuaidihelp\.com\/g_order_core\/v2\/mina\/User\/getBannerList url reject-dict
 
 
 
@@ -208,7 +242,11 @@ hostname = dock.tenchii.com, s.jiediankeji.com, qapi.huolala.cn, dsp.fcbox.com, 
 ^https:\/\/file\.dian\.so\/c\/leto url reject-dict
 # > 小兔充充 小程序净化 感谢#豆豆分享 ad.xiaotucc.com, mapi.xiaotucc.com
 ^https:\/\/ad\.xiaotucc\.com\/advert url reject
-^https:\/\/mapi\.xiaotucc\.com\/(mall\/main|main_page\/index\/getActivity) url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/xiaotucc.js
+^https:\/\/mapi\.xiaotucc\.com\/(mall\/main|main_page\/index\/getActivity) url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/xiaotucc.js
+# > 星巴克 微信小程序净化 3pp.starbucks.com.cn
+^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/popup url reject-dict
+^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/index\/banner url reject-dict
+^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/index\/global url reject-dict
 
 
 
