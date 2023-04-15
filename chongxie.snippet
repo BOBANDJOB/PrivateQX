@@ -258,7 +258,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show url reject
 ^https?:\/\/staticlive.douyucdn.cn\/upload\/signs\/ url reject
 ^https?:\/\/douyucdn.cn\/.+\/appapi\/getinfo url reject
 ^https?+:\/\/rtbapi\.douyucdn\.cn\/japi\/sign\/app\/getinfo url reject-200
-^https?:\/\/capi.douyucdn.cn\/lapi\/sign\/app(api)?\/getinfo\?client_sys=ios url reject
+^https?:\/\/capi\.douyucdn\.cn\/lapi\/sign\/app(api)?\/getinfo\?client_sys=ios url reject
 ^https?:\/\/capi\.douyucdn\.cn\/api\/ios_app\/check_update url reject-img
 ^https?:\/\/capi\.douyucdn\.cn\/api\/v1\/getStartSend?client_sys=ios url reject-img
 ^https?:\/\/douyucdn\.cn\/.+?\/appapi\/getinfo url reject-img
@@ -473,10 +473,7 @@ https://fbchina.flipchina.cn/v2/ad/query/* url reject
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ url reject-array
 ^https?://union.click.jd.com/jda? url request-header ^(.+?\s).+?(\s[\s\S]+?Host:).+?(\r\n) request-header $1/jda?adblock=$2union.click.jd.com$3
 ^https?://union.click.jd.com/sem.php? url request-header ^(.+?\s).+?(\s[\s\S]+?Host:).+?(\r\n) request-header $1/sem.php?adblock=$2union.click.jd.com$3
-^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/(aladdin\/na\/m\/getLoadingPicture|aladdin\/na\/m\/getLoadingPicture) url reject
-^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture url reject
-^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/(new)?na\/m\/adInfo url reject
-^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo url reject
+^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/(aladdin\/na\/m\/getLoadingPicture|aladdin\/na\/m\/getLoadingPicture|base\/(new)?na\/m\/adInfo) url reject
 ^https?:\/\/bdsp-x\.jd\.com\/adx\/ url reject
 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=(start|queryMaterialAdverts) url reject
 ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ url reject
@@ -774,15 +771,13 @@ https://api.rr.tv/storage/business/rootName/app/homePage\?dataType=JSON url reje
 ^https?:\/\/cms\.daydaycook\.com\.cn\/api\/cms\/advertisement\/ url reject
 ^https?:\/\/api\.daydaycook\.com\.cn\/daydaycook\/server\/ad\/ url reject
 # > 人民日报
-^https:\/\/app\.peopleapp\.com\/Api\/\d+/HomeApi\/getAdvertImage url reject
-^https:\/\/app\.peopleapp\.com\/Api\/\d+/HomeApi\/adv url reject-dict
+^https:\/\/app\.peopleapp\.com\/Api\/\d+/HomeApi\/(getAdvertImage|adv) url reject
 ^https?:\/\/stat\.peopleapp\.com\/ url reject
 ^https?:\/\/adstatic\.peopleapp\.com\/upload\/AppLoad\/.*.(jpg|png) url reject-200
 
 # >>>>>>>>>>>>>>> ✅ S ✅ <<<<<<<<<<<<<<
 # > 顺丰
-^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/appVersion\/detectionUpgrade url reject-dict
-^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/ url reject
+^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/(appVersion\/detectionUpgrade|ad) url reject-dict
 ^https?:\/\/shopic\.sf-express\.com\/crm\/mobile\/common\/flashscreen url reject
 # > 顺丰优选
 ^https://mapi.sfbest.com\/brokerservice-server\/cms\/getPositionById.* url reject
@@ -797,22 +792,13 @@ https://api.rr.tv/storage/business/rootName/app/homePage\?dataType=JSON url reje
 ^https?:\/\/api\.k\.sohu\.com\/api\/channel\/ad\/ url reject-img
 ^https?:\/\/hui\.sohu\.com\/predownload2\/? url reject-img
 ^https?:\/\/m\.aty\.sohu\.com\/openload? url reject-img
-^https?:\/\/mmg\.aty\.sohu\.com\/mqs? url reject-img
-^https?:\/\/mmg\.aty\.sohu\.com\/pvlog? url reject-img
+^https?:\/\/mmg\.aty\.sohu\.com\/(mqs|pvlog) url reject-img
 ^https?:\/\/photocdn\.sohu\.com\/tvmobilemvms url reject-img
 ^https?:\/\/pic\.k\.sohu\.com\/img\d\/wb\/tj\/ url reject
 ^https?:\/\/s\.go\.sohu\.com\/adgtr\/\?gbcode= url reject-img
 # > spotify音乐
-^https?:\/\/spclient\.wg\.spotify\.com\/.+ad_slot url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/.+banners url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/.+crashlytics url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/.+doubleclick url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/.+enabled-tracks url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/.+event url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/.+promoted url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/.+sponsored url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/ad-logic url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/ads url reject-img
+^https?:\/\/spclient\.wg\.spotify\.com\/.+(ad_slot|banners|crashlytics|doubleclick|enabled-tracks|event|promoted|sponsored) url reject-img
+^https?:\/\/spclient\.wg\.spotify\.com\/(ad-logic|ads) url reject-img
 ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 # > 搜狗输入法
 ^https?+:\/\/business-cdn\.shouji\.sogou\.com\/wapdl\/hole\/.+?\.jpg url reject-200
@@ -860,8 +846,7 @@ https://apis.lifeweek.com.cn/api/baseConfig/getIosNewConfig url reject
 ^https?:\/\/mapi\.sichuanair\.com\/zt\/tribeport\/encrypt_translate_key url reject-200
 # > 苏e行 #开屏广告 感谢@alist.choc.ga分享 #主机名api.bwton.com
 ^https?:\/\/api\.bwton\.com\/bas\/ad url reject-200
-^https:\/\/api\.bwton\.com\/bff\/app\/index\/goods url reject-dict
-^https:\/\/api\.bwton\.com\/bff\/app\/index\/recommend url reject-dict
+^https:\/\/api\.bwton\.com\/bff\/app\/index\/(goods|recommend) url reject-dict
 # > 苏周到 #更新提示 感谢@alist.choc.ga分享 #主机名szdmobile.suzhou.gov.cn
 ^https:\/\/szdmobile\.suzhou\.gov\.cn\/thirdapp-center\/appUpdate\/update url reject-dict
 
@@ -881,12 +866,8 @@ https://apis.lifeweek.com.cn/api/baseConfig/getIosNewConfig url reject
 ^https?+:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ url reject-200
 ^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ url reject
 # > 腾讯新闻
-^https?:\/\/r\.inews\.qq\.com\/(adsBlacklist|getFullScreenPic|getQQNewsRemoteConfig) url reject
-^https?:\/\/r\.inews\.qq\.com\/getBannerAds url reject-img
-^https?:\/\/r\.inews\.qq\.com\/getNewsRemoteConfig url reject-img
+^https?:\/\/r\.inews\.qq\.com\/(getBannerAds|adsBlacklist|getFullScreenPic|get(QQ)?NewsRemoteConfig|searchHotCatList|upLoadLoc) url reject
 ^https?:\/\/r\.inews\.qq\.com\/getSplash\?apptype=ios&startarticleid=&__qnr= url reject-img
-^https?:\/\/r\.inews\.qq\.com\/searchHotCatList url reject-img
-^https?:\/\/r\.inews\.qq\.com\/upLoadLoc url reject-img
 ^https:\/\/(news\.ssp\.qq\.com\/app|r\.inews\.qq\.com\/(get(QQNewsUnreadList|TagFeedList)|gw\/page\/event_detail|news_feed\/hot_module_list)) url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/qq-news.js
 # > 腾讯体育
 ^https?:\/\/news\.ssp\.qq\.com\/app url reject
@@ -1066,8 +1047,7 @@ http:\/\/analytics\.163\.com\/ntes url reject
 ^https:\/\/m\.ctrip\.com\/html5\/webresource\/js\/iscroll\.js$ url reject
 ^https:\/\/mbd\.baidu\.com\/newspage\/api\/getmobads\?page\=landingshare url reject
 # > 兴业银行 原规则删除 顺便问下谁有兴业银行跳过代理检测的规则
-^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20221[1-2]{1} url reject-200
-^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20230[1-9]{1} url reject-200
+^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=(20221[1-2]{1}|20230[1-9]{1}) url reject-200
 # > 兴业生活
 ^https?:\/\/file\.cibfintech\.com\/file\/M0[0-9]{1}\/*\/*\/.*.zip url reject-img
 # 小米 //api.m.mi.com, api-mifit.huami.com, api.jr.mi.com, home.mi.com
@@ -1089,12 +1069,6 @@ http:\/\/analytics\.163\.com\/ntes url reject
 ^https?+:\/\/api-mifit.+?\.huami\.com\/discovery\/mi\/discovery\/.+?_ad\? url reject-200
 ^https?:\/\/home\.mi\.com\/cgi-op\/api\/v\d\/recommendation\/banner url reject
 ^https?:\/\/(api-mifit|api-mifit-\w+)\.huami\.com\/discovery\/mi\/discovery\/\w+_ad\? url reject
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/homepage_ad\? url reject-img
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sleep_ad\? url reject-img
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_summary_ad\? url reject-img
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_training_ad\? url reject-img
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/step_detail_ad\? url reject-img
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/training_video_ad\? url reject-img
 # > 小米运动
 ^https:\/\/api-mifit-cn2\.huami\.com\/discovery\/mi\/cards\/startpage_ad url reject
 # > 小米有品去开屏广告 主机名 shopapi.io.mi.com
