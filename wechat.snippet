@@ -24,7 +24,7 @@
 
 
 # 去重后的hostname，将对以下域名进行MITM（MAN-IN-THE-MIDDLE：中间人攻击）
-hostname = api-fouth-mem.huazhu.com, wxapp.bestwehotel.com, app.homeinns.com, wx.bthhotels.com, mystore-gw.watsonsvip.com.cn, tm-api.pin-dao.cn, res.pizzahut.com.cn, orders.kfc.com.cn, dynamicad.kfc.com.cn, res.kfc.com.cn, api.mcd.cn, 3pp.starbucks.com.cn, wechat-api.i-xiaoma.com.cn, apiproxy.zuche.com, miniprogram.ishansong.com, ads.ishansong.com, minicap.caocaokeji.cn, applets.jtexpress.com.cn, ump.ems.com.cn, api.hellobike.com, api.kuaidihelp.com, wxproj.seeyouyima.com, dock.tenchii.com, s.jiediankeji.com, qapi.huolala.cn, dsp.fcbox.com, file.dian.so, capis*.didapinche.com, adsoss.zhinengxiyifang.cn, common.diditaxi.com.cn, api.hongyibo.com.cn, api-marketing.zhinengxiyifang.cn, wx.mygolbs.com, ccmsupport-sz.tenpay.com, ads.zhinengxiyifang.cn, apis.alenable.com, supplier-api.imdada.cn, webchatapp.fcbox.com, ucmp.sf-express.com, ad.xiaotucc.com, mobile-api.imlaidian.com, consumer.fcbox.com, customer-app.sto.cn, aag.enmonster.com, suyun-user.daojia.com, api.sodalife.xyz, sto-customer-app.oss-cn-shanghai.aliyuncs.com, wxs-weixin.sd.zhumanggroup.com, mapi.xiaotucc.com, hdgateway.zto.com, appuser-static.huolala.cn, res.hongyibo.com.cn, smarket.dian.so, conf.diditaxi.com.cn, wxsnsdythumb.wxs.qq.com, api.ulife.group, 
+hostname = lawsonapi.yorentown.com, plt.yorentown.com, minifm.maxxipoint.com, htwkop.xiaojukeji.com, mxsa.mxbc.net, go.heytea.com, miniapp.sexytea2013.com, api-fouth-mem.huazhu.com, wxapp.bestwehotel.com, app.homeinns.com, wx.bthhotels.com, mystore-gw.watsonsvip.com.cn, tm-api.pin-dao.cn, res.pizzahut.com.cn, orders.kfc.com.cn, dynamicad.kfc.com.cn, res.kfc.com.cn, api.mcd.cn, 3pp.starbucks.com.cn, wechat-api.i-xiaoma.com.cn, apiproxy.zuche.com, miniprogram.ishansong.com, ads.ishansong.com, minicap.caocaokeji.cn, applets.jtexpress.com.cn, ump.ems.com.cn, api.hellobike.com, api.kuaidihelp.com, wxproj.seeyouyima.com, dock.tenchii.com, s.jiediankeji.com, qapi.huolala.cn, dsp.fcbox.com, file.dian.so, capis*.didapinche.com, adsoss.zhinengxiyifang.cn, common.diditaxi.com.cn, api.hongyibo.com.cn, api-marketing.zhinengxiyifang.cn, wx.mygolbs.com, ccmsupport-sz.tenpay.com, ads.zhinengxiyifang.cn, apis.alenable.com, supplier-api.imdada.cn, webchatapp.fcbox.com, ucmp.sf-express.com, ad.xiaotucc.com, mobile-api.imlaidian.com, consumer.fcbox.com, customer-app.sto.cn, aag.enmonster.com, suyun-user.daojia.com, api.sodalife.xyz, sto-customer-app.oss-cn-shanghai.aliyuncs.com, wxs-weixin.sd.zhumanggroup.com, mapi.xiaotucc.com, hdgateway.zto.com, appuser-static.huolala.cn, res.hongyibo.com.cn, smarket.dian.so, conf.diditaxi.com.cn, wxsnsdythumb.wxs.qq.com, api.ulife.group, 
 
 # >>>>>>>>>>>>>>> ✅ 0 ✅ <<<<<<<<<<<<<<
 
@@ -72,23 +72,22 @@ hostname = api-fouth-mem.huazhu.com, wxapp.bestwehotel.com, app.homeinns.com, wx
 
 # >>>>>>>>>>>>>>> ✅ B ✅ <<<<<<<<<<<<<<
 # > 必胜客 微信小程序净化 res.pizzahut.com.cn
-
 ^https:\/\/res\.pizzahut\.com\.cn\/CRM url reject-dict
-
 
 
 
 # >>>>>>>>>>>>>>> ✅ C ✅ <<<<<<<<<<<<<<
 # > 曹操出行 微信小程序净化 minicap.caocaokeji.cn
 ^https:\/\/minicap\.caocaokeji\.cn\/advert-bss\/pullAdvert url reject-dict
-
+# > 茶颜悦色 微信小程序净化 miniapp.sexytea2013.com
+^https:\/\/miniapp\.sexytea2013\.com\/cms\/slot\/queryByCodes url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/ccyse.js
 
 
 # >>>>>>>>>>>>>>> ✅ D ✅ <<<<<<<<<<<<<<
 # > 达达快送 微信小程序净化
 ^https:\/\/supplier-api\.imdada\.cn\/fe\/public\/ad\/spot\?forwardServiceName=growth-activity url reject-dict
 # > 滴滴出行 微信小程序个人中心净化 由TEXAS和豆豆提供
-^https:\/\/common\.diditaxi\.com\.cn\/common\/v5 url script-response-body didi.js
+^https:\/\/common\.diditaxi\.com\.cn\/common\/v5 url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/didi.js
 # > 滴滴打车 小程序净化 感谢#豆豆分享
 ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/core url reject-dict
 # > 嘀嗒出行 小程序净化 感谢#豆豆分享
@@ -154,13 +153,19 @@ hostname = api-fouth-mem.huazhu.com, wxapp.bestwehotel.com, app.homeinns.com, wx
 # >>>>>>>>>>>>>>> ✅ L ✅ <<<<<<<<<<<<<<
 # > 来电 小程序净化
 ^https:\/\/mobile-api\.imlaidian\.com\/api\/args url reject-dict
+# > 罗森点点 微信小程序净化 lawsonapi.yorentown.com, plt.yorentown.com
+^https:\/\/lawsonapi\.yorentown\.com\/area\/sh-lawson\/app\/v1\/mina\/systemSetting url reject-dict
+^https:\/\/plt\.yorentown\.com\/pltapp\/v1\/banner url reject-dict
+^https:\/\/lawsonapi\.yorentown\.com\/area\/sh-lawson\/app\/v1\/home url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/lawson.js
 
 
 # >>>>>>>>>>>>>>> ✅ M ✅ <<<<<<<<<<<<<<
 # > 美柚 微信小程序净化 wxproj.seeyouyima.com
 ^https:\/\/wxproj\.seeyouyima\.com\/data\/today_tips url reject-dict
-#麦当劳 微信小程序净化 api.mcd.cn
+# > 麦当劳 微信小程序净化 api.mcd.cn
 ^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/hotActivity url reject-dict
+# > 蜜雪冰城 微信小程序净化 mxsa.mxbc.net
+^https:\/\/mxsa\.mxbc\.net\/api\/v1\/adinfo\/adplace\/query url reject-dict
 
 
 
@@ -182,6 +187,13 @@ hostname = api-fouth-mem.huazhu.com, wxapp.bestwehotel.com, app.homeinns.com, wx
 # >>>>>>>>>>>>>>> ✅ Q ✅ <<<<<<<<<<<<<<
 # > 屈臣氏 微信小程序开屏(或许APP也可以干掉) mystore-gw.watsonsvip.com.cn
 ^https:\/\/mystore-gw\.watsonsvip\.com\.cn\/gfu\/popup\/advert\/launch url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/watsons.js
+# > 青桔 微信小程序净化 htwkop.xiaojukeji.com
+^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=cms\.htw\.delivery url reject-dict
+^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=prd\.task url reject-dict
+^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=hm\.fa url reject-dict
+^https:\/\/star\.xiaojukeji\.com\/config url reject-dict
+# > 全家微会员 微信小程序净化 minifm.maxxipoint.com
+^https:\/\/minifm\.maxxipoint\.com\/banner\/list url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/FamilyMart.js
 
 
 
@@ -259,7 +271,8 @@ hostname = api-fouth-mem.huazhu.com, wxapp.bestwehotel.com, app.homeinns.com, wx
 ^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/popup url reject-dict
 ^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/index\/banner url reject-dict
 ^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/index\/global url reject-dict
-
+# > 喜茶 微信小程序净化 go.heytea.com
+^https:\/\/go\.heytea\.com\/api\/service-portal\/vip url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/heytea.js
 
 
 # >>>>>>>>>>>>>>> ✅ Y ✅ <<<<<<<<<<<<<<
