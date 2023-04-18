@@ -24,7 +24,7 @@
 
 
 # 去重后的hostname，将对以下域名进行MITM（MAN-IN-THE-MIDDLE：中间人攻击）
-hostname = triangle.wearemanner.com, cappapi.alittle-tea.com, alittle-tea.oss-cn-shanghai.aliyuncs.com, member.lxjchina.com.cn, cbd-gateway-service-applets.hualala.com, coco-com.e.verystar.net, lawsonapi.yorentown.com, plt.yorentown.com, minifm.maxxipoint.com, htwkop.xiaojukeji.com, mxsa.mxbc.net, go.heytea.com, miniapp.sexytea2013.com, api-fouth-mem.huazhu.com, wxapp.bestwehotel.com, app.homeinns.com, wx.bthhotels.com, mystore-gw.watsonsvip.com.cn, tm-api.pin-dao.cn, res.pizzahut.com.cn, orders.kfc.com.cn, dynamicad.kfc.com.cn, res.kfc.com.cn, api.mcd.cn, 3pp.starbucks.com.cn, wechat-api.i-xiaoma.com.cn, apiproxy.zuche.com, miniprogram.ishansong.com, ads.ishansong.com, minicap.caocaokeji.cn, applets.jtexpress.com.cn, ump.ems.com.cn, api.hellobike.com, api.kuaidihelp.com, wxproj.seeyouyima.com, dock.tenchii.com, s.jiediankeji.com, qapi.huolala.cn, dsp.fcbox.com, file.dian.so, capis*.didapinche.com, adsoss.zhinengxiyifang.cn, common.diditaxi.com.cn, api.hongyibo.com.cn, api-marketing.zhinengxiyifang.cn, wx.mygolbs.com, ccmsupport-sz.tenpay.com, ads.zhinengxiyifang.cn, apis.alenable.com, supplier-api.imdada.cn, webchatapp.fcbox.com, ucmp.sf-express.com, ad.xiaotucc.com, mobile-api.imlaidian.com, consumer.fcbox.com, customer-app.sto.cn, aag.enmonster.com, suyun-user.daojia.com, api.sodalife.xyz, sto-customer-app.oss-cn-shanghai.aliyuncs.com, wxs-weixin.sd.zhumanggroup.com, mapi.xiaotucc.com, hdgateway.zto.com, appuser-static.huolala.cn, res.hongyibo.com.cn, smarket.dian.so, conf.diditaxi.com.cn, wxsnsdythumb.wxs.qq.com, api.ulife.group, 
+hostname = webapi.qmai.cn, api.prod.dj.mstand.cn, api.prod.dj.mstand.cn, triangle.wearemanner.com, cappapi.alittle-tea.com, alittle-tea.oss-cn-shanghai.aliyuncs.com, member.lxjchina.com.cn, cbd-gateway-service-applets.hualala.com, coco-com.e.verystar.net, lawsonapi.yorentown.com, plt.yorentown.com, minifm.maxxipoint.com, htwkop.xiaojukeji.com, mxsa.mxbc.net, go.heytea.com, miniapp.sexytea2013.com, api-fouth-mem.huazhu.com, wxapp.bestwehotel.com, app.homeinns.com, wx.bthhotels.com, mystore-gw.watsonsvip.com.cn, tm-api.pin-dao.cn, res.pizzahut.com.cn, orders.kfc.com.cn, dynamicad.kfc.com.cn, res.kfc.com.cn, api.mcd.cn, 3pp.starbucks.com.cn, wechat-api.i-xiaoma.com.cn, apiproxy.zuche.com, miniprogram.ishansong.com, ads.ishansong.com, minicap.caocaokeji.cn, applets.jtexpress.com.cn, ump.ems.com.cn, api.hellobike.com, api.kuaidihelp.com, wxproj.seeyouyima.com, dock.tenchii.com, s.jiediankeji.com, qapi.huolala.cn, dsp.fcbox.com, file.dian.so, capis*.didapinche.com, adsoss.zhinengxiyifang.cn, common.diditaxi.com.cn, api.hongyibo.com.cn, api-marketing.zhinengxiyifang.cn, wx.mygolbs.com, ccmsupport-sz.tenpay.com, ads.zhinengxiyifang.cn, apis.alenable.com, supplier-api.imdada.cn, webchatapp.fcbox.com, ucmp.sf-express.com, ad.xiaotucc.com, mobile-api.imlaidian.com, consumer.fcbox.com, customer-app.sto.cn, aag.enmonster.com, suyun-user.daojia.com, api.sodalife.xyz, sto-customer-app.oss-cn-shanghai.aliyuncs.com, wxs-weixin.sd.zhumanggroup.com, mapi.xiaotucc.com, hdgateway.zto.com, appuser-static.huolala.cn, res.hongyibo.com.cn, smarket.dian.so, conf.diditaxi.com.cn, wxsnsdythumb.wxs.qq.com, api.ulife.group, 
 
 # >>>>>>>>>>>>>>> ✅ 0 ✅ <<<<<<<<<<<<<<
 
@@ -163,6 +163,9 @@ hostname = triangle.wearemanner.com, cappapi.alittle-tea.com, alittle-tea.oss-cn
 ^https:\/\/lawsonapi\.yorentown\.com\/area\/sh-lawson\/app\/v1\/home url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/lawson.js
 # > 老乡鸡 微信小程序净化 member.lxjchina.com.cn
 ^https:\/\/member\.lxjchina\.com\.cn\/mini-server\/home\/page\/banner url reject-dict
+# > LINLEE 微信小程序净化 webapi.qmai.cn
+^https:\/\/webapi\.qmai\.cn\/web\/catering\/design\/homePage-Config url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/LINLEE.js
+
 
 
 # >>>>>>>>>>>>>>> ✅ M ✅ <<<<<<<<<<<<<<
@@ -174,7 +177,9 @@ hostname = triangle.wearemanner.com, cappapi.alittle-tea.com, alittle-tea.oss-cn
 ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/adinfo\/adplace\/query url reject-dict
 # > Manner 微信小程序净化(去除首页轮播图以及进入小程序弹窗) triangle.wearemanner.com
 ^https:\/\/triangle\.wearemanner\.com\/mp-api\/v1\/ads url reject-dict
-
+# > M Stand 微信小程序净化 api.prod.dj.mstand.cn, api.prod.dj.mstand.cn
+^https:\/\/api\.prod\.dj\.mstand\.cn\/scrm\/mini\/app\/index\/info url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/M_Stand.js
+^https:\/\/api\.prod\.dj\.mstand\.cn\/scrm\/app\/mdm\/index\/listAdv\?types url reject-dict
 
 
 # >>>>>>>>>>>>>>> ✅ N ✅ <<<<<<<<<<<<<<
