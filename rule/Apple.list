@@ -44,13 +44,20 @@ HOST-KEYWORD ,apple-support.akadns.net, direct
 HOST-KEYWORD ,icloud.com.akadns.net, direct
 HOST-KEYWORD ,apple.com.edgekey.net, direct
 # ---(Apple Proxy)---
-HOST-SUFFIX, appsto.re, Apple Proxy // Apple URL Shortener
-HOST-SUFFIX, smoot.apple.com, Apple Proxy // Spotlight
-HOST, amp-api.podcasts.apple.com, Apple Proxy // Podcasts
-HOST, beta.music.apple.com, Apple Proxy // Apple Music Web
-HOST, books.itunes.apple.com, Apple Proxy // iBooks Store download
-HOST, lookup-api.apple.com, Apple Proxy // Look Up
-HOST, radio.itunes.apple.com, Apple Proxy // Apple Music Radio
+# > Apple URL Shortener
+HOST-SUFFIX, appsto.re, Apple Proxy
+# > Spotlight
+HOST-SUFFIX, smoot.apple.com, Apple Proxy
+# > Podcasts
+HOST, amp-api.podcasts.apple.com, Apple Proxy
+# > Apple Music Web
+HOST, beta.music.apple.com, Apple Proxy
+# > iBooks Store download
+HOST, books.itunes.apple.com, Apple Proxy
+# > Look Up
+HOST, lookup-api.apple.com, Apple Proxy
+# > Apple Music Radio
+HOST, radio.itunes.apple.com, Apple Proxy
 # > Web Preview
 HOST, apps.apple.com, Apple Proxy
 HOST, books.apple.com, Apple Proxy
