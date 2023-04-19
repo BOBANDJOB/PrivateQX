@@ -2,22 +2,8 @@
 # > 某些APP要清除缓存或者重新安装APP，拦截广告才会生效！  
 # > 更新时间  2022.11.05
 # > */  
-# > OpenAi
-DOMAIN-SUFFIX, openaiapi-site.azureedge.net, OpenAI节点
-DOMAIN-SUFFIX, openaicom.imgix.net, OpenAI节点
-DOMAIN-SUFFIX, openaicomproductionae4b.blob.core.windows.net, OpenAI节点
-DOMAIN-SUFFIX, openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net, OpenAI节点
-HOST-SUFFIX, ai.com, OpenAI节点
-HOST-SUFFIX, openai.com, OpenAI节点
-HOST-SUFFIX, vimeo.com, OpenAI节点
-HOST-SUFFIX, vimeocdn.com, OpenAI节点
-HOST-SUFFIX, hcaptcha.com, OpenAI节点
-HOST-SUFFIX, akamaized.com, OpenAI节点
-HOST, cdn.auth0.com, OpenAI节点
-# > 苹果天气直连
-host-keyword, weather-data.apple.com, direct
-host-keyword, weather-map.apple.com, direct
-host-keyword, weather-analytics-events.apple.com, direct
+# > 彩云天气
+host, ad.cyapi.cn, reject
 # > 虎牙直播开屏广告 #热心网友分享 
 host, pp-cdnfile2pcdn.msstatic.com, reject
 host, livewebbs2pcdn.msstatic.com, reject
@@ -164,6 +150,8 @@ HOST-SUFFIX,bazinga.mse.sogou.com, reject
 HOST-SUFFIX,bite.theta.sogoucdn.com, reject
 HOST-SUFFIX,brand.sogou.com, reject
 HOST-SUFFIX,bsiet.husky.sogou.com, reject
+# > 朵朵校友圈微信小程序去广告
+host-suffix, ad.duoduo.link, reject
 # > 搜狗输入法
 host-keyword, business-cdn.shouji.sogou.com, reject
 ## QQ音乐广告
@@ -998,6 +986,10 @@ HOST,imgadpai.thepaper.cn, reject
 # > 迅雷
 HOST,adsp.xunlei.com, reject
 HOST,etl.xlmc.sandai.net, reject
+# > 避免迅雷版权问题
+host, hub5idx.v6.shub.sandai.net, reject
+host, hub5emu.v6.shub.sandai.net, reject
+host, hub5btmain.v6.shub.sandai.net, reject
 # (V)
 # > VariFlight
 HOST,adv-adlog.variflight.com, reject
@@ -1014,7 +1006,6 @@ HOST,vcardsdkservice.vivo.com.cn, reject
 HOST-KEYWORD,stsdk.vivo.com.cn, reject
 HOST-KEYWORD,stsdk.vivoglobal.com, reject
 # > 微博
-HOST,sdkapp.uve.weibo.com, direct
 HOST,gw.im.weibo.cn,reject
 HOST,gw1.i.weibo.cn,reject
 HOST-KEYWORD,fastimage.uve.weibo.com, reject
@@ -1172,17 +1163,6 @@ HOST-SUFFIX,cm.ad.bilibili.com, reject
 HOST-SUFFIX,cm.adcommon.bilibili.com, reject
 HOST-SUFFIX,cm.game.bilibili.com, reject
 HOST-SUFFIX,cm.track.biligame.bilibili.com, reject
-HOST,api.biliapi.com,BiliBili换区
-HOST,api.biliapi.net,BiliBili换区
-HOST,api.bilibili.com,BiliBili换区
-HOST,app.biliapi.com,BiliBili换区
-HOST,app.biliapi.net,BiliBili换区
-HOST,app.bilibili.com,BiliBili换区
-HOST,grpc.biliapi.net,BiliBili换区
-HOST,m.bilibili.com,BiliBili换区
-HOST,upos-hz-mirrorakam.akamaized.net,BiliBili换区
-HOST,www.bilibili.com,BiliBili换区
-HOST-KEYWORD,cn-hk-eq-bcache-,BiliBili换区
 # > 快手
 HOST-SUFFIX,e.kuaishou.com, reject
 HOST-SUFFIX,cm.downloader.commercial.kuaishou.com, reject
