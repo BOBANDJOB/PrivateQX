@@ -44,24 +44,24 @@ HOST-KEYWORD ,apple-support.akadns.net, direct
 HOST-KEYWORD ,icloud.com.akadns.net, direct
 HOST-KEYWORD ,apple.com.edgekey.net, direct
 # ---(Apple Proxy)---
-HOST-SUFFIX, appsto.re, Apple Pxoxy // Apple URL Shortener
-HOST-SUFFIX, smoot.apple.com, Apple Pxoxy // Spotlight
-HOST, amp-api.podcasts.apple.com, Apple Pxoxy // Podcasts
-HOST, beta.music.apple.com, Apple Pxoxy // Apple Music Web
-HOST, books.itunes.apple.com, Apple Pxoxy // iBooks Store download
-HOST, lookup-api.apple.com, Apple Pxoxy // Look Up
-HOST, radio.itunes.apple.com, Apple Pxoxy // Apple Music Radio
+HOST-SUFFIX, appsto.re, Apple Proxy // Apple URL Shortener
+HOST-SUFFIX, smoot.apple.com, Apple Proxy // Spotlight
+HOST, amp-api.podcasts.apple.com, Apple Proxy // Podcasts
+HOST, beta.music.apple.com, Apple Proxy // Apple Music Web
+HOST, books.itunes.apple.com, Apple Proxy // iBooks Store download
+HOST, lookup-api.apple.com, Apple Proxy // Look Up
+HOST, radio.itunes.apple.com, Apple Proxy // Apple Music Radio
 # > Web Preview
-HOST, apps.apple.com, Apple Pxoxy
-HOST, books.apple.com, Apple Pxoxy
-HOST, itunes.apple.com, Apple Pxoxy
-HOST, tv.apple.com, Apple Pxoxy
+HOST, apps.apple.com, Apple Proxy
+HOST, books.apple.com, Apple Proxy
+HOST, itunes.apple.com, Apple Proxy
+HOST, tv.apple.com, Apple Proxy
 # > News
-HOST, gateway.icloud.com, Apple Pxoxy
-HOST-SUFFIX, apple.news, Apple Pxoxy
-HOST, news-assets.apple.com, Apple Pxoxy
-HOST, news-client.apple.com, Apple Pxoxy
-HOST, news-client-search.apple.com, Apple Pxoxy
-HOST, news-edge.apple.com, Apple Pxoxy
-HOST, news-events.apple.com, Apple Pxoxy
-HOST, apple.comscoreresearch.com, Apple Pxoxy
+HOST, gateway.icloud.com, Apple Proxy
+HOST-SUFFIX, apple.news, Apple Proxy
+HOST, news-assets.apple.com, Apple Proxy
+HOST, news-client.apple.com, Apple Proxy
+HOST, news-client-search.apple.com, Apple Proxy
+HOST, news-edge.apple.com, Apple Proxy
+HOST, news-events.apple.com, Apple Proxy
+HOST, apple.comscoreresearch.com, Apple Proxy
