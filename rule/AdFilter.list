@@ -45,7 +45,7 @@ host-keyword, p26-be-pack-sign.pglstatp-toutiao.com, reject
 host-keyword, assets.51downapp.cn, reject
 # > 叮嗒出行
 host-keyword, image.bianxianmao.com, reject
-ip-cidr, 203.107.1.1/24, reject, no-resolve
+ip-cidr, 203.107.1.1/24, reject
 # > VIVO商城
 host-keyword, paradisestatic.vivo.com.cn, reject
 # > 酷安

@@ -10,16 +10,16 @@
 # LAN
 host-suffix, local, direct
 host-keyword, merlinblog, Available
-ip-cidr, 10.0.0.0/8, direct, no-resolve
-ip-cidr, 17.0.0.0/8, direct, no-resolve
-ip-cidr, 100.64.0.0/10, direct, no-resolve
-ip-cidr, 127.0.0.0/8, direct, no-resolve
-ip-cidr, 172.16.0.0/12, direct, no-resolve
-ip-cidr, 192.168.0.0/16, direct, no-resolve
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 17.0.0.0/8, direct
+ip-cidr, 100.64.0.0/10, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 192.168.0.0/16, direct
 # > 路由器后台
-ip-cidr, 192.168.0.1/24, direct, no-resolve
+ip-cidr, 192.168.0.1/24, direct
 # > 天翼网关
-ip-cidr, 192.168.1.1/24, direct, no-resolve
+ip-cidr, 192.168.1.1/24, direct
 
 # pikpak
 host-suffix, mypikpak.com, Available
