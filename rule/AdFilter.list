@@ -1163,6 +1163,9 @@ HOST-SUFFIX,cm.ad.bilibili.com, reject
 HOST-SUFFIX,cm.adcommon.bilibili.com, reject
 HOST-SUFFIX,cm.game.bilibili.com, reject
 HOST-SUFFIX,cm.track.biligame.bilibili.com, reject
+# > 通过拒绝登陆避免mitm失效 Cube (可在登陆账号后使用)
+#HOST, mall.bilibili.com, REJECT
+#HOST, passport.bilibili.com, REJECT
 # > 快手
 HOST-SUFFIX,e.kuaishou.com, reject
 HOST-SUFFIX,cm.downloader.commercial.kuaishou.com, reject
@@ -1239,7 +1242,11 @@ host-suffix, ali-ad.a.yximgs.com, reject
 HOST, open.e.kuaishou.com, reject
 HOST-SUFFIX, pangolin-sdk-toutiao.com, reject
 HOST-SUFFIX, pangolin-sdk-toutiao-b.com, reject
+# > ShadowShare广告
+host-suffix, doubleclick-cn.net, reject
 # > 其他广告
+host-keyword, huichuan-mc.sm.cn, reject
+host-keyword, knockout, reject
 HOST-SUFFIX, u3.ucweb.com, reject
 host-keyword,extlog.snssdk.com, reject
 host-keyword,is.snssdk.com, reject
@@ -9732,6 +9739,7 @@ HOST-SUFFIX,gdc.kg.qq.com, reject
 # > 蓝奏云
 HOST,pos.baidu.com,reject
 HOST-SUFFIX, statics.woozooo.com, REJECT
+HOST, wn.pos.baidu.com, REJECT
 # > 屏蔽数字联盟
 HOST-SUFFIX,shuzilm.cn,REJECT
 # > @RuCu6 #投稿 # Outlook
