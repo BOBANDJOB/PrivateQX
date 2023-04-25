@@ -34,41 +34,4 @@ host-keyword, api-adservices.apple.com, direct
 host-keyword, ls.apple.com, direct
 host-keyword, gsa.apple.com, direct
 host-keyword, ess.apple.com, direct
-# > 国内直连
-HOST-SUFFIX, akadns.net, direct
-HOST-SUFFIX, apple.com.edgekey.net, direct
-HOST-SUFFIX, itunes.com, direct
-HOST-SUFFIX, smoot.apple.cn, direct
-HOST-KEYWORD ,apple.com.akadns.net, direct
-HOST-KEYWORD ,apple-support.akadns.net, direct
-HOST-KEYWORD ,icloud.com.akadns.net, direct
-HOST-KEYWORD ,apple.com.edgekey.net, direct
-# ---(Apple Proxy)---
-# > Apple URL Shortener
-HOST-SUFFIX, appsto.re, Apple Proxy
-# > Spotlight
-HOST-SUFFIX, smoot.apple.com, Apple Proxy
-# > Podcasts
-HOST, amp-api.podcasts.apple.com, Apple Proxy
-# > Apple Music Web
-HOST, beta.music.apple.com, Apple Proxy
-# > iBooks Store download
-HOST, books.itunes.apple.com, Apple Proxy
-# > Look Up
-HOST, lookup-api.apple.com, Apple Proxy
-# > Apple Music Radio
-HOST, radio.itunes.apple.com, Apple Proxy
-# > Web Preview
-HOST, apps.apple.com, Apple Proxy
-HOST, books.apple.com, Apple Proxy
-HOST, itunes.apple.com, Apple Proxy
-HOST, tv.apple.com, Apple Proxy
-# > News
-HOST, gateway.icloud.com, Apple Proxy
-HOST-SUFFIX, apple.news, Apple Proxy
-HOST, news-assets.apple.com, Apple Proxy
-HOST, news-client.apple.com, Apple Proxy
-HOST, news-client-search.apple.com, Apple Proxy
-HOST, news-edge.apple.com, Apple Proxy
-HOST, news-events.apple.com, Apple Proxy
-HOST, apple.comscoreresearch.com, Apple Proxy
+
