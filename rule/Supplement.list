@@ -20,7 +20,6 @@ ip-cidr, 192.168.0.0/16, direct
 ip-cidr, 192.168.0.1/24, direct
 # > 天翼网关
 ip-cidr, 192.168.1.1/24, direct
-
 # pikpak
 host-suffix, mypikpak.com, Available
 # 海角社区
@@ -30,14 +29,14 @@ host-suffix, 18comic.org, HK节点
 host-suffix, 18comic.vip, HK节点
 host-keyword, copymanga, HK节点
 host-suffix, mangafuna.xyz, HK节点
-
 # > QQ空间
 host-keyword, ctc.qzs.qzone.qq.com, direct
 # > 微博
 HOST,sdkapp.uve.weibo.com, direct
-
 # > 12306
 host, ad.12306.cn, direct
+# > 莫高雷Emby
+ip-cidr, 202.61.255.248, Available
 # > 其他分流修正
 host-keyword, anti-ad.net, direct
 
