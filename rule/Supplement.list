@@ -36,7 +36,7 @@ HOST,sdkapp.uve.weibo.com, direct
 # > 12306
 host, ad.12306.cn, direct
 # > 莫高雷Emby
-ip-cidr, 202.61.255.248, Available
+ip-cidr, 202.61.255.248/32, Available
 # > 其他分流修正
 host-keyword, anti-ad.net, direct
 
