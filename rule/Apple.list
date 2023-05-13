@@ -3,6 +3,9 @@ host, ocsp.apple.com, reject
 # > 苹果商店
 HOST, apps.apple.com, Available
 HOST, iosapps.itunes.apple.com, Available
+HOST, p23-buy.itunes.apple.com, Available
+HOST, mzstorekit.itunes.apple.com, Available
+HOST, apptrailers.itunes.apple.com, Available
 HOST, itunes.apple.com, Available
 # > 屏蔽系统更新
 host, ns.itunes.apple.com, Apple Update
