@@ -8,12 +8,12 @@ host, xp.apple.com, Apple Update
 host, gdmf.apple.com, Apple Update
 host, updates-http.cdn-apple.com, Apple Update
 # > 苹果商店
-;HOST, apps.apple.com, Available
-;HOST, iosapps.itunes.apple.com, Available
-;HOST, p23-buy.itunes.apple.com, Available
-;HOST, mzstorekit.itunes.apple.com, Available
-;HOST, apptrailers.itunes.apple.com, Available
-;HOST-SUFFIX, itunes.apple.com, Available
+HOST, apps.apple.com, Available
+HOST, iosapps.itunes.apple.com, Available
+HOST, p23-buy.itunes.apple.com, Available
+HOST, mzstorekit.itunes.apple.com, Available
+HOST, apptrailers.itunes.apple.com, Available
+HOST-SUFFIX, itunes.apple.com, Available
 # > 苹果推送服务
 host-keyword, push.apple.com, Apple
 # > 苹果时间同步
