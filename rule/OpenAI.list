@@ -14,3 +14,6 @@ HOST-SUFFIX, akamaized.com
 HOST, cdn.auth0.com
 HOST, challenges.cloudflare.com
 host-suffix, identrust.com
+# 谷歌bard及其它
+host-suffix, anthropic.com
+host, bard.google.com

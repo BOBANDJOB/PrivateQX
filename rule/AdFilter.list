@@ -1244,6 +1244,8 @@ HOST-SUFFIX, pangolin-sdk-toutiao.com, reject
 HOST-SUFFIX, pangolin-sdk-toutiao-b.com, reject
 # > ShadowShare广告
 host-suffix, doubleclick-cn.net, reject
+# > IOS版GPT错误跟踪
+host, o33249.ingest.sentry.io, reject
 # > 其他广告
 host-keyword, huichuan-mc.sm.cn, reject
 host-keyword, knockout, reject
