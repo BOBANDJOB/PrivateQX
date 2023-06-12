@@ -31,6 +31,10 @@ host-keyword, copymanga, HK节点
 host-suffix, mangafuna.xyz, HK节点
 host, api.tipatipa.xyz, HK节点
 host, api.mangacopy.com, HK节点
+host, pica-web.wakamoment.tk, HK节点
+# 黑料
+host, h7.zztt72.com, Available
+host, 155.fun, Available
 # > QQ空间
 host-keyword, ctc.qzs.qzone.qq.com, direct
 # > 微博
