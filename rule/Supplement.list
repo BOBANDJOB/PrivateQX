@@ -20,11 +20,11 @@ ip-cidr, 192.168.0.0/16, direct
 ip-cidr, 192.168.0.1/24, direct
 # > 天翼网关
 ip-cidr, 192.168.1.1/24, direct
-# pikpak
+# > pikpak
 host-suffix, mypikpak.com, Available
-# 海角社区
+# > 海角社区
 host-suffix, haijiao.com, HK节点
-# 漫画
+# > 漫画
 host-suffix, 18comic.org, HK节点
 host-suffix, 18comic.vip, HK节点
 host-keyword, copymanga, HK节点
@@ -32,7 +32,7 @@ host-suffix, mangafuna.xyz, HK节点
 host, api.tipatipa.xyz, HK节点
 host, api.mangacopy.com, HK节点
 host, pica-web.wakamoment.tk, HK节点
-# 黑料社
+# > 黑料社
 host, h7.zztt72.com, Available
 host, 155.fun, Available
 # > QQ空间
@@ -46,6 +46,8 @@ ip-cidr, 202.61.255.248/32, Available
 # > 携程
 host-keyword, aw-s.tripcdn.com, direct
 host-keyword, trip.com, direct
+# > freeok视频网
+host-suffix, freeok.vip, direct
 # > 其他分流修正
 host-keyword, anti-ad.net, direct
 
