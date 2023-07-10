@@ -20,6 +20,9 @@ ip-cidr, 192.168.0.0/16, direct
 ip-cidr, 192.168.0.1/24, direct
 # > 天翼网关
 ip-cidr, 192.168.1.1/24, direct
+# > 其他分流修正
+host-keyword, anti-ad.net, direct
+# >>>>>>>>>>>>>>> 补充 <<<<<<<<<<<<<<
 # > pikpak
 host-suffix, mypikpak.com, Available
 # > 海角社区
@@ -48,7 +51,5 @@ host-keyword, aw-s.tripcdn.com, direct
 host-keyword, trip.com, direct
 # > freeok视频网
 host-suffix, freeok.vip, direct
-# > 其他分流修正
-host-keyword, anti-ad.net, direct
-
-
+# > 小宝影院
+host, xiaoheimi.net, SS_HK
