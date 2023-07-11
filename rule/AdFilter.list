@@ -97,6 +97,16 @@ IP-CIDR, 101.227.200.11/32, reject
 IP-CIDR, 101.227.200.28/32, reject
 IP-CIDR, 124.192.153.42/32, reject
 
+# > 安全浏览限制解除
+HOST, lookup.api.bsb.baidu.com, REJECT
+HOST, proxy.safebrowsing.apple, REJECT
+HOST, safebrowsing.g.applimg.com, REJECT
+HOST, safebrowsing.googleapis.com, REJECT
+HOST, safebrowsing.urlsec.qq.com, REJECT
+HOST, token.safebrowsing.apple, REJECT
+HOST, vs6.bj2ct.u3.ucweb.com, REJECT
+HOST-SUFFIX, safebrowsing.apple, REJECT
+HOST-SUFFIX, u3.ucweb.com, REJECT
 
 
 # >>>>>>>>>>>>>>> ✅ B ✅ <<<<<<<<<<<<<<
@@ -311,8 +321,21 @@ HOST,data-hoisin.coocaa.com, reject
 host-suffix, atrace.chelaile.net.cn, reject
 host, logs.chelaile.net.cn, reject
 host, ad.chelaile.net.cn, reject
-
-
+# > 彩云天气
+HOST, ad.cyapi.cn, REJECT
+# > 菜鸟
+HOST, iyes.youku.com, REJECT
+HOST, vali.cp31.ott.cibntv.net, REJECT
+IP-CIDR, 117.161.156.227/32, REJECT
+# > ChatGPT
+HOST, o33249.ingest.sentry.io, REJECT
+# > Clue 智库
+HOST, api.helloclue.com, REJECT
+HOST, brahe.apptimize.com, REJECT
+HOST, collector.clue.run, REJECT
+HOST, mapi.apptimize.com, REJECT
+HOST, md-i-s.apptimize.com, REJECT
+HOST, images.ctfassets.net, REJECT
 
 # >>>>>>>>>>>>>>> ✅ D ✅ <<<<<<<<<<<<<<
 # > 叮嗒出行
@@ -350,6 +373,16 @@ HOST-SUFFIX,deliver.ifeng.com, reject
 HOST,api.newad.ifeng.com, reject
 HOST,ifengad.3g.ifeng.com, reject
 
+# > Flurry
+HOST, data.flurry.com, REJECT
+# Foreca & Google
+HOST, adservice.google.com, REJECT
+HOST, googleads.g.doubleclick-cn.net, REJECT
+HOST, googleads.g.doubleclick.net, REJECT
+HOST, pubads.g.doubleclick.net, REJECT
+HOST, pagead2.googlesyndication.com, REJECT
+HOST, www.googleadservices.com, REJECT
+HOST-KEYWORD, adservice.google.com., REJECT
 
 
 # >>>>>>>>>>>>>>> ✅ G ✅ <<<<<<<<<<<<<<
@@ -401,7 +434,14 @@ HOST,optimus-ads.amap.com.w.alikunlun.com, reject
 HOST-SUFFIX, shouji.sougou.com, reject
 HOST, u51.me, reject
 HOST-SUFFIX, u51.me, reject
-
+# > 工商银行 开屏广告
+HOST, pageviewp.icbc.com.cn, REJECT
+# > 广告联盟
+HOST, is.snssdk.com, REJECT
+HOST, mi.gdt.qq.com, REJECT
+HOST, open.e.kuaishou.com, REJECT
+HOST-SUFFIX, pangolin-sdk-toutiao.com, REJECT
+HOST-SUFFIX, pangolin-sdk-toutiao-b.com, REJECT
 
 
 # >>>>>>>>>>>>>>> ✅ H ✅ <<<<<<<<<<<<<<
@@ -585,7 +625,8 @@ HOST,c1wx.lianwangtech.com, reject
 host-keyword,medicine.lanjiyin.com.cn, reject
 # > 两步路
 HOST-SUFFIX, admobile.top, reject
-
+# > 蓝奏云
+HOST, statics.woozooo.com, REJECT
 
 
 # >>>>>>>>>>>>>>> ✅ M ✅ <<<<<<<<<<<<<<
@@ -726,7 +767,10 @@ HOST-SUFFIX,v.gdt.qq.com, reject
 
 
 # >>>>>>>>>>>>>>> ✅ R ✅ <<<<<<<<<<<<<<
-
+# > RARBG 推广跳转
+HOST, bravetense.com, REJECT
+HOST, furiousfar.com, REJECT
+HOST, swallowcrockerybless.com, REJECT
 
 
 # >>>>>>>>>>>>>>> ✅ S ✅ <<<<<<<<<<<<<<
@@ -762,7 +806,10 @@ HOST-SUFFIX,bsiet.husky.sogou.com, reject
 ;host-keyword, business-cdn.shouji.sogou.com, reject
 # > 深圳通微信小程序
 HOST-SUFFIX,wxsnsdythumb.wxs.qq.com, reject
-
+# > 什么值得买
+HOST, api.zuihuimai.com, REJECT
+# > 数字联盟
+HOST-SUFFIX, shuzilm.cn, REJECT
 
 
 # >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
@@ -926,6 +973,8 @@ HOST,vv.video.qq.com, reject
 HOST,wa.gtimg.com, reject
 # HOST,wxsnsdy.wxs.qq.com, reject
 # HOST,wxsnsdythumb.wxs.qq.com, reject
+# > 腾讯 无法使用的推送服务
+HOST, tpns.qq.com, REJECT
 # > 腾讯视频
 host-suffix, tetrack.qq.com, reject
 host-suffix, tpns.tencent.com, reject
@@ -1181,6 +1230,13 @@ HOST,yt-adp.nosdn.127.net, reject
 HOST,yt-adp.ws.126.net, reject
 # > 网易云
 host-keyword, ossgw.alicdn.com, reject
+# 网易云音乐
+HOST, gdt.qq.com, REJECT
+HOST, httpdns.n.netease.com, REJECT
+HOST, iadmat.nosdn.127.net, REJECT
+HOST, iadmusicmat.music.126.net, REJECT
+HOST, iadmusicmatvideo.music.126.net, REJECT
+HOST-SUFFIX, 163jiasu.com, REJECT
 # > 微软
 HOST-SUFFIX,ads.msn.com, reject
 HOST-SUFFIX,ads1.msn.com, reject
@@ -1251,6 +1307,7 @@ HOST,ads-video-qc.xhscdn.com, reject
 HOST,t-ads.xiaohongshu.com, reject
 # > 小米
 HOST,data.mistat.xiaomi.com, reject
+HOST, sdkconfig.ad.xiaomi.com, REJECT
 HOST,tracking.intl.miui.com, reject
 # > 小小影视
 host,39d83s.com, reject
