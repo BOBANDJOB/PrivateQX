@@ -386,6 +386,9 @@ HOST-KEYWORD, adservice.google.com., REJECT
 
 
 # >>>>>>>>>>>>>>> ✅ G ✅ <<<<<<<<<<<<<<
+# > 广州地铁乘车码 #多个广告 感谢CtrlMusic🐓分享
+host, apis.alenable.com, reject
+
 # > GozenData
 # https://www.v2ex.com/t/772523, reject
 HOST-SUFFIX,gozendata.com, reject
