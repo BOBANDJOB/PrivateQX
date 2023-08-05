@@ -21,7 +21,6 @@ HOST-SUFFIX, intercom.io
 HOST-SUFFIX, intercomcdn.com
 HOST-KEYWORD, openai
 # 谷歌bard及其它
-HOST-SUFFIX, anthropic.com
 HOST, bard.google.com
 HOST-SUFFIX, poe.com
 HOST-SUFFIX, stripe.com
