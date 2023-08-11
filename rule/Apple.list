@@ -12,6 +12,11 @@ HOST-SUFFIX, ads.internal.unity3d.com, Apple Update
 HOST-SUFFIX, ads.prd.ie.internal.unity3d.com, Apple Update
 HOST-SUFFIX, unityads.unity3d.com, Apple Update
 
+# > 苹果商店
+HOST, apps.apple.com, SS_HK
+HOST, iosapps.itunes.apple.com, SS_HK
+HOST, itunes.apple.com, SS_HK
+
 # > 苹果推送服务
 host-keyword, push.apple.com, Apple
 # > 苹果时间同步
