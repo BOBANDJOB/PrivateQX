@@ -69,7 +69,8 @@ host, ad.12306.cn, direct
 
 
 # >>>>>>>>>>>>>>> ✅ B ✅ <<<<<<<<<<<<<<
-
+# > 哔咔广告
+host, ad-channel.wikawika.xyz, reject
 
 
 # >>>>>>>>>>>>>>> ✅ C ✅ <<<<<<<<<<<<<<
