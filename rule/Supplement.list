@@ -7,21 +7,7 @@
 # > "reject-dict"   策略返回 HTTP 状态码 200,同时附带一个空的 JSON 对象
 # > "reject-array"  策略返回 HTTP 状态码 200,同时附带一个空的 JSON 数组
 #############################################
-# LAN
-host-suffix, local, direct
-host-keyword, merlinblog, Available
-ip-cidr, 10.0.0.0/8, direct
-ip-cidr, 17.0.0.0/8, direct
-ip-cidr, 100.64.0.0/10, direct
-ip-cidr, 127.0.0.0/8, direct
-ip-cidr, 172.16.0.0/12, direct
-ip-cidr, 192.168.0.0/16, direct
-# > 路由器后台
-ip-cidr, 192.168.0.1/24, direct
-# > 天翼网关
-ip-cidr, 192.168.1.1/24, direct
-# > 其他分流修正
-host-keyword, anti-ad.net, direct
+
 
 # >>>>>>>>>>>>>>> ✅ 0 ✅ <<<<<<<<<<<<<<
 
@@ -65,8 +51,23 @@ host, ad.12306.cn, direct
 
 
 # >>>>>>>>>>>>>>> ✅ A ✅ <<<<<<<<<<<<<<
+# > anti-ad
+host-keyword, anti-ad.net, direct
 
-
+# > 爱影视  #分流修正 #欢迎大家补充
+host,static.jssp.tv, direct
+host,lain.bgm.tv, direct
+host,tiao.cjkypo.com, direct
+host,ok.zuidapic.com, direct
+host,ts.thefilehosting.com, direct
+host,deo.shopeemobile.com, direct
+host,m3u8.255tv.tk, direct
+host,m3u8.mstopq.com, direct
+host,ain.bgm.tv, direct
+host-keyword,vip.lz-cdn, direct
+host-keyword,ax1x.com, direct
+host-keyword,o.lencr.org, direct
+host-keyword,ttcdn-tos.kkimg.cc, direct
 
 # >>>>>>>>>>>>>>> ✅ B ✅ <<<<<<<<<<<<<<
 # > 哔咔广告
@@ -78,7 +79,20 @@ host, ad-channel.wikawika.xyz, reject
 
 
 # >>>>>>>>>>>>>>> ✅ D ✅ <<<<<<<<<<<<<<
-
+# > 大师兄影视  #分流修正 #欢迎大家补充
+host,sdk.alibaba.com.ailbaba.me, direct
+host,img.ffzypic.com, direct
+host,img.liangzipic.com, direct
+host,img.bfzypic.com, direct
+host,img.kuaikanzy.net, direct
+host,vip.imgffzy.com, direct
+host,vip.ffzyread.com, direct
+host,cdn.jsdelivr.net, direct
+host,image.maimn.com, direct
+host-keyword,bfzycdn.com, direct
+host-keyword,vip.kuaikan-cdn, direct
+host-keyword,vip.ffzy-play, direct
+host-keyword,vip.ffzy-online, direct
 
 
 # >>>>>>>>>>>>>>> ✅ E ✅ <<<<<<<<<<<<<<
@@ -119,7 +133,22 @@ host, 155.fun, Available
 
 
 # >>>>>>>>>>>>>>> ✅ L ✅ <<<<<<<<<<<<<<
-
+# > LAN
+host-suffix, local, direct
+# 私有网络
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 192.168.0.0/16, direct
+# 运营商级NAT
+ip-cidr, 100.64.0.0/10, direct
+# 环回地址
+ip-cidr, 127.0.0.0/8, direct
+# 多播传输
+ip-cidr, 224.0.0.0/24, direct
+# 苹果服务
+ip-cidr, 17.0.0.0/8, direct
+# 腾讯游戏
+ip-cidr, 182.254.116.0/24, direct
 
 
 # >>>>>>>>>>>>>>> ✅ M ✅ <<<<<<<<<<<<<<
@@ -197,7 +226,10 @@ host, xiaobaotv.net, SS_HK
 
 
 # >>>>>>>>>>>>>>> ✅ 其他 ✅ <<<<<<<<<<<<<<
-
+# > 路由器后台
+ip-cidr, 192.168.0.1/24, direct
+# > 天翼网关
+ip-cidr, 192.168.1.1/24, direct
 
 
 
