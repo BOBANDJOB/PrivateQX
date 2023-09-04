@@ -23,7 +23,7 @@ host, ppq.apple.com, HK节点
 
 
 # > 苹果facetime
-host, gs-loc-cn.apple.com, HK节点
+host, gs-loc-cn.apple.com, SS_HK
 
 
 # > 苹果推送服务
