@@ -22,9 +22,11 @@ host-suffix, mzstatic.com, HK节点
 host, ppq.apple.com, HK节点
 
 
-# > 苹果facetime
-host, gs-loc-cn.apple.com, SS_HK
-
+# > 苹果facetime和iMessage
+host-suffix, ess.apple.com, HK节点
+host, service.ess.apple.com, HK节点
+host, init.ess.apple.com, HK节点
+host, static.ess.apple.com, HK节点
 
 # > 苹果推送服务
 host-keyword, push.apple.com, Apple
