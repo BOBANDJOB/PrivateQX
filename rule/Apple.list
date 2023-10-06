@@ -15,11 +15,11 @@ HOST-SUFFIX, unityads.unity3d.com, Apple Update
 
 
 # > 苹果商店
-host-suffix, itunes.apple.com, HK节点
-host-suffix, apps.apple.com, HK节点
-host, iosapps.itunes.apple.com, HK节点
-host-suffix, mzstatic.com, HK节点
-host, ppq.apple.com, HK节点
+host-suffix, itunes.apple.com, Available
+host-suffix, apps.apple.com, Available
+host, iosapps.itunes.apple.com, Available
+host-suffix, mzstatic.com, Available
+host, ppq.apple.com, Available
 
 
 # > 苹果facetime和iMessage
