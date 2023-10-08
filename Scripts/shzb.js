@@ -3,7 +3,7 @@ var objc = JSON.parse($response.body);
 objc = {
   "status" : true,
   "ad" : {
-    "active" : true,
+    "active" : false,
     "info" : {
       "aid" : "ad_1018",
       "close_forever" : true
