@@ -94,7 +94,8 @@ host-keyword,bfzycdn.com, direct
 host-keyword,vip.kuaikan-cdn, direct
 host-keyword,vip.ffzy-play, direct
 host-keyword,vip.ffzy-online, direct
-
+# 第一动漫
+host, d1-dm.online, SS_HK
 
 # >>>>>>>>>>>>>>> ✅ E ✅ <<<<<<<<<<<<<<
 # > e-hantai
