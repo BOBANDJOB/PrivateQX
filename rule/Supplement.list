@@ -161,6 +161,7 @@ ip-cidr, 182.254.116.0/24, direct
 # > 漫画
 host-suffix, 18comic.org, SS_HK
 host-suffix, 18comic.vip, SS_HK
+host-suffix, mangafunc.fun, SS_HK
 host-keyword, copymanga, SS_HK
 host-suffix, mangafuna.xyz, SS_HK
 host, api.tipatipa.xyz, SS_HK
