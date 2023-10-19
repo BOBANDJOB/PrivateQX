@@ -169,6 +169,7 @@ host-suffix, mangafuna.xyz, SS_HK
 host, api.tipatipa.xyz, SS_HK
 host, api.mangacopy.com, SS_HK
 host, pica-web.wakamoment.tk, SS_HK
+host, cdn.xsskc.com, SS_HK
 
 # > 漫画星球App
 host-suffix, chuangke.tv, direct
