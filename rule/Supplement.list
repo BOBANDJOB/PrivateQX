@@ -70,8 +70,7 @@ host-keyword,o.lencr.org, direct
 host-keyword,ttcdn-tos.kkimg.cc, direct
 
 # >>>>>>>>>>>>>>> ✅ B ✅ <<<<<<<<<<<<<<
-# > 哔咔广告
-host, ad-channel.wikawika.xyz, reject
+
 
 
 # >>>>>>>>>>>>>>> ✅ C ✅ <<<<<<<<<<<<<<
@@ -98,8 +97,6 @@ host-keyword,vip.ffzy-online, direct
 host, d1-dm.online, SS_HK
 
 # >>>>>>>>>>>>>>> ✅ E ✅ <<<<<<<<<<<<<<
-# > e-hantai
-host, exhentai.org, US节点
 
 
 # >>>>>>>>>>>>>>> ✅ F ✅ <<<<<<<<<<<<<<
@@ -161,15 +158,23 @@ ip-cidr, 182.254.116.0/24, direct
 
 # >>>>>>>>>>>>>>> ✅ M ✅ <<<<<<<<<<<<<<
 # > 漫画
+# e-hantai
+host, exhentai.org, US节点
+# 禁漫天堂
 host-suffix, 18comic.org, SS_HK
 host-suffix, 18comic.vip, SS_HK
+# copymanga
 host-suffix, mangafunc.fun, SS_HK
 host-keyword, copymanga, SS_HK
 host-suffix, mangafuna.xyz, SS_HK
-host, api.tipatipa.xyz, SS_HK
 host, api.mangacopy.com, SS_HK
-host, pica-web.wakamoment.tk, SS_HK
 host, cdn.xsskc.com, SS_HK
+# 哔咔
+host, ad-channel.wikawika.xyz, reject
+host, pica-web.wakamoment.tk, SS_HK
+host, api.tipatipa.xyz, SS_HK
+host-suffix, diwodiwo.xyz, SS_HK
+host-suffix, picacomic.com, SS_HK
 
 # > 漫画星球App
 host-suffix, chuangke.tv, direct
