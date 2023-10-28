@@ -7,6 +7,8 @@
 # "reject-img"    策略返回 HTTP 状态码 200,同时附带 1px gif
 # "reject-dict"   策略返回 HTTP 状态码 200,同时附带一个空的 JSON 对象
 # "reject-array"  策略返回 HTTP 状态码 200,同时附带一个空的 JSON 数组
+# 1.2.3.4/24      /24表示网络的子网掩码长度，即前24位是网络部分，后8位是主机部分。这种表示法常用于描述特定范围内的IP地址
+# 6.7.8.9/32      /32表示整个32位的IP地址都用于表示这一个地址，即单独的一个IP地址
 #############################################
 
 
@@ -885,10 +887,6 @@ host-suffix, v.gdt.qq.com, reject
 # > soul
 host, soul-ad.soulapp.cn, reject
 host, ad-r.soulapp.cn, reject
-host, ssp.soulapp.cn, reject
-host, insight.soulapp.cn, reject
-host, increase-openapi.soulapp.cn, reject
-host, media-service.soulapp.cn, reject
 
 # > Snapchat
 host, ads.snapchat.com, reject
