@@ -109,9 +109,9 @@ host-suffix, freeok.vip, direct
 host, www.google.com, GoogleSearch
 
 # > Goodnotes6
-host-suffix, goodnotes.email, US节点
-host-suffix, goodnotescloud.com, US节点
-host-suffix, goodnotes.com, US节点
+host-suffix, goodnotes.email, US
+host-suffix, goodnotescloud.com, US
+host-suffix, goodnotes.com, US
 
 
 # >>>>>>>>>>>>>>> ✅ H ✅ <<<<<<<<<<<<<<
@@ -129,7 +129,7 @@ host, 155.fun, Available
 
 # >>>>>>>>>>>>>>> ✅ J ✅ <<<<<<<<<<<<<<
 # > JavDB
-host, api.liquidlink.cn, HK节点
+host, api.liquidlink.cn, HK
 
 
 
@@ -159,7 +159,7 @@ ip-cidr, 182.254.116.0/24, direct
 # >>>>>>>>>>>>>>> ✅ M ✅ <<<<<<<<<<<<<<
 # > 漫画
 # e-hantai
-host, exhentai.org, US节点
+host, exhentai.org, US
 # 禁漫天堂
 host-suffix, 18comic.org, SS_HK
 host-suffix, 18comic.vip, SS_HK
@@ -203,16 +203,26 @@ host-keyword, ctc.qzs.qzone.qq.com, direct
 
 # >>>>>>>>>>>>>>> ✅ R ✅ <<<<<<<<<<<<<<
 # > reddit
-host-suffix, reddit.com, US节点
+host-suffix, reddit.com, US
 
 
 # >>>>>>>>>>>>>>> ✅ S ✅ <<<<<<<<<<<<<<
 # > suppercell
 host-suffix, supercell.com, SS_HK
 
+# > 神户直播
+ip-cidr, 18.143.209.231/32, HK
+host-suffix, changjiangjin.com, HK
+host-suffix, heshuangde.com, HK
+host-suffix, lyjinaojixie.com, HK
 
 # >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
-
+# > Talkatone
+host-suffix, tktn.be, SS_US
+IP-CIDR, 50.117.27.0/24, SS_US
+IP-CIDR, 69.46.75.0/24, SS_US
+IP-CIDR, 205.164.56.29/24, SS_US
+IP-CIDR, 63.251.124.0/24, SS_US
 
 
 # >>>>>>>>>>>>>>> ✅ U ✅ <<<<<<<<<<<<<<
