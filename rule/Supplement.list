@@ -237,7 +237,7 @@ IP-CIDR, 63.251.124.0/24, SS_US
 # > 微博
 HOST,sdkapp.uve.weibo.com, direct
 
-# > 豌豆Pro
+# > 豌豆Pro影视
 host, www.wandou.la, direct
 
 # >>>>>>>>>>>>>>> ✅ X ✅ <<<<<<<<<<<<<<
