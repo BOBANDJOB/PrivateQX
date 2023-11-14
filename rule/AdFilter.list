@@ -1,4 +1,4 @@
-#!name=广告拦截合集
+#!name=广告拦截合集-分流
 #!desc=(F)针对部分APP开屏广告，应用内广告进行拦截，某些APP要清除缓存或者重新安装APP，拦截广告才会生效！
 #!proxy-select：reject
 #############################################
@@ -7374,7 +7374,6 @@ host-suffix, pp9899.com, reject
 host-suffix, ppjia55.com, reject
 host-suffix, ppoi.org, reject
 host-suffix, ppurifier.game.xiaomi.com, reject
-host-suffix, ppx.hgo7r.cn, reject
 host-suffix, pr.atwola.com, reject
 host-suffix, pr.da.netease.com, reject
 host-suffix, pr.ybp.yahoo.com, reject
