@@ -79,6 +79,9 @@ host-suffix, clashroyale.com, SS_HK
 host-suffix, clashroyaleapp.com, SS_HK
 
 # >>>>>>>>>>>>>>> ✅ D ✅ <<<<<<<<<<<<<<
+# > 抖音开屏
+host-keyword, asiad.byteactivity, reject
+
 # > 大师兄影视  #分流修正 #欢迎大家补充
 host, sdk.alibaba.com.ailbaba.me, direct
 host, img.ffzypic.com, direct
@@ -217,6 +220,10 @@ host-suffix, heshuangde.com, HK
 host-suffix, lyjinaojixie.com, HK
 
 # >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
+# > terabox网盘
+host, www.terabox.com, Available
+host-suffix, 1024tera.com, Available
+
 # > Talkatone
 host-suffix, tktn.be, SS_US
 IP-CIDR, 50.117.27.0/24, SS_US
