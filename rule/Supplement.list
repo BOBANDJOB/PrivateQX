@@ -74,6 +74,9 @@ host-keyword, ttcdn-tos.kkimg.cc, direct
 
 
 # >>>>>>>>>>>>>>> ✅ C ✅ <<<<<<<<<<<<<<
+# > 插件网站
+host-suffix, crxsoso.com, HK
+
 # > ClashRoyale
 host-suffix, clashroyale.com, SS_HK
 host-suffix, clashroyaleapp.com, SS_HK
@@ -134,7 +137,8 @@ host, 155.fun, Available
 # > JavDB
 host, api.liquidlink.cn, HK
 
-
+# > JapanAV
+host, av.jkforum.net, SS_HK
 
 # >>>>>>>>>>>>>>> ✅ K ✅ <<<<<<<<<<<<<<
 
