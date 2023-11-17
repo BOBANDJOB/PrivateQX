@@ -1,11 +1,11 @@
 ################################################################
 # > 自用分流补充
 #############################################
-# > "reject"        策略返回 HTTP 状态码 404,不附带任何额外内容
-# > "reject-200"    策略返回 HTTP 状态码 200,不附带任何额外内容
-# > "reject-img"    策略返回 HTTP 状态码 200,同时附带 1px gif
-# > "reject-dict"   策略返回 HTTP 状态码 200,同时附带一个空的 JSON 对象
-# > "reject-array"  策略返回 HTTP 状态码 200,同时附带一个空的 JSON 数组
+# > "reject"        策略返回 HTTP 状态码 404, 不附带任何额外内容
+# > "reject-200"    策略返回 HTTP 状态码 200, 不附带任何额外内容
+# > "reject-img"    策略返回 HTTP 状态码 200, 同时附带 1px gif
+# > "reject-dict"   策略返回 HTTP 状态码 200, 同时附带一个空的 JSON 对象
+# > "reject-array"  策略返回 HTTP 状态码 200, 同时附带一个空的 JSON 数组
 #############################################
 
 
@@ -55,19 +55,19 @@ host, ad.12306.cn, direct
 host-keyword, anti-ad.net, direct
 
 # > 爱影视  #分流修正 #欢迎大家补充
-host,static.jssp.tv, direct
-host,lain.bgm.tv, direct
-host,tiao.cjkypo.com, direct
-host,ok.zuidapic.com, direct
-host,ts.thefilehosting.com, direct
-host,deo.shopeemobile.com, direct
-host,m3u8.255tv.tk, direct
-host,m3u8.mstopq.com, direct
-host,ain.bgm.tv, direct
-host-keyword,vip.lz-cdn, direct
-host-keyword,ax1x.com, direct
-host-keyword,o.lencr.org, direct
-host-keyword,ttcdn-tos.kkimg.cc, direct
+host, static.jssp.tv, direct
+host, lain.bgm.tv, direct
+host, tiao.cjkypo.com, direct
+host, ok.zuidapic.com, direct
+host, ts.thefilehosting.com, direct
+host, deo.shopeemobile.com, direct
+host, m3u8.255tv.tk, direct
+host, m3u8.mstopq.com, direct
+host, ain.bgm.tv, direct
+host-keyword, vip.lz-cdn, direct
+host-keyword, ax1x.com, direct
+host-keyword, o.lencr.org, direct
+host-keyword, ttcdn-tos.kkimg.cc, direct
 
 # >>>>>>>>>>>>>>> ✅ B ✅ <<<<<<<<<<<<<<
 
@@ -80,19 +80,19 @@ host-suffix, clashroyaleapp.com, SS_HK
 
 # >>>>>>>>>>>>>>> ✅ D ✅ <<<<<<<<<<<<<<
 # > 大师兄影视  #分流修正 #欢迎大家补充
-host,sdk.alibaba.com.ailbaba.me, direct
-host,img.ffzypic.com, direct
-host,img.liangzipic.com, direct
-host,img.bfzypic.com, direct
-host,img.kuaikanzy.net, direct
-host,vip.imgffzy.com, direct
-host,vip.ffzyread.com, direct
-host,cdn.jsdelivr.net, direct
-host,image.maimn.com, direct
-host-keyword,bfzycdn.com, direct
-host-keyword,vip.kuaikan-cdn, direct
-host-keyword,vip.ffzy-play, direct
-host-keyword,vip.ffzy-online, direct
+host, sdk.alibaba.com.ailbaba.me, direct
+host, img.ffzypic.com, direct
+host, img.liangzipic.com, direct
+host, img.bfzypic.com, direct
+host, img.kuaikanzy.net, direct
+host, vip.imgffzy.com, direct
+host, vip.ffzyread.com, direct
+host, cdn.jsdelivr.net, direct
+host, image.maimn.com, direct
+host-keyword, bfzycdn.com, direct
+host-keyword, vip.kuaikan-cdn, direct
+host-keyword, vip.ffzy-play, direct
+host-keyword, vip.ffzy-online, direct
 # 第一动漫
 host, d1-dm.online, SS_HK
 
@@ -235,7 +235,7 @@ IP-CIDR, 63.251.124.0/24, SS_US
 
 # >>>>>>>>>>>>>>> ✅ W ✅ <<<<<<<<<<<<<<
 # > 微博
-HOST,sdkapp.uve.weibo.com, direct
+HOST, sdkapp.uve.weibo.com, direct
 
 # > 豌豆Pro影视
 host, www.wandou.la, direct
