@@ -23,10 +23,10 @@ host, ppq.apple.com, Available
 
 
 # > 苹果facetime和iMessage
-host-suffix, ess.apple.com, direct
-host, service.ess.apple.com, direct
-host, init.ess.apple.com, direct
-host, static.ess.apple.com, direct
+host-suffix, ess.apple.com, Apple
+host, service.ess.apple.com, Apple
+host, init.ess.apple.com, Apple
+host, static.ess.apple.com, Apple
 
 # > 苹果推送服务
 host-keyword, push.apple.com, Apple
