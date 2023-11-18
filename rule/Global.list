@@ -165,7 +165,6 @@ HOST-SUFFIX,6park.com
 HOST-SUFFIX,6parkbbs.com
 HOST-SUFFIX,6parker.com
 HOST-SUFFIX,6parknews.com
-HOST-SUFFIX,7-zip.org
 HOST-SUFFIX,7capture.com
 HOST-SUFFIX,7cow.com
 HOST-SUFFIX,8-d.com
@@ -344,6 +343,7 @@ HOST-SUFFIX,animecrazy.net
 HOST-SUFFIX,aniscartujo.com
 HOST-SUFFIX,annatam.com
 HOST-SUFFIX,anobii.com
+HOST-SUFFIX,anonfiles.com
 HOST-SUFFIX,anontext.com
 HOST-SUFFIX,anonymitynetwork.com
 HOST-SUFFIX,anonymizer.com
@@ -991,7 +991,7 @@ HOST-SUFFIX,civilhrfront.org
 HOST-SUFFIX,civiliangunner.com
 HOST-SUFFIX,civilmedia.tw
 HOST-SUFFIX,civisec.org
-HOST-SUFFIX,cjb.net
+HOST-SUFFIX,civitai.com
 HOST-SUFFIX,ck101.com
 HOST-SUFFIX,clarionproject.org
 HOST-SUFFIX,classicalguitarblog.net
@@ -1009,6 +1009,7 @@ HOST-SUFFIX,cloakpoint.com
 HOST-SUFFIX,cloudcone.com
 HOST-SUFFIX,cloudflare-ipfs.com
 HOST-SUFFIX,cloudfront.net
+HOST-SUFFIX,cloudfunctions.net
 HOST-SUFFIX,club1069.com
 HOST-SUFFIX,clubhouseapi.com
 HOST-SUFFIX,clyp.it
@@ -1295,6 +1296,7 @@ HOST-SUFFIX,dnset.com
 HOST-SUFFIX,dnsrd.com
 HOST-SUFFIX,dnssec.net
 HOST-SUFFIX,dnvod.tv
+HOST-SUFFIX,docker.com
 HOST-SUFFIX,doctorvoice.org
 HOST-SUFFIX,documentingreality.com
 HOST-SUFFIX,dogfartnetwork.com
@@ -2001,6 +2003,7 @@ HOST-SUFFIX,go141.com
 HOST-SUFFIX,goagent.biz
 HOST-SUFFIX,goagentplus.com
 HOST-SUFFIX,gobet.cc
+HOST-SUFFIX,godaddy.com
 HOST-SUFFIX,godfootsteps.org
 HOST-SUFFIX,godns.work
 HOST-SUFFIX,godoc.org
@@ -2307,6 +2310,7 @@ HOST-SUFFIX,greenpeace.org
 HOST-SUFFIX,greenreadings.com
 HOST-SUFFIX,greenvpn.net
 HOST-SUFFIX,greenvpn.org
+HOST-SUFFIX,grindr.com
 HOST-SUFFIX,grotty-monday.com
 HOST-SUFFIX,grow.google
 HOST-SUFFIX,gs-discuss.com
@@ -2687,6 +2691,7 @@ HOST-SUFFIX,imagezilla.net
 HOST-SUFFIX,imb.org
 HOST-SUFFIX,imdb.com
 HOST-SUFFIX,img.ly
+HOST-SUFFIX,imgasd.com
 HOST-SUFFIX,imgchili.net
 HOST-SUFFIX,imgmega.com
 HOST-SUFFIX,imgur.com
@@ -2783,6 +2788,7 @@ HOST-SUFFIX,itaiwan.gov.tw
 HOST-SUFFIX,italiatibet.org
 HOST-SUFFIX,itasoftware.com
 HOST-SUFFIX,itemdb.com
+HOST-SUFFIX,itemfix.com
 HOST-SUFFIX,ithome.com.tw
 HOST-SUFFIX,itsaol.com
 HOST-SUFFIX,itshidden.com
@@ -3038,6 +3044,7 @@ HOST-SUFFIX,lbank.info
 HOST-SUFFIX,le-vpn.com
 HOST-SUFFIX,leafyvpn.net
 HOST-SUFFIX,lecloud.net
+HOST-SUFFIX,ledger.com
 HOST-SUFFIX,leeao.com.cn
 HOST-SUFFIX,lefora.com
 HOST-SUFFIX,left21.hk
@@ -3065,6 +3072,7 @@ HOST-SUFFIX,lflinkup.org
 HOST-SUFFIX,lfpcontent.com
 HOST-SUFFIX,lhakar.org
 HOST-SUFFIX,lhasocialwork.org
+HOST-SUFFIX,li.taipei
 HOST-SUFFIX,liangyou.net
 HOST-SUFFIX,liangzhichuanmei.com
 HOST-SUFFIX,lianyue.net
@@ -3170,6 +3178,7 @@ HOST-SUFFIX,lyfhk.net
 HOST-SUFFIX,lzjscript.com
 HOST-SUFFIX,lzmtnews.org
 HOST-SUFFIX,m-sport.co.uk
+HOST-SUFFIX,m-team.cc
 HOST-SUFFIX,m.me
 HOST-SUFFIX,macgamestore.com
 HOST-SUFFIX,macrovpn.com
@@ -3375,6 +3384,7 @@ HOST-SUFFIX,monar.ch
 HOST-SUFFIX,mondex.org
 HOST-SUFFIX,money-link.com.tw
 HOST-SUFFIX,moneyhome.biz
+HOST-SUFFIX,monica.im
 HOST-SUFFIX,monitorchina.org
 HOST-SUFFIX,monitorware.com
 HOST-SUFFIX,monlamit.org
@@ -3747,6 +3757,7 @@ HOST-SUFFIX,okk.tw
 HOST-SUFFIX,okx.com
 HOST-SUFFIX,olabloga.pl
 HOST-SUFFIX,old-cat.net
+HOST-SUFFIX,olehdtv.com
 HOST-SUFFIX,olevod.com
 HOST-SUFFIX,olumpo.com
 HOST-SUFFIX,olympicwatch.org
@@ -3843,9 +3854,9 @@ HOST-SUFFIX,pacificpoker.com
 HOST-SUFFIX,packetix.net
 HOST-SUFFIX,pacopacomama.com
 HOST-SUFFIX,padmanet.com
+HOST-SUFFIX,page.link
 HOST-SUFFIX,page.tl
 HOST-SUFFIX,page2rss.com
-HOST-SUFFIX,pages.dev
 HOST-SUFFIX,pagodabox.com
 HOST-SUFFIX,palacemoon.com
 HOST-SUFFIX,paldengyal.com
@@ -3988,6 +3999,7 @@ HOST-SUFFIX,pobieramy.top
 HOST-SUFFIX,podbean.com
 HOST-SUFFIX,podcast.co
 HOST-SUFFIX,podictionary.com
+HOST-SUFFIX,poe.com
 HOST-SUFFIX,pokerstars.com
 HOST-SUFFIX,pokerstars.net
 HOST-SUFFIX,pokerstrategy.com
@@ -5080,7 +5092,6 @@ HOST-SUFFIX,tpi.org.tw
 HOST-SUFFIX,tracfone.com
 HOST-SUFFIX,tradingview.com
 HOST-SUFFIX,translate.goog
-HOST-SUFFIX,translate.google
 HOST-SUFFIX,transparency.org
 HOST-SUFFIX,treemall.com.tw
 HOST-SUFFIX,trendsmap.com
@@ -5739,6 +5750,7 @@ HOST-SUFFIX,xiaod.in
 HOST-SUFFIX,xiaohexie.com
 HOST-SUFFIX,xiaolan.me
 HOST-SUFFIX,xiaoma.org
+HOST-SUFFIX,xiaomi.eu
 HOST-SUFFIX,xiaxiaoqiang.net
 HOST-SUFFIX,xiezhua.com
 HOST-SUFFIX,xihua.es
@@ -6140,6 +6152,10 @@ IP-CIDR,119.235.236.0/23,no-resolve
 IP-CIDR,147.92.128.0/17,no-resolve
 IP-CIDR,203.104.128.0/19,no-resolve
 
+# Oracle Cloud
+HOST,cloud.oracle.com
+HOST-SUFFIX,oraclecloud.com
+
 # OneDrive
 HOST-KEYWORD,1drv
 HOST-KEYWORD,onedrive
@@ -6205,7 +6221,6 @@ HOST-SUFFIX,steamserver.net
 HOST-SUFFIX,steamstatic.com
 HOST-SUFFIX,steamstat.us
 HOST,steambroadcast.akamaized.net
-HOST,steamcdn-a.akamaihd.net
 HOST,steamcommunity-a.akamaihd.net
 HOST,steamstore-a.akamaihd.net
 HOST,steamusercontent-a.akamaihd.net
