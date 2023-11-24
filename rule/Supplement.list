@@ -136,6 +136,7 @@ host, 155.fun, Available
 # >>>>>>>>>>>>>>> ✅ J ✅ <<<<<<<<<<<<<<
 # > JavDB
 host, api.liquidlink.cn, HK
+host, jdforrepam.com, HK
 
 # > JapanAV
 host, av.jkforum.net, SS_HK
@@ -207,6 +208,8 @@ host-suffix, mypikpak.com, Available
 # > QQ空间
 host-keyword, ctc.qzs.qzone.qq.com, direct
 
+# > QQ音乐开屏
+host, us.l.qq.com, reject
 
 # >>>>>>>>>>>>>>> ✅ R ✅ <<<<<<<<<<<<<<
 
@@ -223,6 +226,9 @@ host-suffix, heshuangde.com, HK
 host-suffix, lyjinaojixie.com, HK
 
 # >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
+# > 糖心VLOG
+ip-cidr, 172.233.81.206/32, direct
+
 # > terabox网盘
 host, www.terabox.com, Available
 host-suffix, 1024tera.com, Available
