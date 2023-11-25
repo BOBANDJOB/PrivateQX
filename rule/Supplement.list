@@ -234,6 +234,8 @@ host, www.terabox.com, Available
 host-suffix, 1024tera.com, Available
 
 # > Talkatone
+# 内部广告域名
+host, creatives.smadex.com, reject
 host-suffix, tktn.be, SS_US
 IP-CIDR, 50.117.27.0/24, SS_US
 IP-CIDR, 69.46.75.0/24, SS_US
