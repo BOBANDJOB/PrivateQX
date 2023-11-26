@@ -8,5 +8,5 @@ hostname = welfare.yuheng.best
 
 */
 var objc = JSON.parse($response.body);
-objc.data.adsTimeLongVideo = 0;
+objc.data.adsTimeLongVideo = 1;
 $done({body : JSON.stringify(objc)})
