@@ -226,9 +226,6 @@ host-suffix, heshuangde.com, HK
 host-suffix, lyjinaojixie.com, HK
 
 # >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
-# > 糖心VLOG
-ip-cidr, 172.233.81.206/32, direct
-
 # > terabox网盘
 host, www.terabox.com, Available
 host-suffix, 1024tera.com, Available
@@ -273,7 +270,9 @@ host, hub5emu.v6.shub.sandai.net, reject
 host, hub5btmain.v6.shub.sandai.net, reject
 
 # >>>>>>>>>>>>>>> ✅ Y ✅ <<<<<<<<<<<<<<
-
+# > yqc破解
+# 糖心VLOG,泡芙短视频
+ip-cidr, 172.233.81.206/32, direct
 
 
 # >>>>>>>>>>>>>>> ✅ Z ✅ <<<<<<<<<<<<<<
