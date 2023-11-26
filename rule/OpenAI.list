@@ -2,6 +2,7 @@
 # platform.openai使用US节点
 host, platform.openai.com, SS_US
 # 防止匹配到Global分流的chat.openai.com
+HOST-SUFFIX, chat.openai.com, OpenAI
 HOST-SUFFIX, openaiapi-site.azureedge.net, OpenAI
 HOST-SUFFIX, openaicom.imgix.net, OpenAI
 HOST-SUFFIX, ai.com, OpenAI
