@@ -176,7 +176,6 @@ host-keyword, copymanga, SS_HK
 host-suffix, mangafuna.xyz, SS_HK
 host, api.mangacopy.com, SS_HK
 host, cdn.xsskc.com, SS_HK
-host, ulogs.umeng.com, SS_HK
 # 哔咔
 host, ad-channel.wikawika.xyz, reject
 host, pica-web.wakamoment.tk, SS_HK
