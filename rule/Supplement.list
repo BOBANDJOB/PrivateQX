@@ -80,6 +80,9 @@ host-suffix, crxsoso.com, direct
 host-suffix, clashroyale.com, SS_HK
 host-suffix, clashroyaleapp.com, SS_HK
 
+# > 菜鸟新建地址
+host-suffix, mmstat.com, direct
+
 # >>>>>>>>>>>>>>> ✅ D ✅ <<<<<<<<<<<<<<
 # > 抖音开屏
 host-keyword, asiad.byteactivity, reject
