@@ -113,7 +113,10 @@ host-suffix, freeok.vip, direct
 
 
 # >>>>>>>>>>>>>>> ✅ G ✅ <<<<<<<<<<<<<<
-# > Google搜索不用韩国节点
+# > Google 
+# Gemini
+host,alkalimakersuite-pa.clients6.google.com,OpenAI
+# Google搜索不用韩国节点
 host, www.google.com, GoogleSearch
 
 # > Goodnotes6
