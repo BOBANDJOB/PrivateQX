@@ -84,8 +84,11 @@ host-suffix, clashroyaleapp.com, SS_HK
 host-suffix, mmstat.com, direct
 
 # >>>>>>>>>>>>>>> ✅ D ✅ <<<<<<<<<<<<<<
-# > 抖音开屏
+# > 抖音
+# 开屏
 host-keyword, asiad.byteactivity, reject
+# 登录设备管理
+host-suffix, bytegoofy.com, direct
 
 # > 大师兄影视  #分流修正 #欢迎大家补充
 host, sdk.alibaba.com.ailbaba.me, direct
