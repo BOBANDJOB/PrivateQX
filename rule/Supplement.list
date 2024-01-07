@@ -225,6 +225,9 @@ host, us.l.qq.com, reject
 
 
 # >>>>>>>>>>>>>>> ✅ S ✅ <<<<<<<<<<<<<<
+# > subStore
+host-suffix, vercel.app, Available
+
 # > suppercell
 host-suffix, supercell.com, SS_HK
 
