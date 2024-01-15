@@ -261,9 +261,6 @@ IP-CIDR, 63.251.124.0/24, SS_US
 
 
 # >>>>>>>>>>>>>>> ✅ W ✅ <<<<<<<<<<<<<<
-# > 微信支付
-host-suffix, s3.pstatp.com, direct
-
 # > 微博
 host, sdkapp.uve.weibo.com, direct
 
