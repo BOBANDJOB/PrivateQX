@@ -261,8 +261,11 @@ IP-CIDR, 63.251.124.0/24, SS_US
 
 
 # >>>>>>>>>>>>>>> ✅ W ✅ <<<<<<<<<<<<<<
+# > 微信支付
+host-suffix, s3.pstatp.com, direct
+
 # > 微博
-HOST, sdkapp.uve.weibo.com, direct
+host, sdkapp.uve.weibo.com, direct
 
 # > 豌豆Pro影视
 host, www.wandou.la, direct
