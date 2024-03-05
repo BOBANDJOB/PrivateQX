@@ -13,5 +13,5 @@ objc.data.hot_start_time_limit_minute = 1;
 objc.data.home_card_ad_closed_interval = 999999;
 objc.data.home_card_switch = 0;
 objc.data.home_card_ad_click_close_invalid = 0;
-objc.data.all_ad_close = 2;
+objc.data.all_ad_close = 1;
 $done({body : JSON.stringify(objc)})
