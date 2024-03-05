@@ -1,6 +1,6 @@
 /*
 关键数据
-^https:\/\/www\.terabox\.app\/api\/user\/getinfo\? url script-response-body https://raw.githubusercontent.com/BOBANDJOB/PrivateQX/main/Scripts/teraboxvip.js
+^https:\/\/www\.(1024tera|terabox)\.(com|app)\/api\/user\/getinfo\? url script-response-body https://raw.githubusercontent.com/BOBANDJOB/PrivateQX/main/Scripts/teraboxvip.js
 
 hostname = www.terabox.com, www.1024tera.com
 
