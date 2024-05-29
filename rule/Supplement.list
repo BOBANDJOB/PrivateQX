@@ -77,8 +77,8 @@ host-keyword, ttcdn-tos.kkimg.cc, direct
 host-suffix, crxsoso.com, direct
 
 # > ClashRoyale
-host-suffix, clashroyale.com, SS_HK
-host-suffix, clashroyaleapp.com, SS_HK
+host-suffix, clashroyale.com, HK
+host-suffix, clashroyaleapp.com, HK
 
 # > 菜鸟新建地址
 host-suffix, mmstat.com, direct
@@ -105,7 +105,7 @@ host-keyword, vip.kuaikan-cdn, direct
 host-keyword, vip.ffzy-play, direct
 host-keyword, vip.ffzy-online, direct
 # 第一动漫
-host, d1-dm.online, SS_HK
+host, d1-dm.online, HK
 
 # >>>>>>>>>>>>>>> ✅ E ✅ <<<<<<<<<<<<<<
 
@@ -134,7 +134,7 @@ host-suffix, goodnotes.com, US
 
 # >>>>>>>>>>>>>>> ✅ H ✅ <<<<<<<<<<<<<<
 # > 海角社区
-host-suffix, haijiao.com, SS_HK
+host-suffix, haijiao.com, HK
 
 # > 黑料社
 host, h7.zztt72.com, Available
@@ -154,7 +154,7 @@ host, api.liquidlink.cn, HK
 host, jdforrepam.com, HK
 
 # > JapanAV
-host, av.jkforum.net, SS_HK
+host, av.jkforum.net, HK
 
 # >>>>>>>>>>>>>>> ✅ K ✅ <<<<<<<<<<<<<<
 # > Keep 防闪退
@@ -186,22 +186,22 @@ ip-cidr, 182.254.116.0/24, direct
 # e-hantai
 host, exhentai.org, US
 # 禁漫天堂
-host-suffix, 18comic.org, SS_HK
-host-suffix, 18comic.vip, SS_HK
+host-suffix, 18comic.org, HK
+host-suffix, 18comic.vip, HK
 # copymanga
-host-suffix, mangafunc.fun, SS_HK
-host-keyword, copymanga, SS_HK
-host-suffix, mangafuna.xyz, SS_HK
-host, api.mangacopy.com, SS_HK
-host, cdn.xsskc.com, SS_HK
+host-suffix, mangafunc.fun, HK
+host-keyword, copymanga, HK
+host-suffix, mangafuna.xyz, HK
+host, api.mangacopy.com, HK
+host, cdn.xsskc.com, HK
 # 哔咔
 host, ad-channel.wikawika.xyz, reject
 host, ad-channel.diwodiwo.xyz, reject
 host, ad-display.diwodiwo.xyz, reject
-host, pica-web.wakamoment.tk, SS_HK
-host, api.tipatipa.xyz, SS_HK
-host-suffix, diwodiwo.xyz, SS_HK
-host-suffix, picacomic.com, SS_HK
+host, pica-web.wakamoment.tk, HK
+host, api.tipatipa.xyz, HK
+host-suffix, diwodiwo.xyz, HK
+host-suffix, picacomic.com, HK
 
 # > 漫画星球App
 host-suffix, chuangke.tv, direct
@@ -239,7 +239,7 @@ host, us.l.qq.com, reject
 host-suffix, vercel.app, Available
 
 # > suppercell
-host-suffix, supercell.com, SS_HK
+host-suffix, supercell.com, HK
 
 # > 神户直播
 ip-cidr, 18.143.209.231/32, HK
@@ -289,8 +289,8 @@ host-keyword, aw-s.tripcdn.com, direct
 host-keyword, trip.com, direct
 
 # > 小宝影院
-host, xiaoheimi.net, SS_HK
-host, xiaobaotv.net, SS_HK
+host, xiaoheimi.net, HK
+host, xiaobaotv.net, HK
 
 # > 避免迅雷版权问题
 host, hub5idx.v6.shub.sandai.net, reject
