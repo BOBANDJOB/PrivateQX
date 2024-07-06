@@ -69,7 +69,9 @@ host-keyword, o.lencr.org, direct
 host-keyword, ttcdn-tos.kkimg.cc, direct
 
 # >>>>>>>>>>>>>>> ✅ B ✅ <<<<<<<<<<<<<<
-
+# > 百度贴吧去开屏
+host, afd.baidu.com, reject
+host, mobads.baidu.com, reject
 
 
 # >>>>>>>>>>>>>>> ✅ C ✅ <<<<<<<<<<<<<<
