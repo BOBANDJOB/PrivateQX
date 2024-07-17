@@ -1,6 +1,6 @@
 # > OpenAI
 # platform.openai使用US节点
-HOST, platform.openai.com, US
+HOST, platform.openai.com, SelfNode
 # 防止匹配到Global分流的chat.openai.com
 HOST-SUFFIX, chat.openai.com, OpenAI
 
