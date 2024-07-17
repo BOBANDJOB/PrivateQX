@@ -79,8 +79,8 @@ host, mobads.baidu.com, reject
 host-suffix, crxsoso.com, direct
 
 # > ClashRoyale
-host-suffix, clashroyale.com, HK
-host-suffix, clashroyaleapp.com, HK
+host-suffix, clashroyale.com, Available
+host-suffix, clashroyaleapp.com, Available
 
 # > 菜鸟新建地址
 host-suffix, mmstat.com, direct
@@ -107,7 +107,7 @@ host-keyword, vip.kuaikan-cdn, direct
 host-keyword, vip.ffzy-play, direct
 host-keyword, vip.ffzy-online, direct
 # 第一动漫
-host, d1-dm.online, HK
+host, d1-dm.online, Available
 
 # >>>>>>>>>>>>>>> ✅ E ✅ <<<<<<<<<<<<<<
 
@@ -129,14 +129,14 @@ host,alkalimakersuite-pa.clients6.google.com,OpenAI
 host, www.google.com, GoogleSearch
 
 # > Goodnotes6
-host-suffix, goodnotes.email, US
-host-suffix, goodnotescloud.com, US
-host-suffix, goodnotes.com, US
+host-suffix, goodnotes.email, Available
+host-suffix, goodnotescloud.com, Available
+host-suffix, goodnotes.com, Available
 
 
 # >>>>>>>>>>>>>>> ✅ H ✅ <<<<<<<<<<<<<<
 # > 海角社区
-host-suffix, haijiao.com, HK
+host-suffix, haijiao.com, Available
 
 # > 黑料社
 host, h7.zztt72.com, Available
@@ -152,11 +152,11 @@ host, 155.fun, Available
 host-suffix, jszctech.com, direct
 
 # > JavDB
-host, api.liquidlink.cn, HK
-host, jdforrepam.com, HK
+host, api.liquidlink.cn, Available
+host, jdforrepam.com, Available
 
 # > JapanAV
-host, av.jkforum.net, HK
+host, av.jkforum.net, Available
 
 # >>>>>>>>>>>>>>> ✅ K ✅ <<<<<<<<<<<<<<
 # > Keep 防闪退
@@ -186,24 +186,24 @@ ip-cidr, 182.254.116.0/24, direct
 # >>>>>>>>>>>>>>> ✅ M ✅ <<<<<<<<<<<<<<
 # > 漫画
 # e-hantai
-host, exhentai.org, US
+host, exhentai.org, Available
 # 禁漫天堂
-host-suffix, 18comic.org, HK
-host-suffix, 18comic.vip, HK
+host-suffix, 18comic.org, Available
+host-suffix, 18comic.vip, Available
 # copymanga
-host-suffix, mangafunc.fun, HK
-host-keyword, copymanga, HK
-host-suffix, mangafuna.xyz, HK
-host, api.mangacopy.com, HK
-host, cdn.xsskc.com, HK
+host-suffix, mangafunc.fun, Available
+host-keyword, copymanga, Available
+host-suffix, mangafuna.xyz, Available
+host, api.mangacopy.com, Available
+host, cdn.xsskc.com, Available
 # 哔咔
 host, ad-channel.wikawika.xyz, reject
 host, ad-channel.diwodiwo.xyz, reject
 host, ad-display.diwodiwo.xyz, reject
-host, pica-web.wakamoment.tk, HK
-host, api.tipatipa.xyz, HK
-host-suffix, diwodiwo.xyz, HK
-host-suffix, picacomic.com, HK
+host, pica-web.wakamoment.tk, Available
+host, api.tipatipa.xyz, Available
+host-suffix, diwodiwo.xyz, Available
+host-suffix, picacomic.com, Available
 
 # > 漫画星球App
 host-suffix, chuangke.tv, direct
@@ -216,8 +216,8 @@ ip-cidr, 202.61.255.248/32, Available
 
 
 # >>>>>>>>>>>>>>> ✅ O ✅ <<<<<<<<<<<<<<
-# platform.openai使用US节点
-host, platform.openai.com, US
+# platform.openai使用美国节点
+host, platform.openai.com, Available
 
 
 # >>>>>>>>>>>>>>> ✅ P ✅ <<<<<<<<<<<<<<
@@ -241,13 +241,13 @@ host, us.l.qq.com, reject
 host-suffix, vercel.app, Available
 
 # > suppercell
-host-suffix, supercell.com, HK
+host-suffix, supercell.com, Available
 
 # > 神户直播
-ip-cidr, 18.143.209.231/32, HK
-host-suffix, changjiangjin.com, HK
-host-suffix, heshuangde.com, HK
-host-suffix, lyjinaojixie.com, HK
+ip-cidr, 18.143.209.231/32, Available
+host-suffix, changjiangjin.com, Available
+host-suffix, heshuangde.com, Available
+host-suffix, lyjinaojixie.com, Available
 
 # >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
 # > terabox网盘
@@ -257,11 +257,11 @@ host-suffix, 1024tera.com, Available
 # > Talkatone
 # 内部广告域名
 host, creatives.smadex.com, reject
-host-suffix, tktn.be, US
-IP-CIDR, 50.117.27.0/24, US
-IP-CIDR, 69.46.75.0/24, US
-IP-CIDR, 205.164.56.29/24, US
-IP-CIDR, 63.251.124.0/24, US
+host-suffix, tktn.be, Available
+IP-CIDR, 50.117.27.0/24, Available
+IP-CIDR, 69.46.75.0/24, Available
+IP-CIDR, 205.164.56.29/24, Available
+IP-CIDR, 63.251.124.0/24, Available
 
 
 # >>>>>>>>>>>>>>> ✅ U ✅ <<<<<<<<<<<<<<
@@ -291,8 +291,8 @@ host-keyword, aw-s.tripcdn.com, direct
 host-keyword, trip.com, direct
 
 # > 小宝影院
-host, xiaoheimi.net, HK
-host, xiaobaotv.net, HK
+host, xiaoheimi.net, Available
+host, xiaobaotv.net, Available
 
 # > 避免迅雷版权问题
 host, hub5idx.v6.shub.sandai.net, reject
