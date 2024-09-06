@@ -4,7 +4,5 @@ hostname：api.go2778.com
 
 */
 var objc = JSON.parse($response.body);
-objc.data.announcements.page = "0"
 objc.data.announcements.docs = [];
-objc.data.announcements.limit = 0;
 $done({body : JSON.stringify(objc)})
