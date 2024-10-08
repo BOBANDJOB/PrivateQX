@@ -1,18 +1,18 @@
 # > 绕过企业证书过期
 host, ocsp.apple.com, reject
 
-
 # > 屏蔽系统更新
 host, ns.itunes.apple.com, AppleUpdate
 host, appldnld.apple.com, AppleUpdate
 host, mesu.apple.com, AppleUpdate
-host, xp.apple.com, AppleUpdate
+# 验证发现拒绝xp.apple.com会影响AppleMusic
+# 同时直连xp.apple.com也可以屏蔽更新
+host, xp.apple.com, Apple
 host, gdmf.apple.com, AppleUpdate
 HOST-SUFFIX, iadsdk.apple.com, AppleUpdate
 HOST-SUFFIX, ads.internal.unity3d.com, AppleUpdate
 HOST-SUFFIX, ads.prd.ie.internal.unity3d.com, AppleUpdate
 HOST-SUFFIX, unityads.unity3d.com, AppleUpdate
-
 
 # > 苹果商店
 host-suffix, itunes.apple.com, Available
@@ -20,7 +20,6 @@ host-suffix, apps.apple.com, Available
 host, iosapps.itunes.apple.com, Available
 host-suffix, mzstatic.com, Available
 host, ppq.apple.com, Available
-
 
 # > 苹果facetime和iMessage
 host-suffix, ess.apple.com, Apple
