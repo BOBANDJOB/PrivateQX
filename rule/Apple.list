@@ -3,15 +3,15 @@ host, ocsp.apple.com, reject
 
 
 # > 屏蔽系统更新
-host, ns.itunes.apple.com, Apple Update
-host, appldnld.apple.com, Apple Update
-host, mesu.apple.com, Apple Update
-host, xp.apple.com, Apple Update
-host, gdmf.apple.com, Apple Update
-HOST-SUFFIX, iadsdk.apple.com, Apple Update
-HOST-SUFFIX, ads.internal.unity3d.com, Apple Update
-HOST-SUFFIX, ads.prd.ie.internal.unity3d.com, Apple Update
-HOST-SUFFIX, unityads.unity3d.com, Apple Update
+host, ns.itunes.apple.com, AppleUpdate
+host, appldnld.apple.com, AppleUpdate
+host, mesu.apple.com, AppleUpdate
+host, xp.apple.com, AppleUpdate
+host, gdmf.apple.com, AppleUpdate
+HOST-SUFFIX, iadsdk.apple.com, AppleUpdate
+HOST-SUFFIX, ads.internal.unity3d.com, AppleUpdate
+HOST-SUFFIX, ads.prd.ie.internal.unity3d.com, AppleUpdate
+HOST-SUFFIX, unityads.unity3d.com, AppleUpdate
 
 
 # > 苹果商店
