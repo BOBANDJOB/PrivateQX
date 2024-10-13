@@ -217,7 +217,7 @@ ip-cidr, 202.61.255.248/32, Available
 
 # >>>>>>>>>>>>>>> ✅ O ✅ <<<<<<<<<<<<<<
 # platform.openai使用美国节点
-host, platform.openai.com, Available
+host, platform.openai.com, US
 
 
 # >>>>>>>>>>>>>>> ✅ P ✅ <<<<<<<<<<<<<<
@@ -257,11 +257,11 @@ host-suffix, 1024tera.com, Available
 # > Talkatone
 # 内部广告域名
 host, creatives.smadex.com, reject
-host-suffix, tktn.be, Available
-IP-CIDR, 50.117.27.0/24, Available
-IP-CIDR, 69.46.75.0/24, Available
-IP-CIDR, 205.164.56.29/24, Available
-IP-CIDR, 63.251.124.0/24, Available
+host-suffix, tktn.be, US
+IP-CIDR, 50.117.27.0/24, US
+IP-CIDR, 69.46.75.0/24, US
+IP-CIDR, 205.164.56.29/24, US
+IP-CIDR, 63.251.124.0/24, US
 
 
 # >>>>>>>>>>>>>>> ✅ U ✅ <<<<<<<<<<<<<<
