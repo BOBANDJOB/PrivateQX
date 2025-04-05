@@ -190,6 +190,13 @@ host, exhentai.org, Available
 # 禁漫天堂
 host-suffix, 18comic.org, Available
 host-suffix, 18comic.vip, Available
+host-suffix, www.cdnmhwscc.vip,US
+host-suffix, www.cdnuc.vip,US
+# JM图片分流
+host-suffix, cdn-msp2.jmapinodeudzn.net,US
+host-suffix, cdn-msp3.jmapinodeudzn.net,US
+host-suffix, cdn-msp2.jmapiproxy2.cc,US
+host-suffix, cdn-msp2.jmapiproxy1.cc,US
 # copymanga
 host-suffix, mangafunc.fun, Available
 host-keyword, copymanga, Available
