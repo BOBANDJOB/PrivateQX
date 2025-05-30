@@ -1,5 +1,6 @@
 HOST,cdn.usefathom.com
 HOST-SUFFIX,anthropic.com
 HOST-SUFFIX,claude.ai
+USER-AGENT, Claude*
 IP-CIDR, 160.79.104.0/23
 IP6-CIDR, 2607:6bc0::/48
