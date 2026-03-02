@@ -126,7 +126,7 @@ host, awaken.amap.com, direct
 # Gemini
 host,alkalimakersuite-pa.clients6.google.com,OpenAI
 # Google搜索不用韩国节点
-host, www.google.com, GoogleSearch
+host, www.google.com, US
 
 # > Goodnotes6
 host-suffix, goodnotes.email, Auto
