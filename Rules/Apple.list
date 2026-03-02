@@ -15,11 +15,11 @@ HOST-SUFFIX, ads.prd.ie.internal.unity3d.com, AppleUpdate
 HOST-SUFFIX, unityads.unity3d.com, AppleUpdate
 
 # > 苹果商店
-host-suffix, itunes.apple.com, Available
-host-suffix, apps.apple.com, Available
-host, iosapps.itunes.apple.com, Available
-host-suffix, mzstatic.com, Available
-host, ppq.apple.com, Available
+host-suffix, itunes.apple.com, Auto
+host-suffix, apps.apple.com, Auto
+host, iosapps.itunes.apple.com, Auto
+host-suffix, mzstatic.com, Auto
+host, ppq.apple.com, Auto
 
 # > 苹果facetime和iMessage
 host-suffix, ess.apple.com, Apple
