@@ -124,7 +124,7 @@ host, awaken.amap.com, direct
 
 # > Google 
 # Gemini
-host,alkalimakersuite-pa.clients6.google.com,OpenAI
+host, alkalimakersuite-pa.clients6.google.com, US
 # Google搜索不用韩国节点
 host, www.google.com, US
 
