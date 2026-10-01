@@ -1,0 +1,8 @@
+# > Muse AI
+HOST-SUFFIX,muse.ai
+HOST,production.museai.com
+HOST,connect.facebook.net
+HOST,meta-ohttp-config-prod.fastly-edge.com
+HOST,meta-ohttp-relay-prod.fastly-edge.com
+HOST-SUFFIX,facebook.com
+HOST-SUFFIX,fbcdn.net
