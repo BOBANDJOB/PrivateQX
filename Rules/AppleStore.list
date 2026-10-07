@@ -1,0 +1,6 @@
+# > 苹果商店
+host-suffix, itunes.apple.com
+host-suffix, apps.apple.com
+host, iosapps.itunes.apple.com
+host-suffix, mzstatic.com
+host, ppq.apple.com
