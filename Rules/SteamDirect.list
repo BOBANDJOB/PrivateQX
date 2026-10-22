@@ -1,7 +1,0 @@
-# Steam 下载与连接，走直连
-# 下载 CDN（*.steamcontent.com，例如 lax1、hkg 等节点）
-HOST-SUFFIX,steamcontent.com,DIRECT
-# Steam 连接服务器
-HOST-SUFFIX,steamserver.net,DIRECT
-# 客户端 API，必须先于 steampowered.com 的代理规则匹配
-HOST,api.steampowered.com,DIRECT
