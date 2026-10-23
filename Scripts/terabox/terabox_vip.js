@@ -19,7 +19,7 @@ Terabox 会员状态响应体修改（仅供本地测试使用）
 
 [rewrite_local]
 
-^https?:\/\/nephobox\.com\/(rest\/2\.0\/membership\/proxy\/user|api\/user\/getinfo) url script-response-body https://raw.githubusercontent.com/BOBANDJOB/PrivateQX/main/Scripts/terabox/terabox_vip.js
+^https?:\/\/nephobox\.com\/(rest\/2\.0\/membership\/proxy\/user|api\/user\/getinfo) url script-response-body https://raw.githubusercontent.com/BOBANDJOB/PrivateQX/refs/heads/main/Scripts/terabox/terabox_vip.js
 
 [mitm]
 
