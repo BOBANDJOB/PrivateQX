@@ -87,6 +87,11 @@ host, d1-dm.online, Auto
 # > freeok视频网
 host-suffix, freeok.vip, direct
 
+# > Facebook 短链（上游 Facebook.list 未收录）
+host-suffix, fb.watch, SocialNetwork
+host-suffix, fbwat.ch, SocialNetwork
+host-suffix, fb.gg, SocialNetwork
+
 
 # >>>>>>>>>>>>>>> ✅ G ✅ <<<<<<<<<<<<<<
 # > 高德地图（防reject卡顿）
@@ -96,6 +101,7 @@ host, awaken.amap.com, direct
 # > Google 
 # Gemini
 host, alkalimakersuite-pa.clients6.google.com, US
+host, aistudio.google.com, US
 # Google搜索不用韩国节点
 host, www.google.com, US
 
