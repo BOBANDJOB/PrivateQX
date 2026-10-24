@@ -1,0 +1,13 @@
+# > 爱影视 · 分流修正（从 Supplement.list 拆出，仅自用）
+host, static.jssp.tv, direct
+host, lain.bgm.tv, direct
+host, tiao.cjkypo.com, direct
+host, ok.zuidapic.com, direct
+host, ts.thefilehosting.com, direct
+host, deo.shopeemobile.com, direct
+host, m3u8.255tv.tk, direct
+host, m3u8.mstopq.com, direct
+host-keyword, vip.lz-cdn, direct
+host-keyword, ax1x.com, direct
+host-suffix, o.lencr.org, direct
+host-keyword, ttcdn-tos.kkimg.cc, direct

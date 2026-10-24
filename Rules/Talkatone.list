@@ -1,0 +1,8 @@
+# > Talkatone（从 Supplement.list 拆出，仅自用；需要美国节点）
+# 内部广告域名
+host, creatives.smadex.com, reject
+host-suffix, tktn.be, US
+ip-cidr, 50.117.27.0/24, US
+ip-cidr, 69.46.75.0/24, US
+ip-cidr, 205.164.56.0/24, US
+ip-cidr, 63.251.124.0/24, US

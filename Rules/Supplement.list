@@ -51,22 +51,7 @@ host, ad.12306.cn, direct
 
 # >>>>>>>>>>>>>>> ✅ A ✅ <<<<<<<<<<<<<<
 # > anti-ad
-host-keyword, anti-ad.net, direct
-
-# > 爱影视  #分流修正 #欢迎大家补充
-host, static.jssp.tv, direct
-host, lain.bgm.tv, direct
-host, tiao.cjkypo.com, direct
-host, ok.zuidapic.com, direct
-host, ts.thefilehosting.com, direct
-host, deo.shopeemobile.com, direct
-host, m3u8.255tv.tk, direct
-host, m3u8.mstopq.com, direct
-host, ain.bgm.tv, direct
-host-keyword, vip.lz-cdn, direct
-host-keyword, ax1x.com, direct
-host-keyword, o.lencr.org, direct
-host-keyword, ttcdn-tos.kkimg.cc, direct
+host-suffix, anti-ad.net, direct
 
 # >>>>>>>>>>>>>>> ✅ B ✅ <<<<<<<<<<<<<<
 # > 百度贴吧去开屏
@@ -92,21 +77,7 @@ host-keyword, asiad.byteactivity, reject
 # 登录设备管理
 host-suffix, bytegoofy.com, direct
 
-# > 大师兄影视  #分流修正 #欢迎大家补充
-host, sdk.alibaba.com.ailbaba.me, direct
-host, img.ffzypic.com, direct
-host, img.liangzipic.com, direct
-host, img.bfzypic.com, direct
-host, img.kuaikanzy.net, direct
-host, vip.imgffzy.com, direct
-host, vip.ffzyread.com, direct
-host, cdn.jsdelivr.net, direct
-host, image.maimn.com, direct
-host-keyword, bfzycdn.com, direct
-host-keyword, vip.kuaikan-cdn, direct
-host-keyword, vip.ffzy-play, direct
-host-keyword, vip.ffzy-online, direct
-# 第一动漫
+# > 第一动漫
 host, d1-dm.online, Auto
 
 # >>>>>>>>>>>>>>> ✅ E ✅ <<<<<<<<<<<<<<
@@ -176,7 +147,7 @@ ip-cidr, 100.64.0.0/10, direct
 # 环回地址
 ip-cidr, 127.0.0.0/8, direct
 # 多播传输
-ip-cidr, 224.0.0.0/24, direct
+ip-cidr, 224.0.0.0/4, direct
 # 苹果服务
 ip-cidr, 17.0.0.0/8, direct
 # 腾讯游戏
@@ -233,7 +204,7 @@ host-suffix, mypikpak.com, Auto
 
 # >>>>>>>>>>>>>>> ✅ Q ✅ <<<<<<<<<<<<<<
 # > QQ空间
-host-keyword, ctc.qzs.qzone.qq.com, direct
+host, ctc.qzs.qzone.qq.com, direct
 
 # > QQ音乐开屏
 host, us.l.qq.com, reject
@@ -249,29 +220,15 @@ host-suffix, vercel.app, Auto
 # > suppercell
 host-suffix, supercell.com, Auto
 
-# > 神户直播
-ip-cidr, 18.143.209.231/32, Auto
-host-suffix, changjiangjin.com, Auto
-host-suffix, heshuangde.com, Auto
-host-suffix, lyjinaojixie.com, Auto
 
 # >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
 # > terabox网盘
 host, www.terabox.com, Auto
 host-suffix, 1024tera.com, Auto
 
-# > Talkatone
-# 内部广告域名
-host, creatives.smadex.com, reject
-host-suffix, tktn.be, US
-IP-CIDR, 50.117.27.0/24, US
-IP-CIDR, 69.46.75.0/24, US
-IP-CIDR, 205.164.56.29/24, US
-IP-CIDR, 63.251.124.0/24, US
-
 # > telegram
 # 防止加载转圈
-IP-CIDR,95.161.76.100/31,reject
+ip-cidr, 95.161.76.100/31, reject
 
 
 # >>>>>>>>>>>>>>> ✅ U ✅ <<<<<<<<<<<<<<
@@ -297,8 +254,8 @@ host, www.wandou.la, direct
 host-suffix, ixdzs8.com, direct
 
 # > 携程
-host-keyword, aw-s.tripcdn.com, direct
-host-keyword, trip.com, direct
+host, aw-s.tripcdn.com, direct
+host-suffix, trip.com, direct
 
 # > 小宝影院
 host, xiaoheimi.net, Auto
@@ -323,10 +280,7 @@ ip-cidr, 172.233.81.206/32, direct
 
 
 # >>>>>>>>>>>>>>> ✅ 其他 ✅ <<<<<<<<<<<<<<
-# > 路由器后台
-ip-cidr, 192.168.0.1/24, direct
-# > 天翼网关
-ip-cidr, 192.168.1.1/24, direct
+# > 路由器后台、天翼网关（192.168.0.x / 192.168.1.x）已包含在 LAN 的 192.168.0.0/16 中
 
 
 

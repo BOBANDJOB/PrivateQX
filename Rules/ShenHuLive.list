@@ -1,0 +1,5 @@
+# > 神户直播（从 Supplement.list 拆出，仅自用；IP 变动时更新这里）
+host-suffix, changjiangjin.com, Auto
+host-suffix, heshuangde.com, Auto
+host-suffix, lyjinaojixie.com, Auto
+ip-cidr, 18.143.209.231/32, Auto
