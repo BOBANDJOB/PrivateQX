@@ -1,0 +1,21 @@
+# AppleIntelligence分流
+# Update 2026-09-17
+
+HOST,guzzoni.apple.com
+HOST,mask-api.fe.apple-dns.net
+HOST,mask-api.icloud.com
+HOST,mask-t.apple-dns.net
+HOST,mask.apple-dns.net
+HOST-SUFFIX,smoot.apple.com
+HOST-SUFFIX,apple-relay.apple.com
+HOST-SUFFIX,apple-relay.cloudflare.com
+HOST-SUFFIX,apple-relay.fastly-edge.com
+HOST-SUFFIX,apple-relay.mask.apple-dns.net
+HOST-SUFFIX,cp4.cloudflare.com
+HOST-SUFFIX,gspe1-ssl.ls.apple.com
+HOST-SUFFIX,gateway.icloud.com
+HOST-SUFFIX,ls.apple.com
+HOST-SUFFIX,mask-h2.icloud.com
+HOST-SUFFIX,mask.icloud.com
+HOST-SUFFIX,apps.mzstatic.com
+HOST-KEYWORD,siri

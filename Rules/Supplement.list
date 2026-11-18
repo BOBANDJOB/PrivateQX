@@ -1,0 +1,293 @@
+################################################################
+# > 自用分流补充
+#############################################
+# > "reject"        策略返回 HTTP 状态码 404, 不附带任何额外内容
+# > "reject-200"    策略返回 HTTP 状态码 200, 不附带任何额外内容
+# > "reject-img"    策略返回 HTTP 状态码 200, 同时附带 1px gif
+# > "reject-dict"   策略返回 HTTP 状态码 200, 同时附带一个空的 JSON 对象
+# > "reject-array"  策略返回 HTTP 状态码 200, 同时附带一个空的 JSON 数组
+#############################################
+
+# >>>>>>>>>>>>>>> ✅ 0 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 1 ✅ <<<<<<<<<<<<<<
+# > 12306
+host, ad.12306.cn, direct
+
+
+# >>>>>>>>>>>>>>> ✅ 2 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 3 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 4 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 5 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 6 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 7 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 8 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 9 ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ A ✅ <<<<<<<<<<<<<<
+# > anti-ad
+host-suffix, anti-ad.net, direct
+
+# >>>>>>>>>>>>>>> ✅ B ✅ <<<<<<<<<<<<<<
+# > 百度贴吧去开屏
+host, afd.baidu.com, reject
+host, mobads.baidu.com, reject
+
+
+# >>>>>>>>>>>>>>> ✅ C ✅ <<<<<<<<<<<<<<
+# > 插件网站
+host-suffix, crxsoso.com, direct
+
+# > ClashRoyale
+host-suffix, clashroyale.com, Auto
+host-suffix, clashroyaleapp.com, Auto
+
+# > 菜鸟新建地址
+host-suffix, mmstat.com, direct
+
+# >>>>>>>>>>>>>>> ✅ D ✅ <<<<<<<<<<<<<<
+# > 抖音
+# 开屏
+host-keyword, asiad.byteactivity, reject
+# 登录设备管理
+host-suffix, bytegoofy.com, direct
+
+# > 第一动漫
+host, d1-dm.online, Auto
+
+# >>>>>>>>>>>>>>> ✅ E ✅ <<<<<<<<<<<<<<
+
+
+# >>>>>>>>>>>>>>> ✅ F ✅ <<<<<<<<<<<<<<
+# > freeok视频网
+host-suffix, freeok.vip, direct
+
+# > Facebook 短链（上游 Facebook.list 未收录）
+host-suffix, fb.watch, SocialNetwork
+host-suffix, fbwat.ch, SocialNetwork
+host-suffix, fb.gg, SocialNetwork
+
+
+# >>>>>>>>>>>>>>> ✅ G ✅ <<<<<<<<<<<<<<
+# > 高德地图（防reject卡顿）
+host, www.qchannel01.cn, direct
+host, awaken.amap.com, direct
+
+# > Google 
+# Gemini
+host, alkalimakersuite-pa.clients6.google.com, US
+host, aistudio.google.com, US
+# Google搜索不用韩国节点
+host, www.google.com, US
+
+# > Goodnotes6
+host-suffix, goodnotes.email, Auto
+host-suffix, goodnotescloud.com, Auto
+host-suffix, goodnotes.com, Auto
+
+
+# >>>>>>>>>>>>>>> ✅ H ✅ <<<<<<<<<<<<<<
+# > 海角社区
+host-suffix, haijiao.com, Auto
+
+# > 黑料社
+host, h7.zztt72.com, Auto
+host, 155.fun, Auto
+
+
+# >>>>>>>>>>>>>>> ✅ I ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ J ✅ <<<<<<<<<<<<<<
+# > 捷顺停车
+host-suffix, jszctech.com, direct
+
+# > JavDB
+host, api.liquidlink.cn, Auto
+host, jdforrepam.com, Auto
+
+# > JapanAV
+host, av.jkforum.net, Auto
+
+# >>>>>>>>>>>>>>> ✅ K ✅ <<<<<<<<<<<<<<
+# > Keep 防闪退
+host, apm.gotokeep.com, direct
+host, kad.gotokeep.com, direct
+
+
+# >>>>>>>>>>>>>>> ✅ L ✅ <<<<<<<<<<<<<<
+# > LAN
+host-suffix, local, direct
+# 私有网络
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 192.168.0.0/16, direct
+# 运营商级NAT
+ip-cidr, 100.64.0.0/10, direct
+# 环回地址
+ip-cidr, 127.0.0.0/8, direct
+# 多播传输
+ip-cidr, 224.0.0.0/4, direct
+# 苹果服务
+ip-cidr, 17.0.0.0/8, direct
+# 腾讯游戏
+ip-cidr, 182.254.116.0/24, direct
+
+
+# >>>>>>>>>>>>>>> ✅ M ✅ <<<<<<<<<<<<<<
+# > 漫画
+# e-hantai
+host, exhentai.org, Auto
+# 禁漫天堂
+host-suffix, 18comic.org, Auto
+host-suffix, 18comic.vip, Auto
+host-suffix, www.cdnmhwscc.vip, Auto
+host-suffix, www.cdnuc.vip, Auto
+# JM图片分流
+host-suffix, cdn-msp2.jmapinodeudzn.net, Auto
+host-suffix, cdn-msp3.jmapinodeudzn.net, Auto
+host-suffix, cdn-msp2.jmapiproxy2.cc, Auto
+host-suffix, cdn-msp2.jmapiproxy1.cc, Auto
+# copymanga
+host-suffix, mangafunc.fun, Auto
+host-keyword, copymanga, Auto
+host-suffix, mangafuna.xyz, Auto
+host, api.mangacopy.com, Auto
+host, cdn.xsskc.com, Auto
+# 哔咔
+host, ad-channel.wikawika.xyz, reject
+host, ad-channel.diwodiwo.xyz, reject
+host, ad-display.diwodiwo.xyz, reject
+host, pica-web.wakamoment.tk, Auto
+host, api.tipatipa.xyz, Auto
+host-suffix, diwodiwo.xyz, Auto
+host-suffix, picacomic.com, Auto
+
+# > 漫画星球App
+host-suffix, chuangke.tv, direct
+
+# > 莫高雷Emby
+ip-cidr, 202.61.255.248/32, Auto
+
+# >>>>>>>>>>>>>>> ✅ N ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ O ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ P ✅ <<<<<<<<<<<<<<
+# > pikpak
+host-suffix, mypikpak.com, Auto
+
+
+# >>>>>>>>>>>>>>> ✅ Q ✅ <<<<<<<<<<<<<<
+# > QQ空间
+host, ctc.qzs.qzone.qq.com, direct
+
+# > QQ音乐开屏
+host, us.l.qq.com, reject
+
+# >>>>>>>>>>>>>>> ✅ R ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ S ✅ <<<<<<<<<<<<<<
+# > subStore
+host-suffix, vercel.app, Auto
+
+# > suppercell
+host-suffix, supercell.com, Auto
+
+
+# >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
+# > terabox网盘
+host, www.terabox.com, Auto
+host-suffix, 1024tera.com, Auto
+
+# > telegram
+# 防止加载转圈
+ip-cidr, 95.161.76.100/31, reject
+
+
+# >>>>>>>>>>>>>>> ✅ U ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ V ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ W ✅ <<<<<<<<<<<<<<
+# > 微博
+host, sdkapp.uve.weibo.com, direct
+
+# > 微信支付，支付宝支付卡顿
+host, s3.pstatp.com, direct
+
+# > 豌豆Pro影视
+host, www.wandou.la, direct
+
+# >>>>>>>>>>>>>>> ✅ X ✅ <<<<<<<<<<<<<<
+# > 小说
+host-suffix, ixdzs8.com, direct
+
+# > 携程
+host, aw-s.tripcdn.com, direct
+host-suffix, trip.com, direct
+
+# > 小宝影院
+host, xiaoheimi.net, Auto
+host, xiaobaotv.net, Auto
+
+# > 避免迅雷版权问题
+host, hub5idx.v6.shub.sandai.net, reject
+host, hub5emu.v6.shub.sandai.net, reject
+host, hub5btmain.v6.shub.sandai.net, reject
+
+# >>>>>>>>>>>>>>> ✅ Y ✅ <<<<<<<<<<<<<<
+# > 医保
+host, v1.cnzz.com, direct
+
+# > yqc破解
+# 糖心VLOG,泡芙短视频
+ip-cidr, 172.233.81.206/32, direct
+
+
+# >>>>>>>>>>>>>>> ✅ Z ✅ <<<<<<<<<<<<<<
+
+
+
+# >>>>>>>>>>>>>>> ✅ 其他 ✅ <<<<<<<<<<<<<<
+# > 路由器后台、天翼网关（192.168.0.x / 192.168.1.x）已包含在 LAN 的 192.168.0.0/16 中
+
+
+
+

@@ -1,0 +1,6 @@
+.DS_Store
+CLAUDE.md
+AGENTS.md
+
+# 本地验证缓存和个人配置备份
+/.local/

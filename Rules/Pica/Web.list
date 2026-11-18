@@ -1,0 +1,6 @@
+# 哔咔网页版接口与网页；由订阅 force-policy=Auto 指定策略。
+# 仅放行业务与需改写的配置入口，不放行 App 的三个独立广告域名。
+host, pica-ad-api.diwodiwo.xyz
+host, picaapi.go2778.com
+host, picaapi.acbbb.com
+host, manhuapica.com

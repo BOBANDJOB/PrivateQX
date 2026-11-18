@@ -1,0 +1,31 @@
+# ==============================================
+# Steam 分流规则（Quantumult X）
+# 用法：filter_remote 引用时【不要】加 force-policy，每行策略各自生效
+# 依赖：配置中需有名为 US 的策略组
+# 商店和社区（steampowered.com / steamcommunity.com）未列出，
+# 交给 Global 或 final 走代理
+# api.steampowered.com 直连不稳定，故意不加
+# ==============================================
+
+# ---------- 下载：Valve 官方 CDN ----------
+# cache*-xxx.steamcontent.com，下载地区选海外节点时使用
+HOST-SUFFIX,steamcontent.com,DIRECT
+
+# ---------- 下载：国区合作 CDN（下载地区选"中国 - xx"时使用）----------
+HOST-SUFFIX,steamchina.com,DIRECT
+HOST,st.dl.eccdnx.com,DIRECT
+HOST,dl.steam.clngaa.com,DIRECT
+HOST,dl.steam.ksyna.com,DIRECT
+HOST,st.dl.bscstorage.net,DIRECT
+HOST,st.dl.pinyuncloud.com,DIRECT
+HOST,xz.pphimalayanrt.com,DIRECT
+HOST-SUFFIX,steamcontent.tnkjmec.com,DIRECT
+# 注：上面的 CDN 还会跳转到 gstore.val.manlaxy.com、gstore.val.smogfly.com 等地址
+# 这类域名经常变化，交给 geoip, cn, direct 处理
+
+# ---------- 连接服务器（CM，用于登录和保持在线）----------
+HOST-SUFFIX,steamserver.net,DIRECT
+
+# ---------- 静态资源：代理 ----------
+# 商店和新闻的图片、JS、CSS；直连时部分内容加载不出来
+HOST-SUFFIX,steamstatic.com,US
